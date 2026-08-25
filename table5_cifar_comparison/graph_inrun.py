@@ -1,0 +1,78 @@
+"""Conservative semantic-graph Adam-aware In-Run scores for Table 5."""
+
+import numpy as np
+import torch
+import torch.nn.functional as functional
+from sklearn.neighbors import NearestNeighbors
+
+import adam_inrun
+from table5_common import DEVICE, RunContext, load_or_compute_scores, make_loader, make_model, standalone_main
+from shapley_common import (
+    TopologyGraph,
+    conservative_graph_scores,
+)
+
+METHOD_NAME = "Graph Adam-aware In-Run"
+CACHE_VERSION = "semantic-conservative-v3"
+GRAPH_K = 10
+GRAPH_FEATURE_SIZE = 128
+GRAPH_SMOOTHING = 0.2
+GRAPH_CONSISTENCY_PENALTY = 1.0
+
+
+@torch.no_grad()
+def _semantic_graph(context: RunContext) -> TopologyGraph:
+    model = make_model(context.config, context.seed + 1101)
+    model.fc = torch.nn.Identity()
+    model.eval()
+    features = []
+    for images, _labels in make_loader(context.train_dataset, context.config, shuffle=False, seed=0):
+        images = functional.interpolate(
+            images, size=(GRAPH_FEATURE_SIZE, GRAPH_FEATURE_SIZE), mode="bilinear", align_corners=False
+        )
+        features.append(functional.normalize(model(images.to(DEVICE)), dim=1).cpu())
+    embeddings = torch.cat(features).numpy()
+    del model
+    if torch.cuda.is_available():
+        torch.cuda.empty_cache()
+
+    n_neighbors = min(GRAPH_K + 1, len(embeddings))
+    neighbors = NearestNeighbors(n_neighbors=n_neighbors, metric="cosine", n_jobs=-1)
+    distances, indices = neighbors.fit(embeddings).kneighbors(embeddings)
+    raw_weights = np.clip(1.0 - distances[:, 1:], 0.0, None).astype(np.float32)
+    row_sum = raw_weights.sum(axis=1, keepdims=True)
+    row_sum[row_sum == 0.0] = 1.0
+    weights = raw_weights / row_sum
+    return TopologyGraph(
+        neighbors=indices[:, 1:].astype(np.int64),
+        weights=weights,
+        density=raw_weights.mean(axis=1),
+    )
+
+
+def score(context: RunContext) -> dict[str, np.ndarray]:
+    raw_scores = load_or_compute_scores(context, adam_inrun.METHOD_NAME, adam_inrun.score)
+    graph = _semantic_graph(context)
+    labels = np.asarray(context.train_dataset.targets)
+    first_values = conservative_graph_scores(
+        raw_scores["Adam-aware 1st Order In-Run"],
+        labels,
+        graph,
+        smoothing=GRAPH_SMOOTHING,
+        consistency_penalty=GRAPH_CONSISTENCY_PENALTY,
+    )
+    second_values = conservative_graph_scores(
+        raw_scores["Adam-aware 2nd Order In-Run"],
+        labels,
+        graph,
+        smoothing=GRAPH_SMOOTHING,
+        consistency_penalty=GRAPH_CONSISTENCY_PENALTY,
+    )
+    return {
+        "Graph Adam-aware 1st Order In-Run": first_values,
+        "Graph Adam-aware 2nd Order In-Run": second_values,
+    }
+
+
+if __name__ == "__main__":
+    standalone_main(METHOD_NAME, score)

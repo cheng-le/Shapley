@@ -1,0 +1,132 @@
+{
+  "dataset": "monology/pile-uncopyrighted",
+  "scanned_rows": 1000000,
+  "removed_from_uncopyrighted": [
+    "Books3",
+    "BookCorpus2",
+    "OpenSubtitles",
+    "YoutubeSubtitles",
+    "OpenWebText2"
+  ],
+  "subsets": [
+    {
+      "subset": "Pile-CC",
+      "available": 60,
+      "train": 50,
+      "val": 10,
+      "file": "data/Pile/subsets/pile_cc.jsonl"
+    },
+    {
+      "subset": "PubMed Central",
+      "available": 60,
+      "train": 50,
+      "val": 10,
+      "file": "data/Pile/subsets/pubmed_central.jsonl"
+    },
+    {
+      "subset": "ArXiv",
+      "available": 60,
+      "train": 50,
+      "val": 10,
+      "file": "data/Pile/subsets/arxiv.jsonl"
+    },
+    {
+      "subset": "Github",
+      "available": 60,
+      "train": 50,
+      "val": 10,
+      "file": "data/Pile/subsets/github.jsonl"
+    },
+    {
+      "subset": "FreeLaw",
+      "available": 60,
+      "train": 50,
+      "val": 10,
+      "file": "data/Pile/subsets/freelaw.jsonl"
+    },
+    {
+      "subset": "StackExchange",
+      "available": 60,
+      "train": 50,
+      "val": 10,
+      "file": "data/Pile/subsets/stackexchange.jsonl"
+    },
+    {
+      "subset": "USPTO Backgrounds",
+      "available": 60,
+      "train": 50,
+      "val": 10,
+      "file": "data/Pile/subsets/uspto_backgrounds.jsonl"
+    },
+    {
+      "subset": "PubMed Abstracts",
+      "available": 60,
+      "train": 50,
+      "val": 10,
+      "file": "data/Pile/subsets/pubmed_abstracts.jsonl"
+    },
+    {
+      "subset": "Gutenberg (PG-19)",
+      "available": 60,
+      "train": 50,
+      "val": 10,
+      "file": "data/Pile/subsets/gutenberg_pg_19.jsonl"
+    },
+    {
+      "subset": "Wikipedia (en)",
+      "available": 60,
+      "train": 50,
+      "val": 10,
+      "file": "data/Pile/subsets/wikipedia_en.jsonl"
+    },
+    {
+      "subset": "DM Mathematics",
+      "available": 60,
+      "train": 50,
+      "val": 10,
+      "file": "data/Pile/subsets/dm_mathematics.jsonl"
+    },
+    {
+      "subset": "Ubuntu IRC",
+      "available": 28,
+      "train": 28,
+      "val": 0,
+      "file": "data/Pile/subsets/ubuntu_irc.jsonl"
+    },
+    {
+      "subset": "EuroParl",
+      "available": 60,
+      "train": 50,
+      "val": 10,
+      "file": "data/Pile/subsets/europarl.jsonl"
+    },
+    {
+      "subset": "HackerNews",
+      "available": 60,
+      "train": 50,
+      "val": 10,
+      "file": "data/Pile/subsets/hackernews.jsonl"
+    },
+    {
+      "subset": "PhilPapers",
+      "available": 60,
+      "train": 50,
+      "val": 10,
+      "file": "data/Pile/subsets/philpapers.jsonl"
+    },
+    {
+      "subset": "NIH ExPorter",
+      "available": 60,
+      "train": 50,
+      "val": 10,
+      "file": "data/Pile/subsets/nih_exporter.jsonl"
+    },
+    {
+      "subset": "Enron Emails",
+      "available": 60,
+      "train": 50,
+      "val": 10,
+      "file": "data/Pile/subsets/enron_emails.jsonl"
+    }
+  ]
+}

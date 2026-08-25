@@ -1,0 +1,241 @@
+{
+  "protocol": {
+    "dataset": "CIFAR10",
+    "subset_size": 1000,
+    "mislabel_fraction": 0.1,
+    "runs": 3,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "model": "ImageNet-pretrained ResNet18",
+    "optimizer": "Adam",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "label_smoothing": 0.1,
+    "epochs": 50,
+    "batch_size": 64,
+    "lr_schedule": "multiply by 0.1 every 10 epochs",
+    "positive_class": "mislabeled",
+    "anomaly_score": "negative data-attribution score",
+    "score_cache_fingerprint": "16a6f42d74e8",
+    "implementation_note": "Uses the exact completed Table 5 score vectors. TRAK, LESS, influence, and In-Run methods retain the approximation boundaries documented there."
+  },
+  "runs": [
+    {
+      "run": 0,
+      "seed": 0,
+      "points": 1000,
+      "mislabeled": 100
+    },
+    {
+      "run": 1,
+      "seed": 1,
+      "points": 1000,
+      "mislabeled": 100
+    },
+    {
+      "run": 2,
+      "seed": 2,
+      "points": 1000,
+      "mislabeled": 100
+    }
+  ],
+  "paper_reference": {
+    "Retraining-based Data Shapley": {
+      "mean": 0.582,
+      "std": 0.029
+    },
+    "Empirical Influence Function": {
+      "mean": 0.552,
+      "std": 0.017
+    },
+    "Datamodels": {
+      "mean": 0.52,
+      "std": 0.008
+    },
+    "KNN-Shapley": {
+      "mean": 0.76,
+      "std": 0.018
+    },
+    "Influence function": {
+      "mean": 0.654,
+      "std": 0.054
+    },
+    "LESS": {
+      "mean": 0.55,
+      "std": 0.032
+    },
+    "1st Order In-Run Data Shapley": {
+      "mean": 0.678,
+      "std": 0.045
+    },
+    "2nd Order In-Run Data Shapley": {
+      "mean": 0.68,
+      "std": 0.048
+    },
+    "TRAK (1 cpt)": {
+      "mean": 0.511,
+      "std": 0.012
+    },
+    "TRAK (5 cpts)": {
+      "mean": 0.542,
+      "std": 0.025
+    },
+    "TRAK (15 cpts)": {
+      "mean": 0.609,
+      "std": 0.028
+    },
+    "TRAK (25 cpts)": {
+      "mean": 0.617,
+      "std": 0.021
+    }
+  },
+  "summary": {
+    "Retraining-based Data Shapley": {
+      "mean": 0.5003555555555556,
+      "std": 0.04221080937370828,
+      "runs": [
+        0.47740000000000005,
+        0.46411111111111114,
+        0.5595555555555556
+      ]
+    },
+    "Empirical Influence Function": {
+      "mean": 0.5069481481481481,
+      "std": 0.007603466468128963,
+      "runs": [
+        0.49623333333333336,
+        0.5130888888888889,
+        0.5115222222222222
+      ]
+    },
+    "Datamodels": {
+      "mean": 0.5042333333333333,
+      "std": 0.04149574523283061,
+      "runs": [
+        0.48487777777777774,
+        0.4659333333333333,
+        0.5618888888888889
+      ]
+    },
+    "KNN-Shapley": {
+      "mean": 0.5630185185185185,
+      "std": 0.05387995674988058,
+      "runs": [
+        0.6209333333333333,
+        0.4911777777777777,
+        0.5769444444444445
+      ]
+    },
+    "Influence function": {
+      "mean": 0.4471037037037037,
+      "std": 0.040097840559789474,
+      "runs": [
+        0.4759777777777778,
+        0.3904,
+        0.4749333333333333
+      ]
+    },
+    "LESS": {
+      "mean": 0.5231629629629629,
+      "std": 0.02703411095277328,
+      "runs": [
+        0.49036666666666673,
+        0.5565777777777777,
+        0.5225444444444445
+      ]
+    },
+    "1st Order In-Run Data Shapley": {
+      "mean": 0.5118851851851852,
+      "std": 0.021929781943211785,
+      "runs": [
+        0.4862111111111111,
+        0.5397888888888889,
+        0.5096555555555555
+      ]
+    },
+    "2nd Order In-Run Data Shapley": {
+      "mean": 0.5000740740740741,
+      "std": 0.035402037017178895,
+      "runs": [
+        0.4515111111111112,
+        0.5349,
+        0.5138111111111111
+      ]
+    },
+    "TRAK (1 cpt)": {
+      "mean": 0.4882111111111111,
+      "std": 0.030151240172679727,
+      "runs": [
+        0.4529,
+        0.48516666666666663,
+        0.5265666666666666
+      ]
+    },
+    "TRAK (5 cpts)": {
+      "mean": 0.4779555555555555,
+      "std": 0.02812421009407447,
+      "runs": [
+        0.44362222222222214,
+        0.47773333333333334,
+        0.5125111111111111
+      ]
+    },
+    "TRAK (15 cpts)": {
+      "mean": 0.47664074074074075,
+      "std": 0.030843852504370863,
+      "runs": [
+        0.4396,
+        0.47521111111111114,
+        0.5151111111111111
+      ]
+    },
+    "TRAK (25 cpts)": {
+      "mean": 0.47704814814814817,
+      "std": 0.030941814946904865,
+      "runs": [
+        0.4389666666666666,
+        0.4774222222222223,
+        0.5147555555555555
+      ]
+    },
+    "Adam-aware 1st Order In-Run": {
+      "mean": 0.4995518518518518,
+      "std": 0.018544512867044907,
+      "runs": [
+        0.4737222222222222,
+        0.5085333333333333,
+        0.5164
+      ]
+    },
+    "Adam-aware 2nd Order In-Run": {
+      "mean": 0.49127407407407403,
+      "std": 0.009215313491329752,
+      "runs": [
+        0.4824777777777778,
+        0.504,
+        0.48734444444444447
+      ]
+    },
+    "Graph Adam-aware 1st Order In-Run": {
+      "mean": 0.6271185185185185,
+      "std": 0.01511688978106772,
+      "runs": [
+        0.6061,
+        0.6342444444444445,
+        0.6410111111111111
+      ]
+    },
+    "Graph Adam-aware 2nd Order In-Run": {
+      "mean": 0.6232962962962963,
+      "std": 0.006803124030226436,
+      "runs": [
+        0.6142555555555556,
+        0.6306666666666666,
+        0.6249666666666667
+      ]
+    }
+  }
+}

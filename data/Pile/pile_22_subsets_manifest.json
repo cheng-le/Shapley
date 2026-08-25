@@ -1,0 +1,103 @@
+{
+  "name": "Pile 22-subset mini sampling workspace",
+  "status": "raw_pile_not_downloaded",
+  "reason": "The historical the-eye.eu Pile URLs currently return 404 or SSL errors in this environment.",
+  "expected_raw_input": "Put Pile all shards or subset jsonl/jsonl.zst files under data/Pile/raw/.",
+  "output_train": "data/Pile/train.jsonl",
+  "output_val": "data/Pile/val.jsonl",
+  "subsets": [
+    {
+      "name": "Pile-CC",
+      "target_file": "data/Pile/subsets/01_pile-cc.jsonl"
+    },
+    {
+      "name": "PubMed Central",
+      "target_file": "data/Pile/subsets/02_pubmed_central.jsonl"
+    },
+    {
+      "name": "Books3",
+      "target_file": "data/Pile/subsets/03_books3.jsonl"
+    },
+    {
+      "name": "OpenWebText2",
+      "target_file": "data/Pile/subsets/04_openwebtext2.jsonl"
+    },
+    {
+      "name": "ArXiv",
+      "target_file": "data/Pile/subsets/05_arxiv.jsonl"
+    },
+    {
+      "name": "Github",
+      "target_file": "data/Pile/subsets/06_github.jsonl"
+    },
+    {
+      "name": "FreeLaw",
+      "target_file": "data/Pile/subsets/07_freelaw.jsonl"
+    },
+    {
+      "name": "StackExchange",
+      "target_file": "data/Pile/subsets/08_stackexchange.jsonl"
+    },
+    {
+      "name": "USPTO Backgrounds",
+      "target_file": "data/Pile/subsets/09_uspto_backgrounds.jsonl"
+    },
+    {
+      "name": "PubMed Abstracts",
+      "target_file": "data/Pile/subsets/10_pubmed_abstracts.jsonl"
+    },
+    {
+      "name": "Gutenberg (PG-19)",
+      "target_file": "data/Pile/subsets/11_gutenberg_pg-19.jsonl"
+    },
+    {
+      "name": "OpenSubtitles",
+      "target_file": "data/Pile/subsets/12_opensubtitles.jsonl"
+    },
+    {
+      "name": "Wikipedia (en)",
+      "target_file": "data/Pile/subsets/13_wikipedia_en.jsonl"
+    },
+    {
+      "name": "DM Mathematics",
+      "target_file": "data/Pile/subsets/14_dm_mathematics.jsonl"
+    },
+    {
+      "name": "Ubuntu IRC",
+      "target_file": "data/Pile/subsets/15_ubuntu_irc.jsonl"
+    },
+    {
+      "name": "BookCorpus2",
+      "target_file": "data/Pile/subsets/16_bookcorpus2.jsonl"
+    },
+    {
+      "name": "EuroParl",
+      "target_file": "data/Pile/subsets/17_europarl.jsonl"
+    },
+    {
+      "name": "HackerNews",
+      "target_file": "data/Pile/subsets/18_hackernews.jsonl"
+    },
+    {
+      "name": "YoutubeSubtitles",
+      "target_file": "data/Pile/subsets/19_youtubesubtitles.jsonl"
+    },
+    {
+      "name": "PhilPapers",
+      "target_file": "data/Pile/subsets/20_philpapers.jsonl"
+    },
+    {
+      "name": "NIH ExPorter",
+      "target_file": "data/Pile/subsets/21_nih_exporter.jsonl"
+    },
+    {
+      "name": "Enron Emails",
+      "target_file": "data/Pile/subsets/22_enron_emails.jsonl"
+    }
+  ],
+  "source_notes": {
+    "pile_paper": "https://arxiv.org/abs/2101.00027",
+    "pile_builder_repo": "https://github.com/EleutherAI/the-pile",
+    "historical_hf_dataset": "EleutherAI/pile uses old loading script and historical the-eye.eu URLs."
+  }
+}

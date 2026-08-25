@@ -1,0 +1,422 @@
+"""Shared protocol and utilities for reproducing Table 5 on local CIFAR10."""
+
+from __future__ import annotations
+
+import argparse
+import gc
+import hashlib
+import json
+import os
+import random
+import time
+from dataclasses import asdict, dataclass
+from pathlib import Path
+from typing import Callable, Dict, Iterable, Optional
+
+import numpy as np
+import torch
+import torch.nn as nn
+import torch.optim as optim
+from torch.utils.data import DataLoader, Dataset, Subset
+
+import sys
+
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
+from cifar_resnet.cifar_resnet_common import LocalCIFAR10, make_cifar_model
+
+
+DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
+_RETRAINING_MEMORY: dict[str, tuple[np.ndarray, np.ndarray]] = {}
+
+
+@dataclass
+class Table5Config:
+    data_root: str = "data"
+    output_dir: str = "table5_cifar_comparison/results"
+    subset_size: int = 1000
+    mislabel_fraction: float = 0.10
+    runs: int = 3
+    seed: int = 0
+    budgets: tuple[float, ...] = (0.20, 0.40, 0.60, 0.80)
+    batch_size: int = 64
+    epochs: int = 50
+    lr: float = 1e-3
+    weight_decay: float = 1e-4
+    label_smoothing: float = 0.1
+    lr_step: int = 10
+    lr_gamma: float = 0.1
+    valuation_size: int = 10000
+    test_size: int = 10000
+    retraining_runs: int = 1000
+    projection_dim: int = 2048
+    influence_cg_steps: int = 50
+    influence_damping: float = 1e-2
+    trak_ridge: float = 1e-3
+    datamodel_ridge: float = 1e-2
+    knn_k: int = 5
+    pretrained: bool = True
+    num_workers: int = 0
+    force: bool = False
+    quick: bool = False
+
+
+class CorruptedSubset(Dataset):
+    """A deterministic CIFAR subset with labels stored independently from the base set."""
+
+    def __init__(self, base: LocalCIFAR10, source_indices: np.ndarray, labels: np.ndarray):
+        self.base = base
+        self.source_indices = np.asarray(source_indices, dtype=np.int64)
+        self.targets = [int(y) for y in labels]
+
+    def __len__(self) -> int:
+        return len(self.source_indices)
+
+    def __getitem__(self, index: int):
+        image, _ = self.base[int(self.source_indices[index])]
+        return image, self.targets[index]
+
+
+@dataclass
+class RunContext:
+    config: Table5Config
+    run_index: int
+    seed: int
+    train_dataset: CorruptedSubset
+    valuation_dataset: Dataset
+    test_dataset: Dataset
+    corrupted_mask: np.ndarray
+    output_dir: Path
+
+
+def set_seed(seed: int) -> None:
+    random.seed(seed)
+    np.random.seed(seed)
+    torch.manual_seed(seed)
+    if torch.cuda.is_available():
+        torch.cuda.manual_seed_all(seed)
+
+
+def _sample_indices(length: int, count: int, seed: int) -> np.ndarray:
+    count = length if count <= 0 else min(count, length)
+    return np.random.default_rng(seed).choice(length, size=count, replace=False)
+
+
+def build_run_context(config: Table5Config, run_index: int) -> RunContext:
+    seed = config.seed + run_index
+    set_seed(seed)
+    full_train = LocalCIFAR10(root=config.data_root, train=True)
+    full_test = LocalCIFAR10(root=config.data_root, train=False)
+    source_indices = _sample_indices(len(full_train), config.subset_size, seed)
+    clean_labels = np.asarray([full_train.targets[int(i)] for i in source_indices], dtype=np.int64)
+    labels = clean_labels.copy()
+    rng = np.random.default_rng(seed + 10_000)
+    corrupt_count = int(round(len(labels) * config.mislabel_fraction))
+    corrupt_positions = rng.choice(len(labels), size=corrupt_count, replace=False)
+    offsets = rng.integers(1, 10, size=corrupt_count)
+    labels[corrupt_positions] = (labels[corrupt_positions] + offsets) % 10
+    corrupted_mask = np.zeros(len(labels), dtype=bool)
+    corrupted_mask[corrupt_positions] = True
+
+    valuation_indices = _sample_indices(len(full_test), config.valuation_size, seed + 20_000)
+    test_indices = _sample_indices(len(full_test), config.test_size, seed + 30_000)
+    output_dir = Path(config.output_dir)
+    output_dir.mkdir(parents=True, exist_ok=True)
+    return RunContext(
+        config=config,
+        run_index=run_index,
+        seed=seed,
+        train_dataset=CorruptedSubset(full_train, source_indices, labels),
+        valuation_dataset=Subset(full_test, valuation_indices.tolist()),
+        test_dataset=Subset(full_test, test_indices.tolist()),
+        corrupted_mask=corrupted_mask,
+        output_dir=output_dir,
+    )
+
+
+def make_loader(dataset: Dataset, config: Table5Config, shuffle: bool, seed: int) -> DataLoader:
+    generator = torch.Generator().manual_seed(seed)
+    drop_last = shuffle and len(dataset) > config.batch_size and len(dataset) % config.batch_size == 1
+    return DataLoader(
+        dataset,
+        batch_size=config.batch_size,
+        shuffle=shuffle,
+        drop_last=drop_last,
+        num_workers=config.num_workers,
+        generator=generator,
+    )
+
+
+def make_model(config: Table5Config, seed: int) -> nn.Module:
+    set_seed(seed)
+    return make_cifar_model(pretrained=config.pretrained)
+
+
+@torch.no_grad()
+def evaluate_accuracy(model: nn.Module, dataset: Dataset, config: Table5Config) -> float:
+    loader = make_loader(dataset, config, shuffle=False, seed=0)
+    model.eval()
+    correct = total = 0
+    for images, labels in loader:
+        images, labels = images.to(DEVICE), labels.to(DEVICE)
+        predictions = model(images).argmax(dim=1)
+        correct += int((predictions == labels).sum().item())
+        total += int(labels.numel())
+    return correct / max(total, 1)
+
+
+def train_model(
+    dataset: Dataset,
+    config: Table5Config,
+    seed: int,
+    epochs: Optional[int] = None,
+    callback: Optional[Callable[[int, nn.Module], None]] = None,
+) -> nn.Module:
+    model = make_model(config, seed)
+    optimizer = optim.Adam(model.parameters(), lr=config.lr, weight_decay=config.weight_decay)
+    scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=config.lr_step, gamma=config.lr_gamma)
+    loss_fn = nn.CrossEntropyLoss(label_smoothing=config.label_smoothing)
+    loader = make_loader(dataset, config, shuffle=True, seed=seed)
+    for epoch in range(1, int(epochs or config.epochs) + 1):
+        model.train()
+        for images, labels in loader:
+            if images.size(0) == 1:
+                for module in model.modules():
+                    if isinstance(module, nn.modules.batchnorm._BatchNorm):
+                        module.eval()
+            images, labels = images.to(DEVICE), labels.to(DEVICE)
+            optimizer.zero_grad(set_to_none=True)
+            loss = loss_fn(model(images), labels)
+            loss.backward()
+            optimizer.step()
+        scheduler.step()
+        if callback is not None:
+            callback(epoch, model)
+    return model
+
+
+def train_selected_and_evaluate(context: RunContext, selected: np.ndarray, seed_offset: int) -> float:
+    selected = np.asarray(selected, dtype=np.int64)
+    model = train_model(
+        Subset(context.train_dataset, selected.tolist()),
+        context.config,
+        context.seed + seed_offset,
+    )
+    accuracy = evaluate_accuracy(model, context.test_dataset, context.config)
+    del model
+    gc.collect()
+    if torch.cuda.is_available():
+        torch.cuda.empty_cache()
+    return accuracy
+
+
+def _last_layer_batch(model: nn.Module, images: torch.Tensor, labels: torch.Tensor, smoothing: float) -> torch.Tensor:
+    captured = []
+
+    def capture(_module, args):
+        captured.append(args[0])
+
+    handle = model.fc.register_forward_pre_hook(capture)
+    logits = model(images)
+    handle.remove()
+    features = captured[0]
+    probs = logits.softmax(dim=1)
+    target = torch.full_like(probs, smoothing / probs.size(1))
+    target.scatter_add_(1, labels[:, None], torch.full_like(labels[:, None], 1.0 - smoothing, dtype=probs.dtype))
+    errors = probs - target
+    weight_grad = torch.einsum("nc,nd->ncd", errors, features).flatten(1)
+    return torch.cat([weight_grad, errors], dim=1)
+
+
+@torch.no_grad()
+def last_layer_gradients(
+    model: nn.Module,
+    dataset: Dataset,
+    config: Table5Config,
+    projection: Optional[torch.Tensor] = None,
+    reduce_mean: bool = False,
+) -> torch.Tensor:
+    loader = make_loader(dataset, config, shuffle=False, seed=0)
+    model.eval()
+    chunks = []
+    running_sum = None
+    count = 0
+    for images, labels in loader:
+        images, labels = images.to(DEVICE), labels.to(DEVICE)
+        grads = _last_layer_batch(model, images, labels, config.label_smoothing)
+        if projection is not None:
+            grads = grads @ projection.to(grads.device)
+        if reduce_mean:
+            batch_sum = grads.sum(dim=0)
+            running_sum = batch_sum if running_sum is None else running_sum + batch_sum
+            count += grads.size(0)
+        else:
+            chunks.append(grads.cpu())
+    if reduce_mean:
+        return (running_sum / max(count, 1)).detach().cpu()
+    return torch.cat(chunks, dim=0)
+
+
+def make_projection(config: Table5Config, seed: int, input_dim: int = 5130) -> torch.Tensor:
+    generator = torch.Generator().manual_seed(seed)
+    projection = torch.randn(input_dim, config.projection_dim, generator=generator)
+    return projection / np.sqrt(config.projection_dim)
+
+
+def projected_checkpoint_score(
+    model: nn.Module,
+    context: RunContext,
+    projection: torch.Tensor,
+    mode: str,
+) -> np.ndarray:
+    train_grads = last_layer_gradients(model, context.train_dataset, context.config, projection)
+    val_mean = last_layer_gradients(model, context.valuation_dataset, context.config, projection, reduce_mean=True)
+    if mode == "cosine":
+        train_grads = nn.functional.normalize(train_grads, dim=1)
+        val_mean = nn.functional.normalize(val_mean[None], dim=1)[0]
+        return (train_grads @ val_mean).numpy()
+    if mode == "trak":
+        gram = train_grads @ train_grads.T
+        scale = float(gram.diag().mean().item()) + 1e-12
+        rhs = train_grads @ val_mean
+        eye = torch.eye(gram.size(0), dtype=gram.dtype)
+        return torch.linalg.solve(gram + context.config.trak_ridge * scale * eye, rhs).numpy()
+    return (train_grads @ val_mean).numpy()
+
+
+def config_fingerprint(config: Table5Config) -> str:
+    payload = asdict(config).copy()
+    payload.pop("force", None)
+    return hashlib.sha1(json.dumps(payload, sort_keys=True).encode("utf-8")).hexdigest()[:12]
+
+
+def score_cache_path(context: RunContext, method_key: str) -> Path:
+    safe = method_key.lower().replace(" ", "_").replace("/", "_")
+    return context.output_dir / "scores" / f"{safe}_run{context.run_index}_{config_fingerprint(context.config)}.pt"
+
+
+def load_or_compute_scores(context: RunContext, method_key: str, scorer) -> Dict[str, np.ndarray]:
+    path = score_cache_path(context, method_key)
+    if path.exists() and not context.config.force:
+        payload = torch.load(path, map_location="cpu", weights_only=False)
+        return {name: np.asarray(values, dtype=np.float64) for name, values in payload["scores"].items()}
+    started = time.perf_counter()
+    result = scorer(context)
+    if isinstance(result, np.ndarray):
+        result = {method_key: result}
+    normalized = {name: np.asarray(values, dtype=np.float64) for name, values in result.items()}
+    path.parent.mkdir(parents=True, exist_ok=True)
+    torch.save({"scores": normalized, "seconds": time.perf_counter() - started}, path)
+    return normalized
+
+
+def retraining_ensemble(context: RunContext) -> tuple[np.ndarray, np.ndarray]:
+    cfg = context.config
+    cache_dir = context.output_dir / "retraining"
+    cache_dir.mkdir(parents=True, exist_ok=True)
+    path = cache_dir / f"coalitions_run{context.run_index}_{config_fingerprint(cfg)}.npz"
+    memory_key = str(path.resolve())
+    if memory_key in _RETRAINING_MEMORY:
+        return _RETRAINING_MEMORY[memory_key]
+
+    start = 0
+    cached_masks = cached_utilities = None
+    if path.exists() and not cfg.force:
+        saved = np.load(path)
+        cached_masks = saved["masks"].astype(bool)
+        cached_utilities = saved["utilities"].astype(np.float64)
+        start = len(cached_utilities)
+        if start >= cfg.retraining_runs:
+            result = (cached_masks[: cfg.retraining_runs], cached_utilities[: cfg.retraining_runs])
+            _RETRAINING_MEMORY[memory_key] = result
+            return result
+
+    n = len(context.train_dataset)
+    rng = np.random.default_rng(context.seed + 40_000)
+    masks = np.zeros((cfg.retraining_runs, n), dtype=bool)
+    utilities = np.zeros(cfg.retraining_runs, dtype=np.float64)
+    if start:
+        masks[:start] = cached_masks
+        utilities[:start] = cached_utilities
+        for _ in range(start):
+            size = int(rng.integers(1, n))
+            rng.choice(n, size=size, replace=False)
+    for run in range(start, cfg.retraining_runs):
+        size = int(rng.integers(1, n))
+        chosen = rng.choice(n, size=size, replace=False)
+        masks[run, chosen] = True
+        model = train_model(Subset(context.train_dataset, chosen.tolist()), cfg, context.seed + 50_000 + run)
+        utilities[run] = evaluate_accuracy(model, context.valuation_dataset, cfg)
+        del model
+        gc.collect()
+        if torch.cuda.is_available():
+            torch.cuda.empty_cache()
+        if (run + 1) % max(1, min(25, cfg.retraining_runs // 10)) == 0:
+            print(f"Retraining coalitions: {run + 1}/{cfg.retraining_runs}", flush=True)
+        temporary = path.with_suffix(".tmp.npz")
+        np.savez_compressed(temporary, masks=masks[: run + 1], utilities=utilities[: run + 1])
+        temporary.replace(path)
+        completed = run + 1
+        if not cfg.force and completed < cfg.retraining_runs and completed % 250 == 0:
+            print(f"Refreshing process after coalition checkpoint {completed}", flush=True)
+            os.execv(sys.executable, [sys.executable, *sys.argv])
+    result = (masks, utilities)
+    _RETRAINING_MEMORY[memory_key] = result
+    return result
+
+
+def add_shared_cli(parser: argparse.ArgumentParser) -> None:
+    parser.add_argument("--data-root", default="data")
+    parser.add_argument("--output-dir", default="table5_cifar_comparison/results")
+    parser.add_argument("--subset-size", type=int, default=1000)
+    parser.add_argument("--mislabel-fraction", type=float, default=0.10)
+    parser.add_argument("--runs", type=int, default=3)
+    parser.add_argument("--seed", type=int, default=0)
+    parser.add_argument("--batch-size", type=int, default=64)
+    parser.add_argument("--epochs", type=int, default=50)
+    parser.add_argument("--lr", type=float, default=1e-3)
+    parser.add_argument("--weight-decay", type=float, default=1e-4)
+    parser.add_argument("--label-smoothing", type=float, default=0.1)
+    parser.add_argument("--lr-step", type=int, default=10)
+    parser.add_argument("--lr-gamma", type=float, default=0.1)
+    parser.add_argument("--valuation-size", type=int, default=10000)
+    parser.add_argument("--test-size", type=int, default=10000)
+    parser.add_argument("--retraining-runs", type=int, default=1000)
+    parser.add_argument("--projection-dim", type=int, default=2048)
+    parser.add_argument("--num-workers", type=int, default=0)
+    parser.add_argument("--no-pretrained", dest="pretrained", action="store_false")
+    parser.add_argument("--force", action="store_true")
+    parser.add_argument("--quick", action="store_true")
+    parser.set_defaults(pretrained=True)
+
+
+def config_from_args(args: argparse.Namespace) -> Table5Config:
+    fields = Table5Config.__dataclass_fields__
+    values = {name: getattr(args, name) for name in fields if hasattr(args, name)}
+    config = Table5Config(**values)
+    if config.quick:
+        config.subset_size = min(config.subset_size, 80)
+        config.runs = 1
+        config.epochs = min(config.epochs, 1)
+        config.valuation_size = min(config.valuation_size, 100)
+        config.test_size = min(config.test_size, 100)
+        config.retraining_runs = min(config.retraining_runs, 3)
+        config.projection_dim = min(config.projection_dim, 64)
+        config.influence_cg_steps = min(config.influence_cg_steps, 5)
+    return config
+
+
+def standalone_main(method_name: str, scorer) -> None:
+    parser = argparse.ArgumentParser(description=f"Table 5 scorer: {method_name}")
+    add_shared_cli(parser)
+    parser.add_argument("--run-index", type=int, default=0)
+    args = parser.parse_args()
+    config = config_from_args(args)
+    context = build_run_context(config, args.run_index)
+    scores = load_or_compute_scores(context, method_name, scorer)
+    for name, values in scores.items():
+        order = np.argsort(values)[::-1][:10]
+        print(name, [(int(i), float(values[i])) for i in order])
+
