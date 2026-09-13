@@ -1,0 +1,1211 @@
+{
+  "protocol": {
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "std_ddof": 0,
+    "pile_corruption_fraction": 0.1,
+    "cifar_mislabel_fraction": 0.1,
+    "pile_graph_version": "graph_v2_dynamic_diverse",
+    "cifar_graph_version": "semantic-conservative-v3",
+    "source_artifacts_are_read_only": true
+  },
+  "metric_summary": {
+    "Pile": {
+      "1st Order In-Run Data Shapley": {
+        "corruption_auroc": {
+          "runs": [
+            0.49591613388888894,
+            0.49325653055555563,
+            0.5038184527777777
+          ],
+          "mean": 0.4976637057407407,
+          "std": 0.0044854621307884365
+        },
+        "top_1pct_contamination": {
+          "runs": [
+            0.191,
+            0.191,
+            0.177
+          ],
+          "mean": 0.18633333333333332,
+          "std": 0.00659966329107445
+        },
+        "top_5pct_contamination": {
+          "runs": [
+            0.1498,
+            0.1506,
+            0.1474
+          ],
+          "mean": 0.14926666666666666,
+          "std": 0.0013597385369580768
+        },
+        "top_10pct_contamination": {
+          "runs": [
+            0.1314,
+            0.1338,
+            0.1301
+          ],
+          "mean": 0.13176666666666667,
+          "std": 0.0015326085243430243
+        },
+        "top_20pct_contamination": {
+          "runs": [
+            0.1183,
+            0.11885,
+            0.11765
+          ],
+          "mean": 0.11826666666666667,
+          "std": 0.0004904646323187358
+        }
+      },
+      "2nd Order In-Run Data Shapley": {
+        "corruption_auroc": {
+          "runs": [
+            0.49625407555555556,
+            0.4935864033333333,
+            0.5040978788888889
+          ],
+          "mean": 0.4979794525925925,
+          "std": 0.004461350619764656
+        },
+        "top_1pct_contamination": {
+          "runs": [
+            0.189,
+            0.189,
+            0.183
+          ],
+          "mean": 0.18699999999999997,
+          "std": 0.0028284271247461922
+        },
+        "top_5pct_contamination": {
+          "runs": [
+            0.1488,
+            0.151,
+            0.1474
+          ],
+          "mean": 0.14906666666666665,
+          "std": 0.001481740718059522
+        },
+        "top_10pct_contamination": {
+          "runs": [
+            0.1304,
+            0.1342,
+            0.1301
+          ],
+          "mean": 0.13156666666666667,
+          "std": 0.0018660713336371313
+        },
+        "top_20pct_contamination": {
+          "runs": [
+            0.1181,
+            0.11865,
+            0.11725
+          ],
+          "mean": 0.118,
+          "std": 0.0005759050847723713
+        }
+      },
+      "Adam-aware 1st Order In-Run": {
+        "corruption_auroc": {
+          "runs": [
+            0.5608098272222222,
+            0.5571076244444445,
+            0.5604899216666667
+          ],
+          "mean": 0.5594691244444444,
+          "std": 0.0016749321535749072
+        },
+        "top_1pct_contamination": {
+          "runs": [
+            0.11,
+            0.084,
+            0.096
+          ],
+          "mean": 0.09666666666666668,
+          "std": 0.010624918300339483
+        },
+        "top_5pct_contamination": {
+          "runs": [
+            0.097,
+            0.0958,
+            0.0994
+          ],
+          "mean": 0.0974,
+          "std": 0.0014966629547095785
+        },
+        "top_10pct_contamination": {
+          "runs": [
+            0.0904,
+            0.0961,
+            0.0933
+          ],
+          "mean": 0.09326666666666666,
+          "std": 0.0023271346234276123
+        },
+        "top_20pct_contamination": {
+          "runs": [
+            0.08785,
+            0.08835,
+            0.08955
+          ],
+          "mean": 0.08858333333333333,
+          "std": 0.0007133644853010931
+        }
+      },
+      "Adam-aware 2nd Order In-Run": {
+        "corruption_auroc": {
+          "runs": [
+            0.5603746949999999,
+            0.5569688227777778,
+            0.5600849405555556
+          ],
+          "mean": 0.5591428194444444,
+          "std": 0.0015417923637824908
+        },
+        "top_1pct_contamination": {
+          "runs": [
+            0.108,
+            0.082,
+            0.096
+          ],
+          "mean": 0.09533333333333334,
+          "std": 0.010624918300339483
+        },
+        "top_5pct_contamination": {
+          "runs": [
+            0.0946,
+            0.0954,
+            0.0994
+          ],
+          "mean": 0.09646666666666666,
+          "std": 0.0020997354330698163
+        },
+        "top_10pct_contamination": {
+          "runs": [
+            0.0911,
+            0.0952,
+            0.0927
+          ],
+          "mean": 0.09300000000000001,
+          "std": 0.0016872067646458379
+        },
+        "top_20pct_contamination": {
+          "runs": [
+            0.0879,
+            0.08845,
+            0.08935
+          ],
+          "mean": 0.08856666666666667,
+          "std": 0.0005976807025680342
+        }
+      },
+      "BM25": {
+        "corruption_auroc": {
+          "runs": [
+            0.45847395944444447,
+            0.4605102961111111,
+            0.46100564
+          ],
+          "mean": 0.45999663185185186,
+          "std": 0.001095518092738089
+        },
+        "top_1pct_contamination": {
+          "runs": [
+            0.063,
+            0.081,
+            0.077
+          ],
+          "mean": 0.07366666666666667,
+          "std": 0.00771722460186015
+        },
+        "top_5pct_contamination": {
+          "runs": [
+            0.1032,
+            0.1038,
+            0.1014
+          ],
+          "mean": 0.1028,
+          "std": 0.0010198039027185563
+        },
+        "top_10pct_contamination": {
+          "runs": [
+            0.1137,
+            0.1118,
+            0.114
+          ],
+          "mean": 0.11316666666666665,
+          "std": 0.0009741092797468325
+        },
+        "top_20pct_contamination": {
+          "runs": [
+            0.11745,
+            0.1166,
+            0.11735
+          ],
+          "mean": 0.11713333333333333,
+          "std": 0.00037932688922470253
+        }
+      },
+      "Graph Adam-aware 1st Order In-Run": {
+        "corruption_auroc": {
+          "runs": [
+            0.5639989277777777,
+            0.5605278027777778,
+            0.5633614183333334
+          ],
+          "mean": 0.5626293829629629,
+          "std": 0.0015086603392880564
+        },
+        "top_1pct_contamination": {
+          "runs": [
+            0.119,
+            0.083,
+            0.102
+          ],
+          "mean": 0.10133333333333333,
+          "std": 0.014704496666741848
+        },
+        "top_5pct_contamination": {
+          "runs": [
+            0.0958,
+            0.0942,
+            0.0988
+          ],
+          "mean": 0.09626666666666667,
+          "std": 0.0019067132861433432
+        },
+        "top_10pct_contamination": {
+          "runs": [
+            0.0898,
+            0.0946,
+            0.0925
+          ],
+          "mean": 0.09230000000000001,
+          "std": 0.0019646882704388493
+        },
+        "top_20pct_contamination": {
+          "runs": [
+            0.0867,
+            0.0884,
+            0.08805
+          ],
+          "mean": 0.08771666666666667,
+          "std": 0.0007329544475765369
+        }
+      },
+      "Graph Adam-aware 2nd Order In-Run": {
+        "corruption_auroc": {
+          "runs": [
+            0.56349244,
+            0.5603653983333333,
+            0.5628898166666667
+          ],
+          "mean": 0.5622492183333333,
+          "std": 0.001354590236878414
+        },
+        "top_1pct_contamination": {
+          "runs": [
+            0.117,
+            0.087,
+            0.099
+          ],
+          "mean": 0.10100000000000002,
+          "std": 0.012328828005937957
+        },
+        "top_5pct_contamination": {
+          "runs": [
+            0.0956,
+            0.094,
+            0.098
+          ],
+          "mean": 0.09586666666666666,
+          "std": 0.0016438437341250618
+        },
+        "top_10pct_contamination": {
+          "runs": [
+            0.0898,
+            0.0952,
+            0.0926
+          ],
+          "mean": 0.09253333333333334,
+          "std": 0.002205044721138831
+        },
+        "top_20pct_contamination": {
+          "runs": [
+            0.0868,
+            0.0881,
+            0.08825
+          ],
+          "mean": 0.08771666666666667,
+          "std": 0.0006510674994874842
+        }
+      },
+      "Influence Function": {
+        "corruption_auroc": {
+          "runs": [
+            0.5075035705555556,
+            0.5030595050000001,
+            0.5087212411111112
+          ],
+          "mean": 0.5064281055555556,
+          "std": 0.0024332807308424273
+        },
+        "top_1pct_contamination": {
+          "runs": [
+            0.254,
+            0.275,
+            0.237
+          ],
+          "mean": 0.25533333333333336,
+          "std": 0.015542057635833035
+        },
+        "top_5pct_contamination": {
+          "runs": [
+            0.1794,
+            0.184,
+            0.1634
+          ],
+          "mean": 0.17559999999999998,
+          "std": 0.008828740944589254
+        },
+        "top_10pct_contamination": {
+          "runs": [
+            0.1463,
+            0.1494,
+            0.1431
+          ],
+          "mean": 0.14626666666666668,
+          "std": 0.002572072229848057
+        },
+        "top_20pct_contamination": {
+          "runs": [
+            0.1214,
+            0.12375,
+            0.12175
+          ],
+          "mean": 0.1223,
+          "std": 0.001035213343551304
+        }
+      },
+      "KNN-Shapley": {
+        "corruption_auroc": {
+          "runs": [
+            0.8573480355555556,
+            0.8576591122222222,
+            0.8571802044444444
+          ],
+          "mean": 0.8573957840740741,
+          "std": 0.00019840716665408653
+        },
+        "top_1pct_contamination": {
+          "runs": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "top_5pct_contamination": {
+          "runs": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "top_10pct_contamination": {
+          "runs": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "top_20pct_contamination": {
+          "runs": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "std": 0.0
+        }
+      },
+      "LESS": {
+        "corruption_auroc": {
+          "runs": [
+            0.5165720177777778,
+            0.5090797222222222,
+            0.5213268127777777
+          ],
+          "mean": 0.5156595175925925,
+          "std": 0.005041315913526716
+        },
+        "top_1pct_contamination": {
+          "runs": [
+            0.038,
+            0.144,
+            0.019
+          ],
+          "mean": 0.06699999999999999,
+          "std": 0.05499696961348567
+        },
+        "top_5pct_contamination": {
+          "runs": [
+            0.0974,
+            0.127,
+            0.0958
+          ],
+          "mean": 0.10673333333333333,
+          "std": 0.014345576166733617
+        },
+        "top_10pct_contamination": {
+          "runs": [
+            0.101,
+            0.1171,
+            0.1005
+          ],
+          "mean": 0.1062,
+          "std": 0.007710166448700481
+        },
+        "top_20pct_contamination": {
+          "runs": [
+            0.10135,
+            0.1067,
+            0.0993
+          ],
+          "mean": 0.10245,
+          "std": 0.00311956193505862
+        }
+      },
+      "Random": {
+        "corruption_auroc": {
+          "runs": [
+            0.49953415944444446,
+            0.4978673388888889,
+            0.4989677888888889
+          ],
+          "mean": 0.4987897624074074,
+          "std": 0.0006920225247717197
+        },
+        "top_1pct_contamination": {
+          "runs": [
+            0.092,
+            0.106,
+            0.097
+          ],
+          "mean": 0.09833333333333334,
+          "std": 0.005792715732327588
+        },
+        "top_5pct_contamination": {
+          "runs": [
+            0.102,
+            0.1094,
+            0.0986
+          ],
+          "mean": 0.10333333333333332,
+          "std": 0.004508756911709579
+        },
+        "top_10pct_contamination": {
+          "runs": [
+            0.1025,
+            0.1052,
+            0.0977
+          ],
+          "mean": 0.1018,
+          "std": 0.003101612483854167
+        },
+        "top_20pct_contamination": {
+          "runs": [
+            0.1001,
+            0.1027,
+            0.1003
+          ],
+          "mean": 0.10103333333333332,
+          "std": 0.0011813363431112912
+        }
+      },
+      "TRAK (1 ckpt)": {
+        "corruption_auroc": {
+          "runs": [
+            0.5165720211111112,
+            0.5090797288888889,
+            0.5213268061111112
+          ],
+          "mean": 0.5156595187037037,
+          "std": 0.005041310716101013
+        },
+        "top_1pct_contamination": {
+          "runs": [
+            0.038,
+            0.144,
+            0.019
+          ],
+          "mean": 0.06699999999999999,
+          "std": 0.05499696961348567
+        },
+        "top_5pct_contamination": {
+          "runs": [
+            0.0974,
+            0.127,
+            0.0958
+          ],
+          "mean": 0.10673333333333333,
+          "std": 0.014345576166733617
+        },
+        "top_10pct_contamination": {
+          "runs": [
+            0.101,
+            0.1171,
+            0.1005
+          ],
+          "mean": 0.1062,
+          "std": 0.007710166448700481
+        },
+        "top_20pct_contamination": {
+          "runs": [
+            0.10135,
+            0.1067,
+            0.0993
+          ],
+          "mean": 0.10245,
+          "std": 0.00311956193505862
+        }
+      }
+    },
+    "CIFAR-10": {
+      "Adam-aware 1st Order In-Run": {
+        "corruption_auroc": {
+          "runs": [
+            0.4737222222222222,
+            0.5085333333333333,
+            0.5164
+          ],
+          "mean": 0.4995518518518518,
+          "std": 0.018544512867044907
+        },
+        "top_10pct_contamination": {
+          "runs": [
+            0.13,
+            0.1,
+            0.16
+          ],
+          "mean": 0.13,
+          "std": 0.02449489742783178
+        },
+        "top_20pct_contamination": {
+          "runs": [
+            0.12,
+            0.095,
+            0.11
+          ],
+          "mean": 0.10833333333333334,
+          "std": 0.010274023338281625
+        },
+        "top_40pct_contamination": {
+          "runs": [
+            0.1125,
+            0.1,
+            0.105
+          ],
+          "mean": 0.10583333333333333,
+          "std": 0.0051370116691408126
+        }
+      },
+      "Graph Adam-aware 1st Order In-Run": {
+        "corruption_auroc": {
+          "runs": [
+            0.6061,
+            0.6342444444444445,
+            0.6410111111111111
+          ],
+          "mean": 0.6271185185185185,
+          "std": 0.01511688978106772
+        },
+        "top_10pct_contamination": {
+          "runs": [
+            0.08,
+            0.06,
+            0.07
+          ],
+          "mean": 0.07,
+          "std": 0.008164965809277263
+        },
+        "top_20pct_contamination": {
+          "runs": [
+            0.075,
+            0.05,
+            0.085
+          ],
+          "mean": 0.07,
+          "std": 0.014719601443879746
+        },
+        "top_40pct_contamination": {
+          "runs": [
+            0.0625,
+            0.06,
+            0.0575
+          ],
+          "mean": 0.06,
+          "std": 0.002041241452319314
+        }
+      },
+      "Adam-aware 2nd Order In-Run": {
+        "corruption_auroc": {
+          "runs": [
+            0.4824777777777778,
+            0.504,
+            0.48734444444444447
+          ],
+          "mean": 0.49127407407407403,
+          "std": 0.009215313491329752
+        },
+        "top_10pct_contamination": {
+          "runs": [
+            0.14,
+            0.12,
+            0.12
+          ],
+          "mean": 0.12666666666666668,
+          "std": 0.009428090415820642
+        },
+        "top_20pct_contamination": {
+          "runs": [
+            0.11,
+            0.105,
+            0.095
+          ],
+          "mean": 0.10333333333333333,
+          "std": 0.006236095644623235
+        },
+        "top_40pct_contamination": {
+          "runs": [
+            0.11,
+            0.095,
+            0.1025
+          ],
+          "mean": 0.1025,
+          "std": 0.006123724356957945
+        }
+      },
+      "Graph Adam-aware 2nd Order In-Run": {
+        "corruption_auroc": {
+          "runs": [
+            0.6142555555555556,
+            0.6306666666666666,
+            0.6249666666666667
+          ],
+          "mean": 0.6232962962962963,
+          "std": 0.006803124030226436
+        },
+        "top_10pct_contamination": {
+          "runs": [
+            0.07,
+            0.08,
+            0.05
+          ],
+          "mean": 0.06666666666666667,
+          "std": 0.012472191289246471
+        },
+        "top_20pct_contamination": {
+          "runs": [
+            0.065,
+            0.06,
+            0.055
+          ],
+          "mean": 0.06,
+          "std": 0.0040824829046386315
+        },
+        "top_40pct_contamination": {
+          "runs": [
+            0.06,
+            0.06,
+            0.05
+          ],
+          "mean": 0.056666666666666664,
+          "std": 0.004714045207910314
+        }
+      }
+    }
+  },
+  "pile_score_stability": {
+    "Adam-aware 1st Order In-Run": {
+      "pairs": [
+        {
+          "seed_pair": [
+            0,
+            1
+          ],
+          "spearman": 0.16580121701735975,
+          "kendall_tau": 0.11125046099561696,
+          "top_1pct_overlap": 0.029,
+          "top_5pct_overlap": 0.1002,
+          "top_10pct_overlap": 0.164,
+          "top_20pct_overlap": 0.2729
+        },
+        {
+          "seed_pair": [
+            0,
+            2
+          ],
+          "spearman": 0.16313753109224002,
+          "kendall_tau": 0.10951072730324898,
+          "top_1pct_overlap": 0.023,
+          "top_5pct_overlap": 0.095,
+          "top_10pct_overlap": 0.1584,
+          "top_20pct_overlap": 0.2706
+        },
+        {
+          "seed_pair": [
+            1,
+            2
+          ],
+          "spearman": 0.164519979767459,
+          "kendall_tau": 0.11042322915489391,
+          "top_1pct_overlap": 0.027,
+          "top_5pct_overlap": 0.0976,
+          "top_10pct_overlap": 0.1688,
+          "top_20pct_overlap": 0.2788
+        }
+      ],
+      "mean_spearman": 0.16448624262568626,
+      "mean_kendall_tau": 0.11039480581791994,
+      "mean_standardized_dispersion": 0.622844976881978,
+      "mean_top_1pct_overlap": 0.026333333333333334,
+      "mean_top_5pct_overlap": 0.0976,
+      "mean_top_10pct_overlap": 0.16373333333333334,
+      "mean_top_20pct_overlap": 0.2741
+    },
+    "Graph Adam-aware 1st Order In-Run": {
+      "pairs": [
+        {
+          "seed_pair": [
+            0,
+            1
+          ],
+          "spearman": 0.1843743028575626,
+          "kendall_tau": 0.12374970241914551,
+          "top_1pct_overlap": 0.029,
+          "top_5pct_overlap": 0.1126,
+          "top_10pct_overlap": 0.1719,
+          "top_20pct_overlap": 0.28475
+        },
+        {
+          "seed_pair": [
+            0,
+            2
+          ],
+          "spearman": 0.18210951866607653,
+          "kendall_tau": 0.12230378441556296,
+          "top_1pct_overlap": 0.029,
+          "top_5pct_overlap": 0.1044,
+          "top_10pct_overlap": 0.1725,
+          "top_20pct_overlap": 0.2826
+        },
+        {
+          "seed_pair": [
+            1,
+            2
+          ],
+          "spearman": 0.18397230589744804,
+          "kendall_tau": 0.12352344021786474,
+          "top_1pct_overlap": 0.028,
+          "top_5pct_overlap": 0.1064,
+          "top_10pct_overlap": 0.1814,
+          "top_20pct_overlap": 0.2905
+        }
+      ],
+      "mean_spearman": 0.18348537580702906,
+      "mean_kendall_tau": 0.12319230901752438,
+      "mean_standardized_dispersion": 0.6146465966701612,
+      "mean_top_1pct_overlap": 0.02866666666666667,
+      "mean_top_5pct_overlap": 0.1078,
+      "mean_top_10pct_overlap": 0.17526666666666668,
+      "mean_top_20pct_overlap": 0.28595
+    },
+    "Adam-aware 2nd Order In-Run": {
+      "pairs": [
+        {
+          "seed_pair": [
+            0,
+            1
+          ],
+          "spearman": 0.16638101304603145,
+          "kendall_tau": 0.11163851622624844,
+          "top_1pct_overlap": 0.031,
+          "top_5pct_overlap": 0.103,
+          "top_10pct_overlap": 0.1648,
+          "top_20pct_overlap": 0.2744
+        },
+        {
+          "seed_pair": [
+            0,
+            2
+          ],
+          "spearman": 0.1639776734958407,
+          "kendall_tau": 0.11007358098878114,
+          "top_1pct_overlap": 0.023,
+          "top_5pct_overlap": 0.0964,
+          "top_10pct_overlap": 0.1618,
+          "top_20pct_overlap": 0.27325
+        },
+        {
+          "seed_pair": [
+            1,
+            2
+          ],
+          "spearman": 0.1654823764009312,
+          "kendall_tau": 0.11107031182470807,
+          "top_1pct_overlap": 0.028,
+          "top_5pct_overlap": 0.0984,
+          "top_10pct_overlap": 0.1706,
+          "top_20pct_overlap": 0.28055
+        }
+      ],
+      "mean_spearman": 0.1652803543142678,
+      "mean_kendall_tau": 0.11092746967991256,
+      "mean_standardized_dispersion": 0.6224710099154509,
+      "mean_top_1pct_overlap": 0.027333333333333334,
+      "mean_top_5pct_overlap": 0.09926666666666667,
+      "mean_top_10pct_overlap": 0.16573333333333332,
+      "mean_top_20pct_overlap": 0.2760666666666667
+    },
+    "Graph Adam-aware 2nd Order In-Run": {
+      "pairs": [
+        {
+          "seed_pair": [
+            0,
+            1
+          ],
+          "spearman": 0.18521165405069284,
+          "kendall_tau": 0.12431448014845829,
+          "top_1pct_overlap": 0.031,
+          "top_5pct_overlap": 0.1132,
+          "top_10pct_overlap": 0.1739,
+          "top_20pct_overlap": 0.2859
+        },
+        {
+          "seed_pair": [
+            0,
+            2
+          ],
+          "spearman": 0.18325968765903092,
+          "kendall_tau": 0.12307402446328097,
+          "top_1pct_overlap": 0.031,
+          "top_5pct_overlap": 0.1072,
+          "top_10pct_overlap": 0.1737,
+          "top_20pct_overlap": 0.28635
+        },
+        {
+          "seed_pair": [
+            1,
+            2
+          ],
+          "spearman": 0.18525938238184286,
+          "kendall_tau": 0.12439273400567033,
+          "top_1pct_overlap": 0.028,
+          "top_5pct_overlap": 0.107,
+          "top_10pct_overlap": 0.1832,
+          "top_20pct_overlap": 0.29155
+        }
+      ],
+      "mean_spearman": 0.18457690803052218,
+      "mean_kendall_tau": 0.12392707953913655,
+      "mean_standardized_dispersion": 0.6142147456123328,
+      "mean_top_1pct_overlap": 0.03,
+      "mean_top_5pct_overlap": 0.10913333333333332,
+      "mean_top_10pct_overlap": 0.17693333333333336,
+      "mean_top_20pct_overlap": 0.2879333333333333
+    }
+  },
+  "pile_confidence_bins": {
+    "Graph Adam-aware 1st Order In-Run": {
+      "0": [
+        {
+          "seed": 0,
+          "quartile": 1,
+          "count": 25000,
+          "confidence_min": 0.0,
+          "confidence_max": 0.15669208765029907,
+          "corruption_rate": 0.0994,
+          "corrupted_mean_standardized_delta": -0.030697103288946585,
+          "corrupted_promotion_rate": 0.2945674044265594
+        },
+        {
+          "seed": 0,
+          "quartile": 2,
+          "count": 25000,
+          "confidence_min": 0.1566975712776184,
+          "confidence_max": 0.28480589389801025,
+          "corruption_rate": 0.08444,
+          "corrupted_mean_standardized_delta": -0.014997849775587572,
+          "corrupted_promotion_rate": 0.3960208432022738
+        },
+        {
+          "seed": 0,
+          "quartile": 3,
+          "count": 25000,
+          "confidence_min": 0.2848154902458191,
+          "confidence_max": 0.436070054769516,
+          "corruption_rate": 0.09644,
+          "corrupted_mean_standardized_delta": -0.002341136846893482,
+          "corrupted_promotion_rate": 0.44421401907922026
+        },
+        {
+          "seed": 0,
+          "quartile": 4,
+          "count": 25000,
+          "confidence_min": 0.4360714554786682,
+          "confidence_max": 0.9872233867645264,
+          "corruption_rate": 0.11972,
+          "corrupted_mean_standardized_delta": 0.002770438049921409,
+          "corrupted_promotion_rate": 0.4610758436351487
+        }
+      ],
+      "1": [
+        {
+          "seed": 1,
+          "quartile": 1,
+          "count": 25000,
+          "confidence_min": 0.0,
+          "confidence_max": 0.1564861387014389,
+          "corruption_rate": 0.09892,
+          "corrupted_mean_standardized_delta": -0.030288014934651067,
+          "corrupted_promotion_rate": 0.30084917104731096
+        },
+        {
+          "seed": 1,
+          "quartile": 2,
+          "count": 25000,
+          "confidence_min": 0.1564943790435791,
+          "confidence_max": 0.28312206268310547,
+          "corruption_rate": 0.09276,
+          "corrupted_mean_standardized_delta": -0.01396883983477198,
+          "corrupted_promotion_rate": 0.3911168607158258
+        },
+        {
+          "seed": 1,
+          "quartile": 3,
+          "count": 25000,
+          "confidence_min": 0.28312981128692627,
+          "confidence_max": 0.43388593196868896,
+          "corruption_rate": 0.09864,
+          "corrupted_mean_standardized_delta": -0.004890652009758137,
+          "corrupted_promotion_rate": 0.44606650446066504
+        },
+        {
+          "seed": 1,
+          "quartile": 4,
+          "count": 25000,
+          "confidence_min": 0.4338873624801636,
+          "confidence_max": 0.9848935604095459,
+          "corruption_rate": 0.10968,
+          "corrupted_mean_standardized_delta": 0.0031271012050948,
+          "corrupted_promotion_rate": 0.462800875273523
+        }
+      ],
+      "2": [
+        {
+          "seed": 2,
+          "quartile": 1,
+          "count": 25000,
+          "confidence_min": 0.0,
+          "confidence_max": 0.1569444090127945,
+          "corruption_rate": 0.10064,
+          "corrupted_mean_standardized_delta": -0.030881805203522593,
+          "corrupted_promotion_rate": 0.3068362480127186
+        },
+        {
+          "seed": 2,
+          "quartile": 2,
+          "count": 25000,
+          "confidence_min": 0.1569448560476303,
+          "confidence_max": 0.28466591238975525,
+          "corruption_rate": 0.09024,
+          "corrupted_mean_standardized_delta": -0.010340091330031047,
+          "corrupted_promotion_rate": 0.424645390070922
+        },
+        {
+          "seed": 2,
+          "quartile": 3,
+          "count": 25000,
+          "confidence_min": 0.2846727669239044,
+          "confidence_max": 0.4362415075302124,
+          "corruption_rate": 0.09744,
+          "corrupted_mean_standardized_delta": -0.0022205154256929923,
+          "corrupted_promotion_rate": 0.45320197044334976
+        },
+        {
+          "seed": 2,
+          "quartile": 4,
+          "count": 25000,
+          "confidence_min": 0.43624448776245117,
+          "confidence_max": 0.9909948706626892,
+          "corruption_rate": 0.11168,
+          "corrupted_mean_standardized_delta": 0.0035845720424342066,
+          "corrupted_promotion_rate": 0.47242120343839544
+        }
+      ]
+    },
+    "Graph Adam-aware 2nd Order In-Run": {
+      "0": [
+        {
+          "seed": 0,
+          "quartile": 1,
+          "count": 25000,
+          "confidence_min": 0.0,
+          "confidence_max": 0.15669208765029907,
+          "corruption_rate": 0.0994,
+          "corrupted_mean_standardized_delta": -0.028751305392946173,
+          "corrupted_promotion_rate": 0.30422535211267604
+        },
+        {
+          "seed": 0,
+          "quartile": 2,
+          "count": 25000,
+          "confidence_min": 0.1566975712776184,
+          "confidence_max": 0.28480589389801025,
+          "corruption_rate": 0.08444,
+          "corrupted_mean_standardized_delta": -0.01422321046018246,
+          "corrupted_promotion_rate": 0.3988630980577925
+        },
+        {
+          "seed": 0,
+          "quartile": 3,
+          "count": 25000,
+          "confidence_min": 0.2848154902458191,
+          "confidence_max": 0.436070054769516,
+          "corruption_rate": 0.09644,
+          "corrupted_mean_standardized_delta": -0.002749809379108916,
+          "corrupted_promotion_rate": 0.4408958938199917
+        },
+        {
+          "seed": 0,
+          "quartile": 4,
+          "count": 25000,
+          "confidence_min": 0.4360714554786682,
+          "confidence_max": 0.9872233867645264,
+          "corruption_rate": 0.11972,
+          "corrupted_mean_standardized_delta": 0.0008162112074725083,
+          "corrupted_promotion_rate": 0.4574006014032743
+        }
+      ],
+      "1": [
+        {
+          "seed": 1,
+          "quartile": 1,
+          "count": 25000,
+          "confidence_min": 0.0,
+          "confidence_max": 0.1564861387014389,
+          "corruption_rate": 0.09892,
+          "corrupted_mean_standardized_delta": -0.028336560053455105,
+          "corrupted_promotion_rate": 0.31176708451273755
+        },
+        {
+          "seed": 1,
+          "quartile": 2,
+          "count": 25000,
+          "confidence_min": 0.1564943790435791,
+          "confidence_max": 0.28312206268310547,
+          "corruption_rate": 0.09276,
+          "corrupted_mean_standardized_delta": -0.013342914656133348,
+          "corrupted_promotion_rate": 0.39241052177662783
+        },
+        {
+          "seed": 1,
+          "quartile": 3,
+          "count": 25000,
+          "confidence_min": 0.28312981128692627,
+          "confidence_max": 0.43388593196868896,
+          "corruption_rate": 0.09864,
+          "corrupted_mean_standardized_delta": -0.005383535414753358,
+          "corrupted_promotion_rate": 0.44768856447688565
+        },
+        {
+          "seed": 1,
+          "quartile": 4,
+          "count": 25000,
+          "confidence_min": 0.4338873624801636,
+          "confidence_max": 0.9848935604095459,
+          "corruption_rate": 0.10968,
+          "corrupted_mean_standardized_delta": 0.0012330941675069602,
+          "corrupted_promotion_rate": 0.45696571845368344
+        }
+      ],
+      "2": [
+        {
+          "seed": 2,
+          "quartile": 1,
+          "count": 25000,
+          "confidence_min": 0.0,
+          "confidence_max": 0.1569444090127945,
+          "corruption_rate": 0.10064,
+          "corrupted_mean_standardized_delta": -0.028920009681518404,
+          "corrupted_promotion_rate": 0.3163751987281399
+        },
+        {
+          "seed": 2,
+          "quartile": 2,
+          "count": 25000,
+          "confidence_min": 0.1569448560476303,
+          "confidence_max": 0.28466591238975525,
+          "corruption_rate": 0.09024,
+          "corrupted_mean_standardized_delta": -0.009494385903586585,
+          "corrupted_promotion_rate": 0.42819148936170215
+        },
+        {
+          "seed": 2,
+          "quartile": 3,
+          "count": 25000,
+          "confidence_min": 0.2846727669239044,
+          "confidence_max": 0.4362415075302124,
+          "corruption_rate": 0.09744,
+          "corrupted_mean_standardized_delta": -0.0027848061310066278,
+          "corrupted_promotion_rate": 0.4548440065681445
+        },
+        {
+          "seed": 2,
+          "quartile": 4,
+          "count": 25000,
+          "confidence_min": 0.43624448776245117,
+          "confidence_max": 0.9909948706626892,
+          "corruption_rate": 0.11168,
+          "corrupted_mean_standardized_delta": 0.0020449514124561492,
+          "corrupted_promotion_rate": 0.46525787965616044
+        }
+      ]
+    }
+  },
+  "corrupted_node_transitions": {
+    "Pile": {
+      "1st": {
+        "corrupted_count": 30000,
+        "mean_standardized_delta": -0.010416802587759654,
+        "promotion_rate": 0.4064
+      },
+      "2nd": {
+        "corrupted_count": 30000,
+        "mean_standardized_delta": -0.010394287000865813,
+        "promotion_rate": 0.4079
+      }
+    },
+    "CIFAR-10": {
+      "1st": {
+        "corrupted_count": 300,
+        "mean_standardized_delta": -0.41616596275566553,
+        "promotion_rate": 0.013333333333333334
+      },
+      "2nd": {
+        "corrupted_count": 300,
+        "mean_standardized_delta": -0.40109169770360187,
+        "promotion_rate": 0.01
+      }
+    }
+  }
+}

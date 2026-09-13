@@ -1,0 +1,313 @@
+{
+  "budget": 40,
+  "selected_corpora": 40000,
+  "epochs": 1,
+  "primary_metric": "validation_token_accuracy",
+  "results": {
+    "Random": {
+      "runs": [
+        0.4419986637490212,
+        0.4416522891095545,
+        0.44180331501870584
+      ],
+      "mean": 0.4418180892924271,
+      "std": 0.00014179223554062863,
+      "val_loss_runs": [
+        3.1307022575378416,
+        3.1334353927612306,
+        3.1317962631225584
+      ],
+      "val_loss_mean": 3.1319779711405435,
+      "val_loss_std": 0.0011231712217890041
+    },
+    "BM25": {
+      "runs": [
+        0.4343094750700547,
+        0.4350063283139106,
+        0.4348011300677811
+      ],
+      "mean": 0.43470564448391547,
+      "std": 0.0002923915564361757,
+      "val_loss_runs": [
+        3.2001428565979,
+        3.201438283920288,
+        3.1997733402252195
+      ],
+      "val_loss_mean": 3.200451493581136,
+      "val_loss_std": 0.0007138869973615625
+    },
+    "KNN-Shapley": {
+      "runs": [
+        0.430198123010603,
+        0.4300626921681575,
+        0.4298862216764861
+      ],
+      "mean": 0.4300490122850822,
+      "std": 0.00012770007819546466,
+      "val_loss_runs": [
+        3.2180476356506347,
+        3.2191157695770265,
+        3.2201234676361086
+      ],
+      "val_loss_mean": 3.2190956242879234,
+      "val_loss_std": 0.0008475745719341024
+    },
+    "Influence Function": {
+      "runs": [
+        0.4396503750203146,
+        0.43993683177191145,
+        0.4400829329231557
+      ],
+      "mean": 0.4398900465717939,
+      "std": 0.0001796630662102371,
+      "val_loss_runs": [
+        3.1559312419891357,
+        3.1551632286071776,
+        3.1515593383789064
+      ],
+      "val_loss_mean": 3.154217936325073,
+      "val_loss_std": 0.0019058800973545584
+    },
+    "TRAK (1 ckpt)": {
+      "runs": [
+        0.43956172937798665,
+        0.43963724233256235,
+        0.44015187953385526
+      ],
+      "mean": 0.4397836170814681,
+      "std": 0.0002622193445137726,
+      "val_loss_runs": [
+        3.157468254852295,
+        3.1571335807800294,
+        3.153921807861328
+      ],
+      "val_loss_mean": 3.1561745478312173,
+      "val_loss_std": 0.0015987765557064337
+    },
+    "LESS": {
+      "runs": [
+        0.43956172937798665,
+        0.43963724233256235,
+        0.44015187953385526
+      ],
+      "mean": 0.4397836170814681,
+      "std": 0.0002622193445137726,
+      "val_loss_runs": [
+        3.157468254852295,
+        3.1571335807800294,
+        3.153921807861328
+      ],
+      "val_loss_mean": 3.1561745478312173,
+      "val_loss_std": 0.0015987765557064337
+    },
+    "1st Order In-Run Data Shapley": {
+      "runs": [
+        0.4412944233683046,
+        0.4414175423159823,
+        0.4420659687737517
+      ],
+      "mean": 0.4415926448193462,
+      "std": 0.0003384437355306046,
+      "val_loss_runs": [
+        3.129263860321045,
+        3.129083207321167,
+        3.127651671218872
+      ],
+      "val_loss_mean": 3.1286662462870285,
+      "val_loss_std": 0.0007211938265976259
+    },
+    "2nd Order In-Run Data Shapley": {
+      "runs": [
+        0.4412853946454749,
+        0.44153163254083033,
+        0.4414733562389296
+      ],
+      "mean": 0.44143012780841157,
+      "std": 0.00010507076403089763,
+      "val_loss_runs": [
+        3.1297162483215333,
+        3.128058476638794,
+        3.127566081237793
+      ],
+      "val_loss_mean": 3.128446935399374,
+      "val_loss_std": 0.0009197752546151023
+    },
+    "Adam-aware 1st Order In-Run": {
+      "runs": [
+        0.4416416188007558,
+        0.44186979925045183,
+        0.44187882797328154
+      ],
+      "mean": 0.4417967486748297,
+      "std": 0.00010975529700695203,
+      "val_loss_runs": [
+        3.1305436237335207,
+        3.1297246765136717,
+        3.1306529041290285
+      ],
+      "val_loss_mean": 3.1303070681254073,
+      "val_loss_std": 0.00041422259979813743
+    },
+    "Adam-aware 2nd Order In-Run": {
+      "runs": [
+        0.44137896504570995,
+        0.4412689787857845,
+        0.44163915642180224
+      ],
+      "mean": 0.44142903341776557,
+      "std": 0.00015521598277269485,
+      "val_loss_runs": [
+        3.1313113693237304,
+        3.1336246868133544,
+        3.13005518951416
+      ],
+      "val_loss_mean": 3.1316637485504146,
+      "val_loss_std": 0.0014783901338478818
+    },
+    "Graph Adam-aware 1st Order In-Run": {
+      "runs": [
+        0.4408085139214698,
+        0.4414963384424961,
+        0.4416843000359507
+      ],
+      "mean": 0.44132971746663885,
+      "std": 0.00037645029931019443,
+      "val_loss_runs": [
+        3.1347962032318115,
+        3.131889892959595,
+        3.13126307182312
+      ],
+      "val_loss_mean": 3.132649722671509,
+      "val_loss_std": 0.001539211980441291,
+      "selection_diagnostics": [
+        {
+          "strategy": "symmetric_graph_greedy",
+          "lambda_fraction": 0.2,
+          "effective_lambda": 1.5553900809483847e-06,
+          "selected_pair_affinity": 8646.5078125,
+          "selected_pair_affinity_per_item": 0.2161626953125,
+          "graph_coverage": 0.98932
+        },
+        {
+          "strategy": "symmetric_graph_greedy",
+          "lambda_fraction": 0.2,
+          "effective_lambda": 1.5312771555562187e-06,
+          "selected_pair_affinity": 8631.744140625,
+          "selected_pair_affinity_per_item": 0.215793603515625,
+          "graph_coverage": 0.99002
+        },
+        {
+          "strategy": "symmetric_graph_greedy",
+          "lambda_fraction": 0.2,
+          "effective_lambda": 1.510791387172192e-06,
+          "selected_pair_affinity": 8685.4443359375,
+          "selected_pair_affinity_per_item": 0.2171361083984375,
+          "graph_coverage": 0.98906
+        }
+      ],
+      "selected_indices_sha256": [
+        "2b9a8a73265224cff936ef1c80640e5b4c5fdf675cc0a87411076d2427b710e5",
+        "8738fe85d5f1af14f9b2e8c46d0efb1e609c8d6289ae68042326471f3f0cc895",
+        "e4d248127a383d30942afc3d9f1dd958539470fbfc157ee4c11d3124f26ab7d9"
+      ]
+    },
+    "Graph Adam-aware 2nd Order In-Run": {
+      "runs": [
+        0.4416063247024215,
+        0.4416522891095545,
+        0.44195187854890366
+      ],
+      "mean": 0.44173683078695986,
+      "std": 0.0001532151790098732,
+      "val_loss_runs": [
+        3.1305414028167724,
+        3.132277418899536,
+        3.1291635749816895
+      ],
+      "val_loss_mean": 3.1306607988993327,
+      "val_loss_std": 0.0012740218612922046,
+      "selection_diagnostics": [
+        {
+          "strategy": "symmetric_graph_greedy",
+          "lambda_fraction": 0.2,
+          "effective_lambda": 1.557587172611317e-06,
+          "selected_pair_affinity": 8644.6572265625,
+          "selected_pair_affinity_per_item": 0.2161164306640625,
+          "graph_coverage": 0.98891
+        },
+        {
+          "strategy": "symmetric_graph_greedy",
+          "lambda_fraction": 0.2,
+          "effective_lambda": 1.5350409063555062e-06,
+          "selected_pair_affinity": 8648.142578125,
+          "selected_pair_affinity_per_item": 0.216203564453125,
+          "graph_coverage": 0.98997
+        },
+        {
+          "strategy": "symmetric_graph_greedy",
+          "lambda_fraction": 0.2,
+          "effective_lambda": 1.5125136574083681e-06,
+          "selected_pair_affinity": 8696.7431640625,
+          "selected_pair_affinity_per_item": 0.2174185791015625,
+          "graph_coverage": 0.98888
+        }
+      ],
+      "selected_indices_sha256": [
+        "86cf3bc4bd05c439ee22d083fdfc464605875a9d243f6db07378f7f13d6f891a",
+        "98747a657cae89f61a8dd4150642cbcd692d8f2daba76cd9e086d09a29836173",
+        "f3d7f83470047e396a0fca0c2c69542e907de05b2eb1ddfe239c3631208504c5"
+      ]
+    }
+  },
+  "raw_sources": [
+    "pile_main_100k/selection_40/raw_100k/method0_seed0.json",
+    "pile_main_100k/selection_40/raw_100k/method0_seed1.json",
+    "pile_main_100k/selection_40/raw_100k/method0_seed2.json",
+    "pile_main_100k/selection_40/raw_100k/method1_seed0.json",
+    "pile_main_100k/selection_40/raw_100k/method1_seed1.json",
+    "pile_main_100k/selection_40/raw_100k/method1_seed2.json",
+    "pile_main_100k/selection_40/raw_100k/method2_seed0.json",
+    "pile_main_100k/selection_40/raw_100k/method2_seed1.json",
+    "pile_main_100k/selection_40/raw_100k/method2_seed2.json",
+    "pile_main_100k/selection_40/raw_100k/method3_seed0.json",
+    "pile_main_100k/selection_40/raw_100k/method3_seed1.json",
+    "pile_main_100k/selection_40/raw_100k/method3_seed2.json",
+    "pile_main_100k/selection_40/raw_100k/method4_seed0.json",
+    "pile_main_100k/selection_40/raw_100k/method4_seed1.json",
+    "pile_main_100k/selection_40/raw_100k/method4_seed2.json",
+    "pile_main_100k/selection_40/raw_100k/method5_seed0.json",
+    "pile_main_100k/selection_40/raw_100k/method5_seed1.json",
+    "pile_main_100k/selection_40/raw_100k/method5_seed2.json",
+    "pile_main_100k/selection_40/raw_100k/method6_seed0.json",
+    "pile_main_100k/selection_40/raw_100k/method6_seed1.json",
+    "pile_main_100k/selection_40/raw_100k/method6_seed2.json",
+    "pile_main_100k/selection_40/raw_100k/method7_seed0.json",
+    "pile_main_100k/selection_40/raw_100k/method7_seed1.json",
+    "pile_main_100k/selection_40/raw_100k/method7_seed2.json",
+    "pile_main_100k/selection_40/raw_100k/method8_seed0.json",
+    "pile_main_100k/selection_40/raw_100k/method8_seed1.json",
+    "pile_main_100k/selection_40/raw_100k/method8_seed2.json",
+    "pile_main_100k/selection_40/raw_100k/method9_seed0.json",
+    "pile_main_100k/selection_40/raw_100k/method9_seed1.json",
+    "pile_main_100k/selection_40/raw_100k/method9_seed2.json",
+    "pile_main_100k/selection_40/raw_100k/method10_seed0.json",
+    "pile_main_100k/selection_40/raw_100k/method10_seed1.json",
+    "pile_main_100k/selection_40/raw_100k/method10_seed2.json",
+    "pile_main_100k/selection_40/raw_100k/method11_seed0.json",
+    "pile_main_100k/selection_40/raw_100k/method11_seed1.json",
+    "pile_main_100k/selection_40/raw_100k/method11_seed2.json",
+    "pile_main_100k/selection_40/raw_100k_graph_v5/method10_seed0.json",
+    "pile_main_100k/selection_40/raw_100k_graph_v5/method10_seed1.json",
+    "pile_main_100k/selection_40/raw_100k_graph_v5/method10_seed2.json",
+    "pile_main_100k/selection_40/raw_100k_graph_v5/method11_seed0.json",
+    "pile_main_100k/selection_40/raw_100k_graph_v5/method11_seed1.json",
+    "pile_main_100k/selection_40/raw_100k_graph_v5/method11_seed2.json"
+  ],
+  "graph_version": {
+    "name": "graph_v5_semantic_diffusion_diverse",
+    "alpha": 0.2,
+    "diffusion_steps": 2,
+    "lambda_fraction": 0.2,
+    "base_results": "pile_main_100k/selection_40/results_100k.json"
+  }
+}

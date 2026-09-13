@@ -1,0 +1,22 @@
+{
+  "semantic_attribution_beyond_memorization/inputs/dataset.json": "5bc35f55642df853be90bb0eccf997d39feac899219fc0631b9d9406c2f8b885",
+  "semantic_attribution_beyond_memorization/run_all.py": "2dd666f7c4b1e339c2b5494bc155d885b4256e95820c11359c7bd3a3a2ef8b50",
+  "semantic_attribution_beyond_memorization/run_study.py": "b3b38acf7209afb4094775afd685ae9e048e4bf645504a64c31986e33917aefe",
+  "semantic_attribution_beyond_memorization/__init__.py": "bd46b76b3f4486b4e419af5d9d66b38ec6cd73f1b22406347f895cd5511f9e0b",
+  "semantic_attribution_beyond_memorization/aggregate.py": "c2f9360701ddd55d4df8807010985b636323ff010c66fb47f40b74e22fa1d287",
+  "semantic_attribution_beyond_memorization/prepare_data.py": "bb1a403c623373e52861fe3b844405548e8a84a6c27e81c6f1edbfa5b6005e52",
+  "pile_case_study_common.py": "0f4fea6aca7b56cfbe385ed8fa374d90a6135ca363bf18d9902326b5d69eab55",
+  "table2_pile_memorization/corpora.py": "a74318f35be7aad298be7e806e87cfc887d26e745f4ae1e5dd802a0796ec047b",
+  "semantic_attribution_beyond_memorization/results/paraphrase/seed1/result.json": "584cf36614d55228a2c9e2b6fee4d0e2bfff0e3e1d6e565c5b7b70c1545decad",
+  "semantic_attribution_beyond_memorization/results/paraphrase/seed0/result.json": "ffaf20ea3c8797b3af4a8c1db39a5cca09d0c21ce1ab84b3e613cd2fe7567acb",
+  "semantic_attribution_beyond_memorization/results/paraphrase/seed2/result.json": "2275040d3458a787c7935b018512f0283086e7cdf917d1a3c72bb6953071c70f",
+  "semantic_attribution_beyond_memorization/results/dynamics/seed1/result.json": "2fb3e28fa22204dc23afcd07a342fe5a13da74df432ac0469917679db6473fe2",
+  "semantic_attribution_beyond_memorization/results/dynamics/seed0/result.json": "2fd99059822c1691d0c537a4468567d6b4624e096113de64d07656e43c51cbea",
+  "semantic_attribution_beyond_memorization/results/dynamics/seed2/result.json": "e3060e69492e61f55ff87b340ff234bb5fda071d5a06aff55bc7bcd6bb002d68",
+  "semantic_attribution_beyond_memorization/results/paraphrase/seed1/scores.npz": "5d0fcff7a13c4456792a130449d5dcfdde6f426fc4c2c979d4f3116d213bd519",
+  "semantic_attribution_beyond_memorization/results/paraphrase/seed0/scores.npz": "aaba2da07f091657e5094a2c2b6c9e447c332891d194d55b1903a5872f94d5b2",
+  "semantic_attribution_beyond_memorization/results/paraphrase/seed2/scores.npz": "d8e25ea4c729d4beee0548ef1ee92385c137e8d42733f085f0881c0d168a77d8",
+  "semantic_attribution_beyond_memorization/results/dynamics/seed1/scores.npz": "4b4d066fc62762069b49307157e9add88d76462d1f2a5c2f707079d461a0ce11",
+  "semantic_attribution_beyond_memorization/results/dynamics/seed0/scores.npz": "68ed8feb2a962055cc38eab8f65598aa5fcf0b2620f0137f6340162d22707bec",
+  "semantic_attribution_beyond_memorization/results/dynamics/seed2/scores.npz": "dd8b621fc8e0ed45699763f2e85b6d70e256a906f99e51f33d9fa076a57daef4"
+}

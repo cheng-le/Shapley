@@ -1,0 +1,14 @@
+{
+  "budget": 60,
+  "selected_corpora": 6000,
+  "epochs": 1,
+  "results": {
+    "Random": {
+      "runs": [
+        3.134410820007324
+      ],
+      "mean": 3.134410820007324,
+      "std": 0.0
+    }
+  }
+}

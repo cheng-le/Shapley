@@ -1,0 +1,14 @@
+{
+  "budget": 80,
+  "selected_corpora": 8000,
+  "epochs": 1,
+  "results": {
+    "Adam-aware 1st Order In-Run": {
+      "runs": [
+        3.124679235458374
+      ],
+      "mean": 3.124679235458374,
+      "std": 0.0
+    }
+  }
+}

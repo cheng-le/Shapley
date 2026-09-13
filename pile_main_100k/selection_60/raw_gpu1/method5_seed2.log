@@ -1,0 +1,2 @@
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 16056.41it/s]
+budget=60 method=Graph Adam-aware 2nd Order In-Run seed=2 val_loss=3.134873

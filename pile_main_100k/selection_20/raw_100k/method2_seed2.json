@@ -1,0 +1,12 @@
+{
+  "budget": 20,
+  "selected_corpora": 20000,
+  "epochs": 1,
+  "primary_metric": "validation_token_accuracy",
+  "method": "KNN-Shapley",
+  "seed": 2,
+  "accuracy": 0.42628376126743567,
+  "val_loss": 3.2300476165771483,
+  "score_cache": "pile_main_100k/cache/clean_seed2.npz",
+  "token_cache": "pile_main_100k/token_cache"
+}

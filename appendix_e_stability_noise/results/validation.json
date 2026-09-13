@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "datasets": 3,
+  "trajectories": 9,
+  "node_rows": 9000,
+  "edge_rows": 90000,
+  "distribution_rows": 63000,
+  "contamination_cells": 486,
+  "rank_correlation_cells": 1323,
+  "max_replay_absolute_error": 2.9103830456733704e-11,
+  "counterfactual_endpoint_tests": "passed",
+  "message_allocation_reconstruction": "passed",
+  "corruption_matches_original_labels": true
+}

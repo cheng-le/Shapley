@@ -1,0 +1,21 @@
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 15839.68it/s]
+budget=60 method=1st Order In-Run Data Shapley seed=0 val_loss=3.138090
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 17756.71it/s]
+budget=60 method=1st Order In-Run Data Shapley seed=1 val_loss=3.137597
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 15250.14it/s]
+budget=60 method=1st Order In-Run Data Shapley seed=2 val_loss=3.138037
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 16404.78it/s]
+budget=60 method=2nd Order In-Run Data Shapley seed=0 val_loss=3.137594
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 14449.31it/s]
+budget=60 method=2nd Order In-Run Data Shapley seed=1 val_loss=3.138751
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 15527.85it/s]
+budget=60 method=2nd Order In-Run Data Shapley seed=2 val_loss=3.137021
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 14662.28it/s]
+budget=60 method=Adam-aware 1st Order In-Run seed=0 val_loss=3.136824
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 18478.21it/s]
+budget=60 method=Adam-aware 1st Order In-Run seed=1 val_loss=3.134805
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 14865.94it/s]
+budget=60 method=Adam-aware 1st Order In-Run seed=2 val_loss=3.135611
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 14639.11it/s]
+budget=60 method=Adam-aware 2nd Order In-Run seed=0 val_loss=3.134491
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 14013.52it/s]

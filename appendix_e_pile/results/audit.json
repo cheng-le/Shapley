@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "source_hashes": "unchanged",
+  "nodes": 3000,
+  "edges": 30000,
+  "distributions": 12000,
+  "contamination_cells": 108,
+  "bucket_counts": "complete",
+  "graph_topk_counts": "verified",
+  "diagnostic_gradient_shape": [
+    1000,
+    1536
+  ]
+}

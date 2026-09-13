@@ -1,0 +1,312 @@
+{
+  "budget": 60,
+  "selected_corpora": 60000,
+  "epochs": 1,
+  "primary_metric": "validation_token_accuracy",
+  "results": {
+    "Random": {
+      "runs": [
+        0.44317650168180484,
+        0.4427324526771805,
+        0.4429499628180778
+      ],
+      "mean": 0.44295297239235437,
+      "std": 0.0001812947375223846,
+      "val_loss_runs": [
+        3.143358355712891,
+        3.144224802017212,
+        3.1441907062530516
+      ],
+      "val_loss_mean": 3.143924621327718,
+      "val_loss_std": 0.0004006521269008801
+    },
+    "BM25": {
+      "runs": [
+        0.4373414843548649,
+        0.4376829342364245,
+        0.4371830713088529
+      ],
+      "mean": 0.43740249663338077,
+      "std": 0.00020857869847675263,
+      "val_loss_runs": [
+        3.201301905822754,
+        3.197667645263672,
+        3.200464434814453
+      ],
+      "val_loss_mean": 3.199811328633626,
+      "val_loss_std": 0.0015538925778831962
+    },
+    "KNN-Shapley": {
+      "runs": [
+        0.43269333368353835,
+        0.4329453171297854,
+        0.43290591906652853
+      ],
+      "mean": 0.4328481899599508,
+      "std": 0.00011067490412716523,
+      "val_loss_runs": [
+        3.2184000938415527,
+        3.2153470405578615,
+        3.21709200592041
+      ],
+      "val_loss_mean": 3.216946380106608,
+      "val_loss_std": 0.0012506501633146737
+    },
+    "Influence Function": {
+      "runs": [
+        0.44135598284214345,
+        0.44139948487032293,
+        0.442239156093485
+      ],
+      "mean": 0.4416648746019838,
+      "std": 0.000406466505569304,
+      "val_loss_runs": [
+        3.161182328414917,
+        3.161458232879639,
+        3.15719598236084
+      ],
+      "val_loss_mean": 3.1599455145517985,
+      "val_loss_std": 0.0019474729386655296
+    },
+    "TRAK (1 ckpt)": {
+      "runs": [
+        0.4414561195862547,
+        0.4414791017898212,
+        0.44196501123665594
+      ],
+      "mean": 0.4416334108709106,
+      "std": 0.0002346645085251424,
+      "val_loss_runs": [
+        3.161260371398926,
+        3.161033098220825,
+        3.157459806060791
+      ],
+      "val_loss_mean": 3.1599177585601805,
+      "val_loss_std": 0.001740509722526364
+    },
+    "LESS": {
+      "runs": [
+        0.4414561195862547,
+        0.4414791017898212,
+        0.44196501123665594
+      ],
+      "mean": 0.4416334108709106,
+      "std": 0.0002346645085251424,
+      "val_loss_runs": [
+        3.161260371398926,
+        3.161033098220825,
+        3.157459806060791
+      ],
+      "val_loss_mean": 3.1599177585601805,
+      "val_loss_std": 0.001740509722526364
+    },
+    "1st Order In-Run Data Shapley": {
+      "runs": [
+        0.4427414814000102,
+        0.4430977055552911,
+        0.44262410800322405
+      ],
+      "mean": 0.44282109831950844,
+      "std": 0.00020137494172773013,
+      "val_loss_runs": [
+        3.1428919063568115,
+        3.139630909729004,
+        3.142004387664795
+      ],
+      "val_loss_mean": 3.14150906791687,
+      "val_loss_std": 0.00137659749410302
+    },
+    "2nd Order In-Run Data Shapley": {
+      "runs": [
+        0.4429630955058301,
+        0.44316747295897513,
+        0.4429754074005979
+      ],
+      "mean": 0.44303532528846773,
+      "std": 9.35775998965554e-05,
+      "val_loss_runs": [
+        3.141563955307007,
+        3.1393471630096434,
+        3.140996002960205
+      ],
+      "val_loss_mean": 3.1406357070922852,
+      "val_loss_std": 0.0009401779465408229
+    },
+    "Adam-aware 1st Order In-Run": {
+      "runs": [
+        0.443116583793935,
+        0.44306487383591037,
+        0.4429417548882326
+      ],
+      "mean": 0.4430410708393593,
+      "std": 7.333131914299704e-05,
+      "val_loss_runs": [
+        3.1425940368652343,
+        3.1422013984680177,
+        3.1433132057189943
+      ],
+      "val_loss_mean": 3.1427028803507486,
+      "val_loss_std": 0.00046037232691611393
+    },
+    "Adam-aware 2nd Order In-Run": {
+      "runs": [
+        0.44252068808717476,
+        0.4425568029784936,
+        0.4427414814000102
+      ],
+      "mean": 0.4426063241552262,
+      "std": 9.67011959834528e-05,
+      "val_loss_runs": [
+        3.146116446685791,
+        3.1449453346252443,
+        3.1433871006011964
+      ],
+      "val_loss_mean": 3.144816293970744,
+      "val_loss_std": 0.0011179806588245214
+    },
+    "Graph Adam-aware 1st Order In-Run": {
+      "runs": [
+        0.44313299965362535,
+        0.4428046824598181,
+        0.44330864935231223
+      ],
+      "mean": 0.4430821104885852,
+      "std": 0.00020886668398991613,
+      "val_loss_runs": [
+        3.141785474014282,
+        3.1415280910491945,
+        3.1393346199035643
+      ],
+      "val_loss_mean": 3.1408827283223473,
+      "val_loss_std": 0.0010997094328074745,
+      "selection_diagnostics": [
+        {
+          "strategy": "symmetric_graph_greedy",
+          "lambda_fraction": 0.05,
+          "effective_lambda": 3.846403078855118e-07,
+          "selected_pair_affinity": 17790.181640625,
+          "selected_pair_affinity_per_item": 0.29650302734375,
+          "graph_coverage": 0.99993
+        },
+        {
+          "strategy": "symmetric_graph_greedy",
+          "lambda_fraction": 0.05,
+          "effective_lambda": 3.794450928339139e-07,
+          "selected_pair_affinity": 17822.16015625,
+          "selected_pair_affinity_per_item": 0.2970360026041667,
+          "graph_coverage": 0.99977
+        },
+        {
+          "strategy": "symmetric_graph_greedy",
+          "lambda_fraction": 0.05,
+          "effective_lambda": 3.734959841030379e-07,
+          "selected_pair_affinity": 17812.63671875,
+          "selected_pair_affinity_per_item": 0.29687727864583335,
+          "graph_coverage": 0.99979
+        }
+      ],
+      "selected_indices_sha256": [
+        "44be033496feba20a8bfcaa0698eb29668373509a7a6186796e82046c0438bff",
+        "8de375b99e378ee1b6fecf19e18f8062ab0f5fc4a77ea7dd0913b6e5f7820556",
+        "f883f3ab11f3860b852d098fb48b904fe83bc0c17c259d36fee4566db153b886"
+      ]
+    },
+    "Graph Adam-aware 2nd Order In-Run": {
+      "runs": [
+        0.44269141302795456,
+        0.4427652843965612,
+        0.44279811611594194
+      ],
+      "mean": 0.4427516045134859,
+      "std": 4.462242819648886e-05,
+      "val_loss_runs": [
+        3.1419688110351562,
+        3.1444929889678956,
+        3.142441153335571
+      ],
+      "val_loss_mean": 3.1429676511128743,
+      "val_loss_std": 0.0010956789344697144,
+      "selection_diagnostics": [
+        {
+          "strategy": "symmetric_graph_greedy",
+          "lambda_fraction": 0.05,
+          "effective_lambda": 3.853673780857151e-07,
+          "selected_pair_affinity": 17790.3828125,
+          "selected_pair_affinity_per_item": 0.2965063802083333,
+          "graph_coverage": 0.99993
+        },
+        {
+          "strategy": "symmetric_graph_greedy",
+          "lambda_fraction": 0.05,
+          "effective_lambda": 3.805143813292902e-07,
+          "selected_pair_affinity": 17798.30859375,
+          "selected_pair_affinity_per_item": 0.2966384765625,
+          "graph_coverage": 0.99979
+        },
+        {
+          "strategy": "symmetric_graph_greedy",
+          "lambda_fraction": 0.05,
+          "effective_lambda": 3.7413920312041554e-07,
+          "selected_pair_affinity": 17810.587890625,
+          "selected_pair_affinity_per_item": 0.2968431315104167,
+          "graph_coverage": 0.99977
+        }
+      ],
+      "selected_indices_sha256": [
+        "69f06a902555136d09fc54cae2a7d85b33fc1a95e468cd277ee1571142c78e10",
+        "80694a99959b49282719a3f95f93367a09f62e225295dd66e7d76bdf11d654b8",
+        "3a26afcfb6d78a4840b9b0678e82cbfb2ab62f1aa9c7068968fbf75fe506b202"
+      ]
+    }
+  },
+  "raw_sources": [
+    "pile_main_100k/selection_60/raw_100k/method0_seed0.json",
+    "pile_main_100k/selection_60/raw_100k/method0_seed1.json",
+    "pile_main_100k/selection_60/raw_100k/method0_seed2.json",
+    "pile_main_100k/selection_60/raw_100k/method1_seed0.json",
+    "pile_main_100k/selection_60/raw_100k/method1_seed1.json",
+    "pile_main_100k/selection_60/raw_100k/method1_seed2.json",
+    "pile_main_100k/selection_60/raw_100k/method2_seed0.json",
+    "pile_main_100k/selection_60/raw_100k/method2_seed1.json",
+    "pile_main_100k/selection_60/raw_100k/method2_seed2.json",
+    "pile_main_100k/selection_60/raw_100k/method3_seed0.json",
+    "pile_main_100k/selection_60/raw_100k/method3_seed1.json",
+    "pile_main_100k/selection_60/raw_100k/method3_seed2.json",
+    "pile_main_100k/selection_60/raw_100k/method4_seed0.json",
+    "pile_main_100k/selection_60/raw_100k/method4_seed1.json",
+    "pile_main_100k/selection_60/raw_100k/method4_seed2.json",
+    "pile_main_100k/selection_60/raw_100k/method5_seed0.json",
+    "pile_main_100k/selection_60/raw_100k/method5_seed1.json",
+    "pile_main_100k/selection_60/raw_100k/method5_seed2.json",
+    "pile_main_100k/selection_60/raw_100k/method6_seed0.json",
+    "pile_main_100k/selection_60/raw_100k/method6_seed1.json",
+    "pile_main_100k/selection_60/raw_100k/method6_seed2.json",
+    "pile_main_100k/selection_60/raw_100k/method7_seed0.json",
+    "pile_main_100k/selection_60/raw_100k/method7_seed1.json",
+    "pile_main_100k/selection_60/raw_100k/method7_seed2.json",
+    "pile_main_100k/selection_60/raw_100k/method8_seed0.json",
+    "pile_main_100k/selection_60/raw_100k/method8_seed1.json",
+    "pile_main_100k/selection_60/raw_100k/method8_seed2.json",
+    "pile_main_100k/selection_60/raw_100k/method9_seed0.json",
+    "pile_main_100k/selection_60/raw_100k/method9_seed1.json",
+    "pile_main_100k/selection_60/raw_100k/method9_seed2.json",
+    "pile_main_100k/selection_60/raw_100k/method10_seed0.json",
+    "pile_main_100k/selection_60/raw_100k/method10_seed1.json",
+    "pile_main_100k/selection_60/raw_100k/method10_seed2.json",
+    "pile_main_100k/selection_60/raw_100k/method11_seed0.json",
+    "pile_main_100k/selection_60/raw_100k/method11_seed1.json",
+    "pile_main_100k/selection_60/raw_100k/method11_seed2.json",
+    "pile_main_100k/selection_60/raw_100k_graph_v2/method10_seed0.json",
+    "pile_main_100k/selection_60/raw_100k_graph_v2/method10_seed1.json",
+    "pile_main_100k/selection_60/raw_100k_graph_v2/method10_seed2.json",
+    "pile_main_100k/selection_60/raw_100k_graph_v2/method11_seed0.json",
+    "pile_main_100k/selection_60/raw_100k_graph_v2/method11_seed1.json",
+    "pile_main_100k/selection_60/raw_100k_graph_v2/method11_seed2.json"
+  ],
+  "graph_version": {
+    "name": "graph_v2_dynamic_diverse",
+    "alpha": 0.2,
+    "lambda_fraction": 0.05,
+    "base_results": "pile_main_100k/selection_60/results_100k.json"
+  }
+}

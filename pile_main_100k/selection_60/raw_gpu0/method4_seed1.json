@@ -1,0 +1,14 @@
+{
+  "budget": 60,
+  "selected_corpora": 6000,
+  "epochs": 1,
+  "results": {
+    "TRAK (1 ckpt)": {
+      "runs": [
+        3.1393312187194824
+      ],
+      "mean": 3.1393312187194824,
+      "std": 0.0
+    }
+  }
+}

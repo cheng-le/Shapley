@@ -1,0 +1,2 @@
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 15490.65it/s]
+budget=40 method=BM25 seed=2 val_accuracy=0.434801 val_loss=3.199773

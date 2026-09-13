@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "trajectories": 9,
+  "configurations": 44,
+  "result_cells": 396,
+  "unique_retraining_fits": 311,
+  "graph_seed_factorial_cells": 27,
+  "exact_seed_control": "bitwise equal"
+}

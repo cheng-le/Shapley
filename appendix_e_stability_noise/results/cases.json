@@ -1,0 +1,242 @@
+[
+  {
+    "title": "Corrupt: largest demotion",
+    "data_seed": 0,
+    "train_seed": 0,
+    "local_id": 938,
+    "source_id": 25810,
+    "corrupted": 1,
+    "observed_label": "deer",
+    "true_label": "airplane",
+    "raw_rank": 458,
+    "graph_rank": 638,
+    "percentile_lift": -0.18018018018018012,
+    "neighbors": [
+      {
+        "local_id": 20,
+        "source_id": 822,
+        "observed_label": "airplane",
+        "true_label": "airplane",
+        "corrupted": 0,
+        "semantic_weight": 0.10538024455308914,
+        "gated_effective_weight": 0.0
+      },
+      {
+        "local_id": 894,
+        "source_id": 14615,
+        "observed_label": "airplane",
+        "true_label": "airplane",
+        "corrupted": 0,
+        "semantic_weight": 0.10192587971687317,
+        "gated_effective_weight": 0.0
+      },
+      {
+        "local_id": 731,
+        "source_id": 26488,
+        "observed_label": "airplane",
+        "true_label": "airplane",
+        "corrupted": 0,
+        "semantic_weight": 0.10141278803348541,
+        "gated_effective_weight": 0.0
+      },
+      {
+        "local_id": 235,
+        "source_id": 14689,
+        "observed_label": "dog",
+        "true_label": "airplane",
+        "corrupted": 1,
+        "semantic_weight": 0.1005992591381073,
+        "gated_effective_weight": 0.0
+      },
+      {
+        "local_id": 607,
+        "source_id": 11633,
+        "observed_label": "airplane",
+        "true_label": "airplane",
+        "corrupted": 0,
+        "semantic_weight": 0.09998705238103867,
+        "gated_effective_weight": 0.0
+      }
+    ]
+  },
+  {
+    "title": "Corrupt: largest promotion",
+    "data_seed": 0,
+    "train_seed": 0,
+    "local_id": 270,
+    "source_id": 46951,
+    "corrupted": 1,
+    "observed_label": "bird",
+    "true_label": "frog",
+    "raw_rank": 883,
+    "graph_rank": 882,
+    "percentile_lift": 0.0010010010010009784,
+    "neighbors": [
+      {
+        "local_id": 448,
+        "source_id": 45774,
+        "observed_label": "frog",
+        "true_label": "frog",
+        "corrupted": 0,
+        "semantic_weight": 0.11367937177419662,
+        "gated_effective_weight": 0.0
+      },
+      {
+        "local_id": 225,
+        "source_id": 32013,
+        "observed_label": "bird",
+        "true_label": "bird",
+        "corrupted": 0,
+        "semantic_weight": 0.10449713468551636,
+        "gated_effective_weight": 0.09001066535711288
+      },
+      {
+        "local_id": 129,
+        "source_id": 34503,
+        "observed_label": "bird",
+        "true_label": "bird",
+        "corrupted": 0,
+        "semantic_weight": 0.09863109141588211,
+        "gated_effective_weight": 0.082957424223423
+      },
+      {
+        "local_id": 242,
+        "source_id": 35146,
+        "observed_label": "bird",
+        "true_label": "bird",
+        "corrupted": 0,
+        "semantic_weight": 0.09855920076370239,
+        "gated_effective_weight": 0.0828716903924942
+      },
+      {
+        "local_id": 603,
+        "source_id": 3944,
+        "observed_label": "bird",
+        "true_label": "bird",
+        "corrupted": 0,
+        "semantic_weight": 0.09826596826314926,
+        "gated_effective_weight": 0.082525834441185
+      }
+    ]
+  },
+  {
+    "title": "Clean: largest promotion",
+    "data_seed": 0,
+    "train_seed": 0,
+    "local_id": 575,
+    "source_id": 47409,
+    "corrupted": 0,
+    "observed_label": "ship",
+    "true_label": "ship",
+    "raw_rank": 663,
+    "graph_rank": 492,
+    "percentile_lift": 0.1711711711711712,
+    "neighbors": [
+      {
+        "local_id": 324,
+        "source_id": 19788,
+        "observed_label": "ship",
+        "true_label": "ship",
+        "corrupted": 0,
+        "semantic_weight": 0.10616341978311539,
+        "gated_effective_weight": 0.09609310328960419
+      },
+      {
+        "local_id": 618,
+        "source_id": 44556,
+        "observed_label": "ship",
+        "true_label": "ship",
+        "corrupted": 0,
+        "semantic_weight": 0.10418020188808441,
+        "gated_effective_weight": 0.09351016581058502
+      },
+      {
+        "local_id": 184,
+        "source_id": 9663,
+        "observed_label": "ship",
+        "true_label": "ship",
+        "corrupted": 0,
+        "semantic_weight": 0.1040499210357666,
+        "gated_effective_weight": 0.09334098547697067
+      },
+      {
+        "local_id": 42,
+        "source_id": 2658,
+        "observed_label": "ship",
+        "true_label": "ship",
+        "corrupted": 0,
+        "semantic_weight": 0.1033540815114975,
+        "gated_effective_weight": 0.09244250506162643
+      },
+      {
+        "local_id": 57,
+        "source_id": 34636,
+        "observed_label": "ship",
+        "true_label": "ship",
+        "corrupted": 0,
+        "semantic_weight": 0.1012641116976738,
+        "gated_effective_weight": 0.08976459503173828
+      }
+    ]
+  },
+  {
+    "title": "Clean: largest demotion",
+    "data_seed": 0,
+    "train_seed": 0,
+    "local_id": 460,
+    "source_id": 11587,
+    "corrupted": 0,
+    "observed_label": "bird",
+    "true_label": "bird",
+    "raw_rank": 516,
+    "graph_rank": 668,
+    "percentile_lift": -0.15215215215215216,
+    "neighbors": [
+      {
+        "local_id": 826,
+        "source_id": 15469,
+        "observed_label": "automobile",
+        "true_label": "automobile",
+        "corrupted": 0,
+        "semantic_weight": 0.1027723178267479,
+        "gated_effective_weight": 0.0
+      },
+      {
+        "local_id": 941,
+        "source_id": 31539,
+        "observed_label": "automobile",
+        "true_label": "automobile",
+        "corrupted": 0,
+        "semantic_weight": 0.10156966000795364,
+        "gated_effective_weight": 0.0
+      },
+      {
+        "local_id": 517,
+        "source_id": 42664,
+        "observed_label": "deer",
+        "true_label": "deer",
+        "corrupted": 0,
+        "semantic_weight": 0.10072267055511475,
+        "gated_effective_weight": 0.0
+      },
+      {
+        "local_id": 259,
+        "source_id": 11919,
+        "observed_label": "airplane",
+        "true_label": "airplane",
+        "corrupted": 0,
+        "semantic_weight": 0.10031375288963318,
+        "gated_effective_weight": 0.0
+      },
+      {
+        "local_id": 972,
+        "source_id": 33345,
+        "observed_label": "cat",
+        "true_label": "cat",
+        "corrupted": 0,
+        "semantic_weight": 0.10010014474391937,
+        "gated_effective_weight": 0.0
+      }
+    ]
+  }
+]

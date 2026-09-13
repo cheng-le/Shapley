@@ -1,0 +1,14 @@
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 20807.73it/s]
+trajectory rows=800/10,000
+trajectory rows=1,600/10,000
+trajectory rows=2,400/10,000
+trajectory rows=3,200/10,000
+trajectory rows=4,000/10,000
+trajectory rows=4,800/10,000
+trajectory rows=5,600/10,000
+trajectory rows=6,400/10,000
+trajectory rows=7,200/10,000
+trajectory rows=8,000/10,000
+trajectory rows=8,800/10,000
+trajectory rows=9,600/10,000
+saved=pile_main_100k/cache/noise_seed2.npz

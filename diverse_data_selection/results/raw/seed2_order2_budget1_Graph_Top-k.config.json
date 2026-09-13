@@ -1,0 +1,8 @@
+{
+  "seed": 2,
+  "order": 2,
+  "budget": 1,
+  "arm": "Graph Top-k",
+  "selected_indices": "/home/lcheng/Shapley/diverse_data_selection/results/selected/seed2_order2_budget1_Graph_Top-k.npy",
+  "indices_sha256": "21252734f0cd7212f4dd5d579693bb395fdd8f274073aa40b795d504a4f2b9ea"
+}

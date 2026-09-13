@@ -1,0 +1,731 @@
+{
+  "configurations": [
+    [
+      "k5_a0_l0",
+      {
+        "k": 5,
+        "alpha": 0.0,
+        "lam": 0.0,
+        "gate": true,
+        "history": true,
+        "pair": true,
+        "scale": true,
+        "embedding": "resnet128",
+        "sym": "directed",
+        "ann": 0,
+        "graph_seed": 0
+      }
+    ],
+    [
+      "k5_a0_l0.05",
+      {
+        "k": 5,
+        "alpha": 0.0,
+        "lam": 0.05,
+        "gate": true,
+        "history": true,
+        "pair": true,
+        "scale": true,
+        "embedding": "resnet128",
+        "sym": "directed",
+        "ann": 0,
+        "graph_seed": 0
+      }
+    ],
+    [
+      "k5_a0_l0.1",
+      {
+        "k": 5,
+        "alpha": 0.0,
+        "lam": 0.1,
+        "gate": true,
+        "history": true,
+        "pair": true,
+        "scale": true,
+        "embedding": "resnet128",
+        "sym": "directed",
+        "ann": 0,
+        "graph_seed": 0
+      }
+    ],
+    [
+      "k5_a0.2_l0",
+      {
+        "k": 5,
+        "alpha": 0.2,
+        "lam": 0.0,
+        "gate": true,
+        "history": true,
+        "pair": true,
+        "scale": true,
+        "embedding": "resnet128",
+        "sym": "directed",
+        "ann": 0,
+        "graph_seed": 0
+      }
+    ],
+    [
+      "k5_a0.2_l0.05",
+      {
+        "k": 5,
+        "alpha": 0.2,
+        "lam": 0.05,
+        "gate": true,
+        "history": true,
+        "pair": true,
+        "scale": true,
+        "embedding": "resnet128",
+        "sym": "directed",
+        "ann": 0,
+        "graph_seed": 0
+      }
+    ],
+    [
+      "k5_a0.2_l0.1",
+      {
+        "k": 5,
+        "alpha": 0.2,
+        "lam": 0.1,
+        "gate": true,
+        "history": true,
+        "pair": true,
+        "scale": true,
+        "embedding": "resnet128",
+        "sym": "directed",
+        "ann": 0,
+        "graph_seed": 0
+      }
+    ],
+    [
+      "k5_a0.4_l0",
+      {
+        "k": 5,
+        "alpha": 0.4,
+        "lam": 0.0,
+        "gate": true,
+        "history": true,
+        "pair": true,
+        "scale": true,
+        "embedding": "resnet128",
+        "sym": "directed",
+        "ann": 0,
+        "graph_seed": 0
+      }
+    ],
+    [
+      "k5_a0.4_l0.05",
+      {
+        "k": 5,
+        "alpha": 0.4,
+        "lam": 0.05,
+        "gate": true,
+        "history": true,
+        "pair": true,
+        "scale": true,
+        "embedding": "resnet128",
+        "sym": "directed",
+        "ann": 0,
+        "graph_seed": 0
+      }
+    ],
+    [
+      "k5_a0.4_l0.1",
+      {
+        "k": 5,
+        "alpha": 0.4,
+        "lam": 0.1,
+        "gate": true,
+        "history": true,
+        "pair": true,
+        "scale": true,
+        "embedding": "resnet128",
+        "sym": "directed",
+        "ann": 0,
+        "graph_seed": 0
+      }
+    ],
+    [
+      "k10_a0_l0",
+      {
+        "k": 10,
+        "alpha": 0.0,
+        "lam": 0.0,
+        "gate": true,
+        "history": true,
+        "pair": true,
+        "scale": true,
+        "embedding": "resnet128",
+        "sym": "directed",
+        "ann": 0,
+        "graph_seed": 0
+      }
+    ],
+    [
+      "k10_a0_l0.05",
+      {
+        "k": 10,
+        "alpha": 0.0,
+        "lam": 0.05,
+        "gate": true,
+        "history": true,
+        "pair": true,
+        "scale": true,
+        "embedding": "resnet128",
+        "sym": "directed",
+        "ann": 0,
+        "graph_seed": 0
+      }
+    ],
+    [
+      "k10_a0_l0.1",
+      {
+        "k": 10,
+        "alpha": 0.0,
+        "lam": 0.1,
+        "gate": true,
+        "history": true,
+        "pair": true,
+        "scale": true,
+        "embedding": "resnet128",
+        "sym": "directed",
+        "ann": 0,
+        "graph_seed": 0
+      }
+    ],
+    [
+      "k10_a0.2_l0",
+      {
+        "k": 10,
+        "alpha": 0.2,
+        "lam": 0.0,
+        "gate": true,
+        "history": true,
+        "pair": true,
+        "scale": true,
+        "embedding": "resnet128",
+        "sym": "directed",
+        "ann": 0,
+        "graph_seed": 0
+      }
+    ],
+    [
+      "full",
+      {
+        "k": 10,
+        "alpha": 0.2,
+        "lam": 0.05,
+        "gate": true,
+        "history": true,
+        "pair": true,
+        "scale": true,
+        "embedding": "resnet128",
+        "sym": "directed",
+        "ann": 0,
+        "graph_seed": 0
+      }
+    ],
+    [
+      "k10_a0.2_l0.1",
+      {
+        "k": 10,
+        "alpha": 0.2,
+        "lam": 0.1,
+        "gate": true,
+        "history": true,
+        "pair": true,
+        "scale": true,
+        "embedding": "resnet128",
+        "sym": "directed",
+        "ann": 0,
+        "graph_seed": 0
+      }
+    ],
+    [
+      "k10_a0.4_l0",
+      {
+        "k": 10,
+        "alpha": 0.4,
+        "lam": 0.0,
+        "gate": true,
+        "history": true,
+        "pair": true,
+        "scale": true,
+        "embedding": "resnet128",
+        "sym": "directed",
+        "ann": 0,
+        "graph_seed": 0
+      }
+    ],
+    [
+      "k10_a0.4_l0.05",
+      {
+        "k": 10,
+        "alpha": 0.4,
+        "lam": 0.05,
+        "gate": true,
+        "history": true,
+        "pair": true,
+        "scale": true,
+        "embedding": "resnet128",
+        "sym": "directed",
+        "ann": 0,
+        "graph_seed": 0
+      }
+    ],
+    [
+      "k10_a0.4_l0.1",
+      {
+        "k": 10,
+        "alpha": 0.4,
+        "lam": 0.1,
+        "gate": true,
+        "history": true,
+        "pair": true,
+        "scale": true,
+        "embedding": "resnet128",
+        "sym": "directed",
+        "ann": 0,
+        "graph_seed": 0
+      }
+    ],
+    [
+      "k20_a0_l0",
+      {
+        "k": 20,
+        "alpha": 0.0,
+        "lam": 0.0,
+        "gate": true,
+        "history": true,
+        "pair": true,
+        "scale": true,
+        "embedding": "resnet128",
+        "sym": "directed",
+        "ann": 0,
+        "graph_seed": 0
+      }
+    ],
+    [
+      "k20_a0_l0.05",
+      {
+        "k": 20,
+        "alpha": 0.0,
+        "lam": 0.05,
+        "gate": true,
+        "history": true,
+        "pair": true,
+        "scale": true,
+        "embedding": "resnet128",
+        "sym": "directed",
+        "ann": 0,
+        "graph_seed": 0
+      }
+    ],
+    [
+      "k20_a0_l0.1",
+      {
+        "k": 20,
+        "alpha": 0.0,
+        "lam": 0.1,
+        "gate": true,
+        "history": true,
+        "pair": true,
+        "scale": true,
+        "embedding": "resnet128",
+        "sym": "directed",
+        "ann": 0,
+        "graph_seed": 0
+      }
+    ],
+    [
+      "k20_a0.2_l0",
+      {
+        "k": 20,
+        "alpha": 0.2,
+        "lam": 0.0,
+        "gate": true,
+        "history": true,
+        "pair": true,
+        "scale": true,
+        "embedding": "resnet128",
+        "sym": "directed",
+        "ann": 0,
+        "graph_seed": 0
+      }
+    ],
+    [
+      "k20_a0.2_l0.05",
+      {
+        "k": 20,
+        "alpha": 0.2,
+        "lam": 0.05,
+        "gate": true,
+        "history": true,
+        "pair": true,
+        "scale": true,
+        "embedding": "resnet128",
+        "sym": "directed",
+        "ann": 0,
+        "graph_seed": 0
+      }
+    ],
+    [
+      "k20_a0.2_l0.1",
+      {
+        "k": 20,
+        "alpha": 0.2,
+        "lam": 0.1,
+        "gate": true,
+        "history": true,
+        "pair": true,
+        "scale": true,
+        "embedding": "resnet128",
+        "sym": "directed",
+        "ann": 0,
+        "graph_seed": 0
+      }
+    ],
+    [
+      "k20_a0.4_l0",
+      {
+        "k": 20,
+        "alpha": 0.4,
+        "lam": 0.0,
+        "gate": true,
+        "history": true,
+        "pair": true,
+        "scale": true,
+        "embedding": "resnet128",
+        "sym": "directed",
+        "ann": 0,
+        "graph_seed": 0
+      }
+    ],
+    [
+      "k20_a0.4_l0.05",
+      {
+        "k": 20,
+        "alpha": 0.4,
+        "lam": 0.05,
+        "gate": true,
+        "history": true,
+        "pair": true,
+        "scale": true,
+        "embedding": "resnet128",
+        "sym": "directed",
+        "ann": 0,
+        "graph_seed": 0
+      }
+    ],
+    [
+      "k20_a0.4_l0.1",
+      {
+        "k": 20,
+        "alpha": 0.4,
+        "lam": 0.1,
+        "gate": true,
+        "history": true,
+        "pair": true,
+        "scale": true,
+        "embedding": "resnet128",
+        "sym": "directed",
+        "ann": 0,
+        "graph_seed": 0
+      }
+    ],
+    [
+      "no_gate",
+      {
+        "k": 10,
+        "alpha": 0.2,
+        "lam": 0.05,
+        "gate": false,
+        "history": true,
+        "pair": true,
+        "scale": true,
+        "embedding": "resnet128",
+        "sym": "directed",
+        "ann": 0,
+        "graph_seed": 0
+      }
+    ],
+    [
+      "no_history",
+      {
+        "k": 10,
+        "alpha": 0.2,
+        "lam": 0.05,
+        "gate": true,
+        "history": false,
+        "pair": true,
+        "scale": true,
+        "embedding": "resnet128",
+        "sym": "directed",
+        "ann": 0,
+        "graph_seed": 0
+      }
+    ],
+    [
+      "no_pair",
+      {
+        "k": 10,
+        "alpha": 0.2,
+        "lam": 0.05,
+        "gate": true,
+        "history": true,
+        "pair": false,
+        "scale": true,
+        "embedding": "resnet128",
+        "sym": "directed",
+        "ann": 0,
+        "graph_seed": 0
+      }
+    ],
+    [
+      "no_scale",
+      {
+        "k": 10,
+        "alpha": 0.2,
+        "lam": 0.05,
+        "gate": true,
+        "history": true,
+        "pair": true,
+        "scale": false,
+        "embedding": "resnet128",
+        "sym": "directed",
+        "ann": 0,
+        "graph_seed": 0
+      }
+    ],
+    [
+      "resnet32",
+      {
+        "k": 10,
+        "alpha": 0.2,
+        "lam": 0.05,
+        "gate": true,
+        "history": true,
+        "pair": true,
+        "scale": true,
+        "embedding": "resnet32",
+        "sym": "directed",
+        "ann": 0,
+        "graph_seed": 0
+      }
+    ],
+    [
+      "pixels8",
+      {
+        "k": 10,
+        "alpha": 0.2,
+        "lam": 0.05,
+        "gate": true,
+        "history": true,
+        "pair": true,
+        "scale": true,
+        "embedding": "pixels8",
+        "sym": "directed",
+        "ann": 0,
+        "graph_seed": 0
+      }
+    ],
+    [
+      "sym_mean",
+      {
+        "k": 10,
+        "alpha": 0.2,
+        "lam": 0.05,
+        "gate": true,
+        "history": true,
+        "pair": true,
+        "scale": true,
+        "embedding": "resnet128",
+        "sym": "mean",
+        "ann": 0,
+        "graph_seed": 0
+      }
+    ],
+    [
+      "sym_mutual",
+      {
+        "k": 10,
+        "alpha": 0.2,
+        "lam": 0.05,
+        "gate": true,
+        "history": true,
+        "pair": true,
+        "scale": true,
+        "embedding": "resnet128",
+        "sym": "mutual",
+        "ann": 0,
+        "graph_seed": 0
+      }
+    ],
+    [
+      "ann2",
+      {
+        "k": 10,
+        "alpha": 0.2,
+        "lam": 0.05,
+        "gate": true,
+        "history": true,
+        "pair": true,
+        "scale": true,
+        "embedding": "resnet128",
+        "sym": "directed",
+        "ann": 2,
+        "graph_seed": 0
+      }
+    ],
+    [
+      "ann8",
+      {
+        "k": 10,
+        "alpha": 0.2,
+        "lam": 0.05,
+        "gate": true,
+        "history": true,
+        "pair": true,
+        "scale": true,
+        "embedding": "resnet128",
+        "sym": "directed",
+        "ann": 8,
+        "graph_seed": 0
+      }
+    ],
+    [
+      "ann32",
+      {
+        "k": 10,
+        "alpha": 0.2,
+        "lam": 0.05,
+        "gate": true,
+        "history": true,
+        "pair": true,
+        "scale": true,
+        "embedding": "resnet128",
+        "sym": "directed",
+        "ann": 32,
+        "graph_seed": 0
+      }
+    ],
+    [
+      "ann128",
+      {
+        "k": 10,
+        "alpha": 0.2,
+        "lam": 0.05,
+        "gate": true,
+        "history": true,
+        "pair": true,
+        "scale": true,
+        "embedding": "resnet128",
+        "sym": "directed",
+        "ann": 128,
+        "graph_seed": 0
+      }
+    ],
+    [
+      "ann8_seed1",
+      {
+        "k": 10,
+        "alpha": 0.2,
+        "lam": 0.05,
+        "gate": true,
+        "history": true,
+        "pair": true,
+        "scale": true,
+        "embedding": "resnet128",
+        "sym": "directed",
+        "ann": 8,
+        "graph_seed": 1
+      }
+    ],
+    [
+      "exact_seed1",
+      {
+        "k": 10,
+        "alpha": 0.2,
+        "lam": 0.05,
+        "gate": true,
+        "history": true,
+        "pair": true,
+        "scale": true,
+        "embedding": "resnet128",
+        "sym": "directed",
+        "ann": 0,
+        "graph_seed": 1
+      }
+    ],
+    [
+      "ann8_seed2",
+      {
+        "k": 10,
+        "alpha": 0.2,
+        "lam": 0.05,
+        "gate": true,
+        "history": true,
+        "pair": true,
+        "scale": true,
+        "embedding": "resnet128",
+        "sym": "directed",
+        "ann": 8,
+        "graph_seed": 2
+      }
+    ],
+    [
+      "exact_seed2",
+      {
+        "k": 10,
+        "alpha": 0.2,
+        "lam": 0.05,
+        "gate": true,
+        "history": true,
+        "pair": true,
+        "scale": true,
+        "embedding": "resnet128",
+        "sym": "directed",
+        "ann": 0,
+        "graph_seed": 2
+      }
+    ],
+    [
+      "random",
+      {
+        "k": 10,
+        "alpha": 0.2,
+        "lam": 0.05,
+        "gate": true,
+        "history": true,
+        "pair": true,
+        "scale": true,
+        "embedding": "resnet128",
+        "sym": "directed",
+        "ann": 0,
+        "graph_seed": 0
+      }
+    ]
+  ],
+  "budget": 0.2,
+  "score_epochs": 5,
+  "retrain_epochs": 50,
+  "model": "frozen ImageNet ResNet18 + normalized-feature linear head",
+  "data_seeds": [
+    0,
+    1,
+    2
+  ],
+  "train_seeds": [
+    0,
+    1,
+    2
+  ],
+  "graph_seeds": [
+    0,
+    1,
+    2
+  ],
+  "script_sha256": "7c48c5a33ec157fcaa38e28d58b15cb051641c3d6253df7761a41256aaec4b24",
+  "torch": "2.4.1+cu121",
+  "numpy": "1.24.3",
+  "faiss": "1.7.4"
+}

@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "source_hashes": "unchanged",
+  "nodes": 9000,
+  "edges": 90000,
+  "distributions": 63000,
+  "contamination_cells": 486,
+  "edge_orientation": "neighbor source -> recipient",
+  "bucket_counts": "complete",
+  "stored_topk_contamination": "verified"
+}

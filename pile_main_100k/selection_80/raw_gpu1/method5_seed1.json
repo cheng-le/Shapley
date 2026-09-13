@@ -1,0 +1,14 @@
+{
+  "budget": 80,
+  "selected_corpora": 8000,
+  "epochs": 1,
+  "results": {
+    "Graph Adam-aware 2nd Order In-Run": {
+      "runs": [
+        3.1247583408355712
+      ],
+      "mean": 3.1247583408355712,
+      "std": 0.0
+    }
+  }
+}

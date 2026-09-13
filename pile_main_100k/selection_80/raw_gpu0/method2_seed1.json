@@ -1,0 +1,14 @@
+{
+  "budget": 80,
+  "selected_corpora": 8000,
+  "epochs": 1,
+  "results": {
+    "KNN-Shapley": {
+      "runs": [
+        3.153392963409424
+      ],
+      "mean": 3.153392963409424,
+      "std": 0.0
+    }
+  }
+}

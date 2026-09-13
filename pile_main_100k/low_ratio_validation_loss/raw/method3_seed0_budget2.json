@@ -1,0 +1,22 @@
+{
+  "budget": 2,
+  "selected_corpora": 2000,
+  "epochs": 1,
+  "primary_metric": "validation_token_accuracy",
+  "method": "Influence Function",
+  "seed": 0,
+  "accuracy": 0.42233638661484096,
+  "val_loss": 3.2773318845560335,
+  "score_cache": "pile_main_100k/cache/clean_seed0.npz",
+  "token_cache": "pile_main_100k/token_cache",
+  "selection": {
+    "strategy": "top_k"
+  },
+  "protocol_split": "pile_main_100k/protocol_v2_split.json",
+  "eval_part": "evaluation",
+  "lr_schedule": "constant",
+  "warmup_ratio": 0.02,
+  "min_lr_ratio": 0.1,
+  "optimizer_steps": 125,
+  "selected_indices_sha256": "abb0313dd1eae17d134efae91639e59714b76c08c3d40f2fd80c42f10e06def3"
+}

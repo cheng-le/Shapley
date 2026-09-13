@@ -1,0 +1,14 @@
+{
+  "budget": 80,
+  "selected_corpora": 8000,
+  "epochs": 1,
+  "results": {
+    "Influence Function": {
+      "runs": [
+        3.1222251796722413
+      ],
+      "mean": 3.1222251796722413,
+      "std": 0.0
+    }
+  }
+}

@@ -1,0 +1,129 @@
+[2026-07-28T11:43:05+08:00] START pile_gpt2/first_order/in_run_sgd_first_order.py
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 19185.81it/s]
+Pile GPT2 SGD 一阶分数: mean=-5.31015e-05, std=0.000118974
+最有帮助(分数最低): [(9433, -0.002988746389746666), (10021, -0.0025509244296699762), (17269, -0.002205412834882736), (8079, -0.002041962929069996), (14648, -0.0017774860607460141)]
+最可能有害(分数最高): [(11189, 0.0004345774941612035), (4901, 0.0004323392058722675), (6336, 0.0004106061242055148), (4837, 0.0003848861961159855), (1997, 0.0003497628786135465)]
+分数已保存到: pile_gpt2/first_order/pile_gpt2_sgd_first_order_large128.pt
+评估图已保存到: pile_gpt2/first_order/pile_gpt2_sgd_first_order_large128.png
+[2026-07-28T11:56:34+08:00] DONE pile_gpt2/first_order/in_run_sgd_first_order.py
+[2026-07-28T11:56:34+08:00] START pile_gpt2/first_order/in_run_adam_first_order.py
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 13466.91it/s]
+[2026-07-28T15:15:30+08:00] RESUME_REMAINING_FIVE
+[2026-07-28T15:15:30+08:00] START pile_gpt2/first_order/in_run_adam_first_order.py
+usage: in_run_adam_first_order.py [-h] [--seed SEED] [--batch-size BATCH_SIZE]
+                                  [--epochs-score EPOCHS_SCORE] [--lr LR]
+                                  [--hidden-dim HIDDEN_DIM]
+                                  [--train-limit TRAIN_LIMIT]
+                                  [--val-limit VAL_LIMIT]
+                                  [--val-samples VAL_SAMPLES]
+                                  [--output OUTPUT]
+                                  [--plot-output PLOT_OUTPUT]
+                                  [--model-name MODEL_NAME]
+                                  [--dataset-name DATASET_NAME]
+                                  [--dataset-config DATASET_CONFIG]
+                                  [--train-split TRAIN_SPLIT]
+                                  [--val-split VAL_SPLIT]
+                                  [--text-field TEXT_FIELD]
+                                  [--dataset-format {hf,text,txt,json,jsonl,parquet,csv}]
+                                  [--allow-remote-pile-download]
+                                  [--local-train-text LOCAL_TRAIN_TEXT]
+                                  [--local-val-text LOCAL_VAL_TEXT]
+                                  [--block-size BLOCK_SIZE] [--stride STRIDE]
+                                  [--mc-batch-size MC_BATCH_SIZE]
+                                  [--mc-permutations MC_PERMUTATIONS]
+                                  [--prune-epochs PRUNE_EPOCHS]
+                                  [--weight-decay WEIGHT_DECAY]
+                                  [--snapshot-after-batches SNAPSHOT_AFTER_BATCHES]
+                                  [--curvature-clip-ratio CURVATURE_CLIP_RATIO]
+                                  [--beta1 BETA1] [--beta2 BETA2] [--eps EPS]
+in_run_adam_first_order.py: error: unrecognized arguments: 
+[2026-07-28T15:16:31+08:00] RESUME_REMAINING_FIVE_V2
+[2026-07-28T15:16:31+08:00] START pile_gpt2/first_order/in_run_adam_first_order.py
+Traceback (most recent call last):
+  File "/home/lcheng/anaconda3/envs/torch_5090/lib/python3.11/site-packages/httpx/_transports/default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "/home/lcheng/anaconda3/envs/torch_5090/lib/python3.11/site-packages/httpx/_transports/default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lcheng/anaconda3/envs/torch_5090/lib/python3.11/site-packages/httpcore/_sync/connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "/home/lcheng/anaconda3/envs/torch_5090/lib/python3.11/site-packages/httpcore/_sync/connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lcheng/anaconda3/envs/torch_5090/lib/python3.11/site-packages/httpcore/_sync/connection.py", line 101, in handle_request
+    raise exc
+  File "/home/lcheng/anaconda3/envs/torch_5090/lib/python3.11/site-packages/httpcore/_sync/connection.py", line 78, in handle_request
+    stream = self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lcheng/anaconda3/envs/torch_5090/lib/python3.11/site-packages/httpcore/_sync/connection.py", line 124, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lcheng/anaconda3/envs/torch_5090/lib/python3.11/site-packages/httpcore/_backends/sync.py", line 207, in connect_tcp
+    with map_exceptions(exc_map):
+  File "/home/lcheng/anaconda3/envs/torch_5090/lib/python3.11/contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/lcheng/anaconda3/envs/torch_5090/lib/python3.11/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectTimeout: [Errno 110] Connection timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/lcheng/Shapley/pile_gpt2/first_order/in_run_adam_first_order.py", line 23, in <module>
+    main()
+  File "/home/lcheng/Shapley/pile_gpt2/first_order/in_run_adam_first_order.py", line 15, in main
+    base_train, val_dataset, scores, snapshot, timing = compute_adam_first_order(config)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lcheng/Shapley/pile_gpt2/pile_gpt2_common.py", line 506, in compute_adam_first_order
+    base_train, val_dataset, train_loader, val_loader = make_pile_experiment_loaders(config)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lcheng/Shapley/pile_gpt2/pile_gpt2_common.py", line 340, in make_pile_experiment_loaders
+    tokenizer = get_tokenizer(config)
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lcheng/Shapley/pile_gpt2/pile_gpt2_common.py", line 294, in get_tokenizer
+    tok = AutoTokenizer.from_pretrained(config.model_name)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lcheng/anaconda3/envs/torch_5090/lib/python3.11/site-packages/transformers/models/auto/tokenization_auto.py", line 891, in from_pretrained
+    return tokenizer_class.from_pretrained(pretrained_model_name_or_path, *inputs, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lcheng/anaconda3/envs/torch_5090/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 1673, in from_pretrained
+    for template in list_repo_templates(
+                    ^^^^^^^^^^^^^^^^^^^^
+  File "/home/lcheng/anaconda3/envs/torch_5090/lib/python3.11/site-packages/transformers/utils/hub.py", line 147, in list_repo_templates
+    return [
+           ^
+  File "/home/lcheng/anaconda3/envs/torch_5090/lib/python3.11/site-packages/transformers/utils/hub.py", line 147, in <listcomp>
+    return [
+           ^
+  File "/home/lcheng/anaconda3/envs/torch_5090/lib/python3.11/site-packages/huggingface_hub/hf_api.py", line 3922, in list_repo_tree
+    for path_info in paginate(path=tree_url, headers=headers, params={"recursive": recursive, "expand": expand}):
+  File "/home/lcheng/anaconda3/envs/torch_5090/lib/python3.11/site-packages/huggingface_hub/utils/_pagination.py", line 35, in paginate
+    r = session.get(path, params=params, headers=headers)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lcheng/anaconda3/envs/torch_5090/lib/python3.11/site-packages/httpx/_client.py", line 1053, in get
+    return self.request(
+           ^^^^^^^^^^^^^
+  File "/home/lcheng/anaconda3/envs/torch_5090/lib/python3.11/site-packages/httpx/_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lcheng/anaconda3/envs/torch_5090/lib/python3.11/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lcheng/anaconda3/envs/torch_5090/lib/python3.11/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lcheng/anaconda3/envs/torch_5090/lib/python3.11/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lcheng/anaconda3/envs/torch_5090/lib/python3.11/site-packages/httpx/_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lcheng/anaconda3/envs/torch_5090/lib/python3.11/site-packages/httpx/_transports/default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+  File "/home/lcheng/anaconda3/envs/torch_5090/lib/python3.11/contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/lcheng/anaconda3/envs/torch_5090/lib/python3.11/site-packages/httpx/_transports/default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectTimeout: [Errno 110] Connection timed out

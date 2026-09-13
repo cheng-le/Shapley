@@ -1,0 +1,2 @@
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 20046.41it/s]
+budget=20 method=Influence Function seed=2 val_accuracy=0.436659 val_loss=3.162119

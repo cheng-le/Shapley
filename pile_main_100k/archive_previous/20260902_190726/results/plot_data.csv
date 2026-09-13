@@ -1,0 +1,73 @@
+method,metric,value,higher_is_better
+Random,Noise AUROC,0.49863546296296296,True
+Random,Domain nRecall@1K,0.12261633609579665,True
+Random,20% Val. Loss,3.1921963386535643,False
+Random,40% Val. Loss,3.154282393137614,False
+Random,60% Val. Loss,3.1336337839762365,False
+Random,80% Val. Loss,3.1222627442677813,False
+BM25,Noise AUROC,0.46320477777777774,True
+BM25,Domain nRecall@1K,0.7718263626031607,True
+BM25,20% Val. Loss,3.218541219711304,False
+BM25,40% Val. Loss,3.1780378487904866,False
+BM25,60% Val. Loss,3.1535480187733964,False
+BM25,80% Val. Loss,3.1324138018290206,False
+KNN-Shapley,Noise AUROC,0.8278307962962964,True
+KNN-Shapley,Domain nRecall@1K,0.5825353836018663,True
+KNN-Shapley,20% Val. Loss,3.233791832605997,False
+KNN-Shapley,40% Val. Loss,3.2029810492197672,False
+KNN-Shapley,60% Val. Loss,3.1793967418670657,False
+KNN-Shapley,80% Val. Loss,3.1537989559173583,False
+Influence Function,Noise AUROC,0.5105983333333334,True
+Influence Function,Domain nRecall@1K,0.18679613316547405,True
+Influence Function,20% Val. Loss,3.1995166676839193,False
+Influence Function,40% Val. Loss,3.160753173192342,False
+Influence Function,60% Val. Loss,3.139643648783366,False
+Influence Function,80% Val. Loss,3.1234854291280114,False
+TRAK (1 ckpt),Noise AUROC,0.5252452777777777,True
+TRAK (1 ckpt),Domain nRecall@1K,0.26611423966380504,True
+TRAK (1 ckpt),20% Val. Loss,3.2036952514648434,False
+TRAK (1 ckpt),40% Val. Loss,3.160354179382324,False
+TRAK (1 ckpt),60% Val. Loss,3.138505184173584,False
+TRAK (1 ckpt),80% Val. Loss,3.120908308029175,False
+LESS,Noise AUROC,0.5252452592592592,True
+LESS,Domain nRecall@1K,0.26611423966380504,True
+LESS,20% Val. Loss,3.2036952514648434,False
+LESS,40% Val. Loss,3.160354179382324,False
+LESS,60% Val. Loss,3.138505184173584,False
+LESS,80% Val. Loss,3.120908308029175,False
+1st Order In-Run Data Shapley,Noise AUROC,0.5042409074074075,True
+1st Order In-Run Data Shapley,Domain nRecall@1K,0.18679613316547405,True
+1st Order In-Run Data Shapley,20% Val. Loss,3.1944806238810224,False
+1st Order In-Run Data Shapley,40% Val. Loss,3.159825881322225,False
+1st Order In-Run Data Shapley,60% Val. Loss,3.137907666524251,False
+1st Order In-Run Data Shapley,80% Val. Loss,3.1237143567403156,False
+2nd Order In-Run Data Shapley,Noise AUROC,0.5044733703703703,True
+2nd Order In-Run Data Shapley,Domain nRecall@1K,0.18679613316547405,True
+2nd Order In-Run Data Shapley,20% Val. Loss,3.1952679341634114,False
+2nd Order In-Run Data Shapley,40% Val. Loss,3.1579368813832605,False
+2nd Order In-Run Data Shapley,60% Val. Loss,3.1377890764872234,False
+2nd Order In-Run Data Shapley,80% Val. Loss,3.1239086062113444,False
+Adam-aware 1st Order In-Run,Noise AUROC,0.5416331666666667,True
+Adam-aware 1st Order In-Run,Domain nRecall@1K,0.2860046968603518,True
+Adam-aware 1st Order In-Run,20% Val. Loss,3.1945947392781577,False
+Adam-aware 1st Order In-Run,40% Val. Loss,3.1549591286977132,False
+Adam-aware 1st Order In-Run,60% Val. Loss,3.1357466290791827,False
+Adam-aware 1st Order In-Run,80% Val. Loss,3.121175725301107,False
+Adam-aware 2nd Order In-Run,Noise AUROC,0.5413652962962963,True
+Adam-aware 2nd Order In-Run,Domain nRecall@1K,0.2860046968603518,True
+Adam-aware 2nd Order In-Run,20% Val. Loss,3.193193656921387,False
+Adam-aware 2nd Order In-Run,40% Val. Loss,3.156874345779419,False
+Adam-aware 2nd Order In-Run,60% Val. Loss,3.134559602737427,False
+Adam-aware 2nd Order In-Run,80% Val. Loss,3.123502754211426,False
+Graph Adam-aware 1st Order In-Run,Noise AUROC,0.5428932962962962,True
+Graph Adam-aware 1st Order In-Run,Domain nRecall@1K,0.2933583527475621,True
+Graph Adam-aware 1st Order In-Run,20% Val. Loss,3.1919059702555335,False
+Graph Adam-aware 1st Order In-Run,40% Val. Loss,3.1565033760070804,False
+Graph Adam-aware 1st Order In-Run,60% Val. Loss,3.137047599156698,False
+Graph Adam-aware 1st Order In-Run,80% Val. Loss,3.122961268107096,False
+Graph Adam-aware 2nd Order In-Run,Noise AUROC,0.5425890185185186,True
+Graph Adam-aware 2nd Order In-Run,Domain nRecall@1K,0.2933583527475621,True
+Graph Adam-aware 2nd Order In-Run,20% Val. Loss,3.192200963973999,False
+Graph Adam-aware 2nd Order In-Run,40% Val. Loss,3.1555045356750484,False
+Graph Adam-aware 2nd Order In-Run,60% Val. Loss,3.134876063028971,False
+Graph Adam-aware 2nd Order In-Run,80% Val. Loss,3.1224861113230387,False

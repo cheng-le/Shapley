@@ -1,0 +1,16 @@
+{
+  "seed": 1,
+  "order": 2,
+  "budget": 2,
+  "arm": "Adam + diversity",
+  "selected_indices": "/home/lcheng/Shapley/diverse_data_selection/results/selected/seed1_order2_budget2_Adam_plus_diversity.npy",
+  "indices_sha256": "4be0afabc67f474ab7f1375331b4804686cadc034f74c0a31fedbd6359f1bb84",
+  "val_loss": 3.2523049112111835,
+  "accuracy": 0.4253116420987358,
+  "epochs": 1,
+  "eval_part": "evaluation",
+  "lr_schedule": "constant",
+  "lr": 6e-05,
+  "batch_size": 16,
+  "optimizer_steps": 125
+}

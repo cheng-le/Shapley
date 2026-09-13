@@ -1,0 +1,18 @@
+{
+  "metric": "Noise AUROC",
+  "noise_fraction": 0.1,
+  "results": {
+    "Random": 0.49188116666666665,
+    "BM25": 0.4648441666666666,
+    "KNN-Shapley": 0.8311681111111112,
+    "Influence Function": 0.5202700555555556,
+    "TRAK (1 ckpt)": 0.5329476111111111,
+    "LESS": 0.5329476666666666,
+    "1st Order In-Run Data Shapley": 0.5139986666666667,
+    "2nd Order In-Run Data Shapley": 0.5143777777777778,
+    "Adam-aware 1st Order In-Run": 0.5378295555555556,
+    "Adam-aware 2nd Order In-Run": 0.5374266666666666,
+    "Graph Adam-aware 1st Order In-Run": 0.5379145555555556,
+    "Graph Adam-aware 2nd Order In-Run": 0.5375322777777778
+  }
+}

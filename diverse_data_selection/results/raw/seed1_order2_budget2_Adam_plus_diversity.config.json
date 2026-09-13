@@ -1,0 +1,8 @@
+{
+  "seed": 1,
+  "order": 2,
+  "budget": 2,
+  "arm": "Adam + diversity",
+  "selected_indices": "/home/lcheng/Shapley/diverse_data_selection/results/selected/seed1_order2_budget2_Adam_plus_diversity.npy",
+  "indices_sha256": "4be0afabc67f474ab7f1375331b4804686cadc034f74c0a31fedbd6359f1bb84"
+}

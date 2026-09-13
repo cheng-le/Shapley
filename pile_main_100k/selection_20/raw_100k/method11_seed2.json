@@ -1,0 +1,12 @@
+{
+  "budget": 20,
+  "selected_corpora": 20000,
+  "epochs": 1,
+  "primary_metric": "validation_token_accuracy",
+  "method": "Graph Adam-aware 2nd Order In-Run",
+  "seed": 2,
+  "accuracy": 0.4382024961956245,
+  "val_loss": 3.138829503250122,
+  "score_cache": "pile_main_100k/cache/clean_seed2.npz",
+  "token_cache": "pile_main_100k/token_cache"
+}

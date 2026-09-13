@@ -1,0 +1,245 @@
+{
+  "python": "3.8.19 (default, Mar 20 2024, 19:58:24) \n[GCC 11.2.0]",
+  "numpy": "1.24.3",
+  "torch": "2.4.1+cu121",
+  "faiss": "1.7.4",
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "device": "cuda:2",
+  "cpu_threads": 4,
+  "source_hashes": {
+    "efficiency_scalability_ablations/study.py": "7c4a4617271be496faae1af8adeb8fe1dfc9aae8b64233d427efe2853fbac5d9",
+    "pile_main_100k/common.py": "e805d14970902800fb0d90aee2c0661431a7de65b86c4a6b645ccc210131c541",
+    "pile_main_100k/graph_utils.py": "66d63d7b8b41653ed4dc1fae8332e5e9b075106accf41d973397f11e358881b6"
+  },
+  "input_caches": [
+    {
+      "path": "pile_main_100k/cache/clean_seed0.npz",
+      "bytes": 721530306,
+      "mtime_ns": 1788405614000000000
+    },
+    {
+      "path": "pile_main_100k/cache/clean_seed1.npz",
+      "bytes": 721535856,
+      "mtime_ns": 1788405496000000000
+    },
+    {
+      "path": "pile_main_100k/cache/clean_seed2.npz",
+      "bytes": 721539953,
+      "mtime_ns": 1788405374000000000
+    },
+    {
+      "path": "pile_main_100k/cache/noise_seed0.npz",
+      "bytes": 721585039,
+      "mtime_ns": 1788405256000000000
+    },
+    {
+      "path": "pile_main_100k/cache/noise_seed1.npz",
+      "bytes": 721580905,
+      "mtime_ns": 1788405142000000000
+    },
+    {
+      "path": "pile_main_100k/cache/noise_seed2.npz",
+      "bytes": 721579446,
+      "mtime_ns": 1788405038000000000
+    }
+  ],
+  "subset_seed": 2027,
+  "sizes": [
+    1000,
+    10000,
+    50000,
+    100000
+  ],
+  "cache_seeds": [
+    0,
+    1,
+    2
+  ],
+  "timing_repetitions": 3,
+  "batch_size": 8,
+  "budget": 0.1,
+  "configurations": [
+    [
+      "full",
+      {
+        "k": 10,
+        "alpha": 0.2,
+        "lam": 0.05,
+        "gate": true,
+        "historical": true,
+        "pair": true,
+        "scale": true,
+        "embedding": "semantic"
+      }
+    ],
+    [
+      "k5",
+      {
+        "k": 5,
+        "alpha": 0.2,
+        "lam": 0.05,
+        "gate": true,
+        "historical": true,
+        "pair": true,
+        "scale": true,
+        "embedding": "semantic"
+      }
+    ],
+    [
+      "k20",
+      {
+        "k": 20,
+        "alpha": 0.2,
+        "lam": 0.05,
+        "gate": true,
+        "historical": true,
+        "pair": true,
+        "scale": true,
+        "embedding": "semantic"
+      }
+    ],
+    [
+      "alpha0",
+      {
+        "k": 10,
+        "alpha": 0,
+        "lam": 0.05,
+        "gate": true,
+        "historical": true,
+        "pair": true,
+        "scale": true,
+        "embedding": "semantic"
+      }
+    ],
+    [
+      "alpha0.1",
+      {
+        "k": 10,
+        "alpha": 0.1,
+        "lam": 0.05,
+        "gate": true,
+        "historical": true,
+        "pair": true,
+        "scale": true,
+        "embedding": "semantic"
+      }
+    ],
+    [
+      "alpha0.4",
+      {
+        "k": 10,
+        "alpha": 0.4,
+        "lam": 0.05,
+        "gate": true,
+        "historical": true,
+        "pair": true,
+        "scale": true,
+        "embedding": "semantic"
+      }
+    ],
+    [
+      "lambda0",
+      {
+        "k": 10,
+        "alpha": 0.2,
+        "lam": 0,
+        "gate": true,
+        "historical": true,
+        "pair": true,
+        "scale": true,
+        "embedding": "semantic"
+      }
+    ],
+    [
+      "lambda0.025",
+      {
+        "k": 10,
+        "alpha": 0.2,
+        "lam": 0.025,
+        "gate": true,
+        "historical": true,
+        "pair": true,
+        "scale": true,
+        "embedding": "semantic"
+      }
+    ],
+    [
+      "lambda0.1",
+      {
+        "k": 10,
+        "alpha": 0.2,
+        "lam": 0.1,
+        "gate": true,
+        "historical": true,
+        "pair": true,
+        "scale": true,
+        "embedding": "semantic"
+      }
+    ],
+    [
+      "no_gate",
+      {
+        "k": 10,
+        "alpha": 0.2,
+        "lam": 0.05,
+        "gate": false,
+        "historical": true,
+        "pair": true,
+        "scale": true,
+        "embedding": "semantic"
+      }
+    ],
+    [
+      "no_historical",
+      {
+        "k": 10,
+        "alpha": 0.2,
+        "lam": 0.05,
+        "gate": true,
+        "historical": false,
+        "pair": true,
+        "scale": true,
+        "embedding": "semantic"
+      }
+    ],
+    [
+      "no_pair",
+      {
+        "k": 10,
+        "alpha": 0.2,
+        "lam": 0.05,
+        "gate": true,
+        "historical": true,
+        "pair": false,
+        "scale": true,
+        "embedding": "semantic"
+      }
+    ],
+    [
+      "no_scale",
+      {
+        "k": 10,
+        "alpha": 0.2,
+        "lam": 0.05,
+        "gate": true,
+        "historical": true,
+        "pair": true,
+        "scale": false,
+        "embedding": "semantic"
+      }
+    ],
+    [
+      "gradient_embedding",
+      {
+        "k": 10,
+        "alpha": 0.2,
+        "lam": 0.05,
+        "gate": true,
+        "historical": true,
+        "pair": true,
+        "scale": true,
+        "embedding": "gradient"
+      }
+    ]
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "seed": 0,
+  "order": 2,
+  "budget": 2,
+  "arm": "Graph Top-k",
+  "selected_indices": "/home/lcheng/Shapley/diverse_data_selection/results/selected/seed0_order2_budget2_Graph_Top-k.npy",
+  "indices_sha256": "c3b94d3f4943b6de94597539d636a6dceda6cd8e99cf50f54eacd54802a8a589",
+  "val_loss": 3.2492311298213976,
+  "accuracy": 0.42371826856146705,
+  "epochs": 1,
+  "eval_part": "evaluation",
+  "lr_schedule": "constant",
+  "lr": 6e-05,
+  "batch_size": 16,
+  "optimizer_steps": 125
+}

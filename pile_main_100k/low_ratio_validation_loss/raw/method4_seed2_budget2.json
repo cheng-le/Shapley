@@ -1,0 +1,22 @@
+{
+  "budget": 2,
+  "selected_corpora": 2000,
+  "epochs": 1,
+  "primary_metric": "validation_token_accuracy",
+  "method": "TRAK (1 ckpt)",
+  "seed": 2,
+  "accuracy": 0.42210025522723027,
+  "val_loss": 3.2806844736930505,
+  "score_cache": "pile_main_100k/cache/clean_seed2.npz",
+  "token_cache": "pile_main_100k/token_cache",
+  "selection": {
+    "strategy": "top_k"
+  },
+  "protocol_split": "pile_main_100k/protocol_v2_split.json",
+  "eval_part": "evaluation",
+  "lr_schedule": "constant",
+  "warmup_ratio": 0.02,
+  "min_lr_ratio": 0.1,
+  "optimizer_steps": 125,
+  "selected_indices_sha256": "c0c34690245379d0f39994a6f711f3a065ed2228fd54e046549e8a8f3eba9495"
+}

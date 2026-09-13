@@ -1,0 +1,39 @@
+{
+  "python": "3.8.19 (default, Mar 20 2024, 19:58:24) \n[GCC 11.2.0]",
+  "torch": "2.4.1+cu121",
+  "numpy": "1.24.3",
+  "matmul_allow_tf32": false,
+  "cuda": "12.1",
+  "methods": [
+    "inrun2",
+    "adam2",
+    "graph",
+    "adam1"
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "gpus": [
+    0,
+    1,
+    2
+  ],
+  "n": 1000,
+  "sequence_length": 128,
+  "batch_size": 8,
+  "learning_rate": 0.0006,
+  "model": "gpt2",
+  "trainable": "transformer.ln_f",
+  "alpha": 0.2,
+  "k": 10,
+  "gradient_gate": false,
+  "base_graph_score": "Adam-aware FIRST order",
+  "sources": {
+    "efficiency_scalability_ablations/second_order_online/run.py": "13394f5d3cfb736f36c55fe9022f5ecb909c2512c1b77960a457d0084f79ee73",
+    "pile_main_100k/common.py": "e805d14970902800fb0d90aee2c0661431a7de65b86c4a6b645ccc210131c541",
+    "pile_main_100k/trajectory.py": "544a3f74d8bdb99ac6a84065303d6ee3f3b907f5ace18c86d47b13ee35b6505c"
+  },
+  "data_manifest_sha256": "f1ec35ffe706aea5eec3ed2390b546a284917c2639c172010f750aa595095dba"
+}

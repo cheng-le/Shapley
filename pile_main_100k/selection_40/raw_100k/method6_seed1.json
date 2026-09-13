@@ -1,0 +1,12 @@
+{
+  "budget": 40,
+  "selected_corpora": 40000,
+  "epochs": 1,
+  "primary_metric": "validation_token_accuracy",
+  "method": "1st Order In-Run Data Shapley",
+  "seed": 1,
+  "accuracy": 0.4414175423159823,
+  "val_loss": 3.129083207321167,
+  "score_cache": "pile_main_100k/cache/clean_seed1.npz",
+  "token_cache": "pile_main_100k/token_cache"
+}

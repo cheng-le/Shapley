@@ -1,0 +1,12 @@
+{
+  "budget": 20,
+  "selected_corpora": 20000,
+  "epochs": 1,
+  "primary_metric": "validation_token_accuracy",
+  "method": "TRAK (1 ckpt)",
+  "seed": 2,
+  "accuracy": 0.43631138915929457,
+  "val_loss": 3.160967405319214,
+  "score_cache": "pile_main_100k/cache/clean_seed2.npz",
+  "token_cache": "pile_main_100k/token_cache"
+}

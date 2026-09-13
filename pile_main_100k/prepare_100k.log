@@ -1,0 +1,171 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+accepted=1,000/110,000 scanned=1,001
+accepted=2,000/110,000 scanned=2,003
+accepted=3,000/110,000 scanned=3,003
+accepted=4,000/110,000 scanned=4,004
+accepted=5,000/110,000 scanned=5,005
+accepted=6,000/110,000 scanned=6,006
+accepted=7,000/110,000 scanned=7,006
+accepted=8,000/110,000 scanned=8,007
+accepted=9,000/110,000 scanned=9,007
+accepted=10,000/110,000 scanned=10,009
+accepted=11,000/110,000 scanned=11,010
+accepted=12,000/110,000 scanned=12,012
+accepted=13,000/110,000 scanned=13,012
+accepted=14,000/110,000 scanned=14,013
+accepted=15,000/110,000 scanned=15,014
+accepted=16,000/110,000 scanned=16,016
+accepted=17,000/110,000 scanned=17,018
+accepted=18,000/110,000 scanned=18,019
+accepted=19,000/110,000 scanned=19,021
+accepted=20,000/110,000 scanned=20,022
+accepted=21,000/110,000 scanned=21,024
+accepted=22,000/110,000 scanned=22,025
+accepted=23,000/110,000 scanned=23,029
+accepted=24,000/110,000 scanned=24,030
+accepted=25,000/110,000 scanned=25,031
+accepted=26,000/110,000 scanned=26,032
+accepted=27,000/110,000 scanned=27,035
+accepted=28,000/110,000 scanned=28,036
+accepted=29,000/110,000 scanned=29,041
+accepted=30,000/110,000 scanned=30,042
+accepted=31,000/110,000 scanned=31,044
+accepted=32,000/110,000 scanned=32,047
+accepted=33,000/110,000 scanned=33,048
+accepted=34,000/110,000 scanned=34,050
+accepted=35,000/110,000 scanned=35,050
+accepted=36,000/110,000 scanned=36,050
+accepted=37,000/110,000 scanned=37,051
+accepted=38,000/110,000 scanned=38,053
+accepted=39,000/110,000 scanned=39,056
+accepted=40,000/110,000 scanned=40,056
+accepted=41,000/110,000 scanned=41,059
+accepted=42,000/110,000 scanned=42,061
+accepted=43,000/110,000 scanned=43,062
+accepted=44,000/110,000 scanned=44,063
+accepted=45,000/110,000 scanned=45,064
+accepted=46,000/110,000 scanned=46,068
+accepted=47,000/110,000 scanned=47,070
+accepted=48,000/110,000 scanned=48,071
+accepted=49,000/110,000 scanned=49,071
+accepted=50,000/110,000 scanned=50,073
+accepted=51,000/110,000 scanned=51,074
+accepted=52,000/110,000 scanned=52,077
+accepted=53,000/110,000 scanned=53,078
+accepted=54,000/110,000 scanned=54,080
+accepted=55,000/110,000 scanned=55,081
+accepted=56,000/110,000 scanned=56,082
+accepted=57,000/110,000 scanned=57,084
+accepted=58,000/110,000 scanned=58,085
+accepted=59,000/110,000 scanned=59,085
+accepted=60,000/110,000 scanned=60,085
+accepted=61,000/110,000 scanned=61,088
+accepted=62,000/110,000 scanned=62,088
+accepted=63,000/110,000 scanned=63,088
+accepted=64,000/110,000 scanned=64,088
+accepted=65,000/110,000 scanned=65,090
+accepted=66,000/110,000 scanned=66,091
+accepted=67,000/110,000 scanned=67,093
+accepted=68,000/110,000 scanned=68,094
+accepted=69,000/110,000 scanned=69,099
+accepted=70,000/110,000 scanned=70,100
+accepted=71,000/110,000 scanned=71,103
+accepted=72,000/110,000 scanned=72,105
+accepted=73,000/110,000 scanned=73,108
+accepted=74,000/110,000 scanned=74,109
+accepted=75,000/110,000 scanned=75,110
+accepted=76,000/110,000 scanned=76,112
+accepted=77,000/110,000 scanned=77,113
+accepted=78,000/110,000 scanned=78,115
+accepted=79,000/110,000 scanned=79,117
+accepted=80,000/110,000 scanned=80,120
+accepted=81,000/110,000 scanned=81,121
+accepted=82,000/110,000 scanned=82,124
+accepted=83,000/110,000 scanned=83,126
+accepted=84,000/110,000 scanned=84,127
+accepted=85,000/110,000 scanned=85,128
+accepted=86,000/110,000 scanned=86,132
+accepted=87,000/110,000 scanned=87,132
+accepted=88,000/110,000 scanned=88,137
+accepted=89,000/110,000 scanned=89,139
+accepted=90,000/110,000 scanned=90,143
+accepted=91,000/110,000 scanned=91,144
+accepted=92,000/110,000 scanned=92,144
+accepted=93,000/110,000 scanned=93,145
+accepted=94,000/110,000 scanned=94,149
+accepted=95,000/110,000 scanned=95,152
+accepted=96,000/110,000 scanned=96,152
+accepted=97,000/110,000 scanned=97,157
+accepted=98,000/110,000 scanned=98,161
+accepted=99,000/110,000 scanned=99,161
+accepted=100,000/110,000 scanned=100,162
+accepted=101,000/110,000 scanned=101,164
+accepted=102,000/110,000 scanned=102,164
+accepted=103,000/110,000 scanned=103,166
+accepted=104,000/110,000 scanned=104,170
+accepted=105,000/110,000 scanned=105,173
+accepted=106,000/110,000 scanned=106,178
+accepted=107,000/110,000 scanned=107,181
+accepted=108,000/110,000 scanned=108,182
+accepted=109,000/110,000 scanned=109,183
+accepted=110,000/110,000 scanned=110,185
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (1208 > 1024). Running this sequence through the model will result in indexing errors
+{
+  "dataset": "monology/pile-uncopyrighted",
+  "sampling": "streaming shuffle with fixed-size random buffer, then deterministic split",
+  "seed": 2027,
+  "shuffle_buffer": 100000,
+  "splits": {
+    "train": {
+      "corpora": 100000,
+      "gpt2_tokens": 164677899,
+      "bytes": 554048424,
+      "domains": {
+        "ArXiv": 1336,
+        "DM Mathematics": 1085,
+        "Enron Emails": 523,
+        "EuroParl": 69,
+        "FreeLaw": 2847,
+        "Github": 10160,
+        "Gutenberg (PG-19)": 41,
+        "HackerNews": 889,
+        "NIH ExPorter": 999,
+        "PhilPapers": 32,
+        "Pile-CC": 29686,
+        "PubMed Abstracts": 16491,
+        "PubMed Central": 3174,
+        "StackExchange": 16771,
+        "USPTO Backgrounds": 6289,
+        "Ubuntu IRC": 11,
+        "Wikipedia (en)": 9597
+      }
+    },
+    "val": {
+      "corpora": 10000,
+      "gpt2_tokens": 16804558,
+      "bytes": 57163331,
+      "domains": {
+        "ArXiv": 165,
+        "DM Mathematics": 116,
+        "Enron Emails": 49,
+        "EuroParl": 1,
+        "FreeLaw": 261,
+        "Github": 1027,
+        "Gutenberg (PG-19)": 4,
+        "HackerNews": 97,
+        "NIH ExPorter": 96,
+        "PhilPapers": 4,
+        "Pile-CC": 2984,
+        "PubMed Abstracts": 1579,
+        "PubMed Central": 320,
+        "StackExchange": 1667,
+        "USPTO Backgrounds": 665,
+        "Ubuntu IRC": 1,
+        "Wikipedia (en)": 964
+      }
+    }
+  },
+  "unique_sha256": 110000
+}
+backup=data/Pile_large_backup_20260902_211657
+installed=data/Pile_large

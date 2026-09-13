@@ -1,0 +1,81 @@
+{
+  "budget": 80,
+  "selected_corpora": 8000,
+  "epochs": 1,
+  "results": {
+    "1st Order In-Run Data Shapley": {
+      "runs": [
+        3.1237083950042726,
+        3.1243493938446045,
+        3.12308528137207
+      ],
+      "mean": 3.1237143567403156,
+      "std": 0.0005160889732896194
+    },
+    "2nd Order In-Run Data Shapley": {
+      "runs": [
+        3.121681224822998,
+        3.1241092529296877,
+        3.1259353408813477
+      ],
+      "mean": 3.1239086062113444,
+      "std": 0.0017425211980849939
+    },
+    "Adam-aware 1st Order In-Run": {
+      "runs": [
+        3.1196740951538087,
+        3.124679235458374,
+        3.1191738452911375
+      ],
+      "mean": 3.121175725301107,
+      "std": 0.0024857594477117407
+    },
+    "Adam-aware 2nd Order In-Run": {
+      "runs": [
+        3.1250844249725342,
+        3.12260235786438,
+        3.1228214797973632
+      ],
+      "mean": 3.123502754211426,
+      "std": 0.0011219819971186502
+    },
+    "Graph Adam-aware 1st Order In-Run": {
+      "runs": [
+        3.1201510162353516,
+        3.125932861328125,
+        3.1227999267578124
+      ],
+      "mean": 3.122961268107096,
+      "std": 0.0023631837906305407
+    },
+    "Graph Adam-aware 2nd Order In-Run": {
+      "runs": [
+        3.122186792373657,
+        3.1247583408355712,
+        3.1205132007598877
+      ],
+      "mean": 3.1224861113230387,
+      "std": 0.0017459472005452751
+    }
+  },
+  "raw_sources": [
+    "pile_main_100k/selection_80/raw_gpu1/method0_seed0.json",
+    "pile_main_100k/selection_80/raw_gpu1/method0_seed1.json",
+    "pile_main_100k/selection_80/raw_gpu1/method0_seed2.json",
+    "pile_main_100k/selection_80/raw_gpu1/method1_seed0.json",
+    "pile_main_100k/selection_80/raw_gpu1/method1_seed1.json",
+    "pile_main_100k/selection_80/raw_gpu1/method1_seed2.json",
+    "pile_main_100k/selection_80/raw_gpu1/method2_seed0.json",
+    "pile_main_100k/selection_80/raw_gpu1/method2_seed1.json",
+    "pile_main_100k/selection_80/raw_gpu1/method2_seed2.json",
+    "pile_main_100k/selection_80/raw_gpu1/method3_seed0.json",
+    "pile_main_100k/selection_80/raw_gpu1/method3_seed1.json",
+    "pile_main_100k/selection_80/raw_gpu1/method3_seed2.json",
+    "pile_main_100k/selection_80/raw_gpu1/method4_seed0.json",
+    "pile_main_100k/selection_80/raw_gpu1/method4_seed1.json",
+    "pile_main_100k/selection_80/raw_gpu1/method4_seed2.json",
+    "pile_main_100k/selection_80/raw_gpu1/method5_seed0.json",
+    "pile_main_100k/selection_80/raw_gpu1/method5_seed1.json",
+    "pile_main_100k/selection_80/raw_gpu1/method5_seed2.json"
+  ]
+}

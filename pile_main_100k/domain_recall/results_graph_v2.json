@@ -1,0 +1,708 @@
+{
+  "metric": "Domain normalized Recall@1000",
+  "definition": "relevant items in top-K / min(K, number of relevant training items)",
+  "eligibility": "train >= 20 and validation >= 5 corpora",
+  "eligible_domains": [
+    "ArXiv",
+    "DM Mathematics",
+    "Enron Emails",
+    "FreeLaw",
+    "Github",
+    "HackerNews",
+    "NIH ExPorter",
+    "Pile-CC",
+    "PubMed Abstracts",
+    "PubMed Central",
+    "StackExchange",
+    "USPTO Backgrounds",
+    "Wikipedia (en)"
+  ],
+  "num_runs": 3,
+  "results": {
+    "Random": 0.07720512753490276,
+    "BM25": 0.7957433271799962,
+    "KNN-Shapley": 0.5849839676123983,
+    "Influence Function": 0.09695729885567939,
+    "TRAK (1 ckpt)": 0.2745097267822912,
+    "LESS": 0.2745097267822912,
+    "1st Order In-Run Data Shapley": 0.09695729885567939,
+    "2nd Order In-Run Data Shapley": 0.09695729885567939,
+    "Adam-aware 1st Order In-Run": 0.24071932347212252,
+    "Adam-aware 2nd Order In-Run": 0.24071932347212252,
+    "Graph Adam-aware 1st Order In-Run": 0.2504991370607215,
+    "Graph Adam-aware 2nd Order In-Run": 0.2504991370607215
+  },
+  "details": {
+    "Random": {
+      "runs": [
+        0.07727162188115802,
+        0.07698945150218092,
+        0.07735430922136935
+      ],
+      "mean": 0.07720512753490276,
+      "std": 0.00015619733752699017
+    },
+    "BM25": {
+      "runs": [
+        0.7957433271799962,
+        0.7957433271799962,
+        0.7957433271799962
+      ],
+      "mean": 0.7957433271799962,
+      "std": 0.0
+    },
+    "KNN-Shapley": {
+      "runs": [
+        0.5849839676123983,
+        0.5849839676123983,
+        0.5849839676123983
+      ],
+      "mean": 0.5849839676123983,
+      "std": 0.0
+    },
+    "Influence Function": {
+      "runs": [
+        0.07989839745996684,
+        0.122621771788722,
+        0.08835172731834931
+      ],
+      "mean": 0.09695729885567939,
+      "std": 0.01847274703668105
+    },
+    "TRAK (1 ckpt)": {
+      "runs": [
+        0.2633914560748544,
+        0.274936385277964,
+        0.28520133899405514
+      ],
+      "mean": 0.2745097267822912,
+      "std": 0.008908957153384384
+    },
+    "LESS": {
+      "runs": [
+        0.2633914560748544,
+        0.274936385277964,
+        0.28520133899405514
+      ],
+      "mean": 0.2745097267822912,
+      "std": 0.008908957153384384
+    },
+    "1st Order In-Run Data Shapley": {
+      "runs": [
+        0.07989839745996684,
+        0.122621771788722,
+        0.08835172731834931
+      ],
+      "mean": 0.09695729885567939,
+      "std": 0.01847274703668105
+    },
+    "2nd Order In-Run Data Shapley": {
+      "runs": [
+        0.07989839745996684,
+        0.122621771788722,
+        0.08835172731834931
+      ],
+      "mean": 0.09695729885567939,
+      "std": 0.01847274703668105
+    },
+    "Adam-aware 1st Order In-Run": {
+      "runs": [
+        0.24288125018669574,
+        0.2521755947195793,
+        0.22710112551009257
+      ],
+      "mean": 0.24071932347212252,
+      "std": 0.010350127112706182
+    },
+    "Adam-aware 2nd Order In-Run": {
+      "runs": [
+        0.24288125018669574,
+        0.2521755947195793,
+        0.22710112551009257
+      ],
+      "mean": 0.24071932347212252,
+      "std": 0.010350127112706182
+    },
+    "Graph Adam-aware 1st Order In-Run": {
+      "runs": [
+        0.2627604525721537,
+        0.2618803547684775,
+        0.22685660384153328
+      ],
+      "mean": 0.2504991370607215,
+      "std": 0.016721656134113878
+    },
+    "Graph Adam-aware 2nd Order In-Run": {
+      "runs": [
+        0.2627604525721537,
+        0.2618803547684775,
+        0.22685660384153328
+      ],
+      "mean": 0.2504991370607215,
+      "std": 0.016721656134113878
+    }
+  },
+  "run_sources": [
+    "pile_main_100k/domain_recall/run0.json",
+    "pile_main_100k/domain_recall/run1.json",
+    "pile_main_100k/domain_recall/run2.json"
+  ],
+  "per_run_per_domain": [
+    {
+      "Random": {
+        "ArXiv": 0.017,
+        "DM Mathematics": 0.015,
+        "Enron Emails": 0.0076481835564053535,
+        "FreeLaw": 0.027,
+        "Github": 0.088,
+        "HackerNews": 0.01687289088863892,
+        "NIH ExPorter": 0.01001001001001001,
+        "Pile-CC": 0.298,
+        "PubMed Abstracts": 0.178,
+        "PubMed Central": 0.039,
+        "StackExchange": 0.166,
+        "USPTO Backgrounds": 0.055,
+        "Wikipedia (en)": 0.087
+      },
+      "BM25": {
+        "ArXiv": 1.0,
+        "DM Mathematics": 0.774,
+        "Enron Emails": 0.4875717017208413,
+        "FreeLaw": 0.996,
+        "Github": 0.997,
+        "HackerNews": 0.4938132733408324,
+        "NIH ExPorter": 0.2782782782782783,
+        "Pile-CC": 0.886,
+        "PubMed Abstracts": 0.763,
+        "PubMed Central": 0.733,
+        "StackExchange": 0.979,
+        "USPTO Backgrounds": 0.998,
+        "Wikipedia (en)": 0.959
+      },
+      "KNN-Shapley": {
+        "ArXiv": 0.454,
+        "DM Mathematics": 0.577,
+        "Enron Emails": 0.14531548757170173,
+        "FreeLaw": 0.697,
+        "Github": 0.693,
+        "HackerNews": 0.2643419572553431,
+        "NIH ExPorter": 0.13413413413413414,
+        "Pile-CC": 0.872,
+        "PubMed Abstracts": 0.922,
+        "PubMed Central": 0.65,
+        "StackExchange": 0.937,
+        "USPTO Backgrounds": 0.853,
+        "Wikipedia (en)": 0.406
+      },
+      "Influence Function": {
+        "ArXiv": 0.012,
+        "DM Mathematics": 0.054,
+        "Enron Emails": 0.04780114722753346,
+        "FreeLaw": 0.039,
+        "Github": 0.082,
+        "HackerNews": 0.007874015748031496,
+        "NIH ExPorter": 0.004004004004004004,
+        "Pile-CC": 0.27,
+        "PubMed Abstracts": 0.071,
+        "PubMed Central": 0.011,
+        "StackExchange": 0.338,
+        "USPTO Backgrounds": 0.033,
+        "Wikipedia (en)": 0.069
+      },
+      "TRAK (1 ckpt)": {
+        "ArXiv": 0.016,
+        "DM Mathematics": 0.434,
+        "Enron Emails": 0.028680688336520075,
+        "FreeLaw": 0.089,
+        "Github": 0.447,
+        "HackerNews": 0.030371203599550055,
+        "NIH ExPorter": 0.037037037037037035,
+        "Pile-CC": 0.537,
+        "PubMed Abstracts": 0.381,
+        "PubMed Central": 0.313,
+        "StackExchange": 0.608,
+        "USPTO Backgrounds": 0.373,
+        "Wikipedia (en)": 0.13
+      },
+      "LESS": {
+        "ArXiv": 0.016,
+        "DM Mathematics": 0.434,
+        "Enron Emails": 0.028680688336520075,
+        "FreeLaw": 0.089,
+        "Github": 0.447,
+        "HackerNews": 0.030371203599550055,
+        "NIH ExPorter": 0.037037037037037035,
+        "Pile-CC": 0.537,
+        "PubMed Abstracts": 0.381,
+        "PubMed Central": 0.313,
+        "StackExchange": 0.608,
+        "USPTO Backgrounds": 0.373,
+        "Wikipedia (en)": 0.13
+      },
+      "1st Order In-Run Data Shapley": {
+        "ArXiv": 0.012,
+        "DM Mathematics": 0.054,
+        "Enron Emails": 0.04780114722753346,
+        "FreeLaw": 0.039,
+        "Github": 0.082,
+        "HackerNews": 0.007874015748031496,
+        "NIH ExPorter": 0.004004004004004004,
+        "Pile-CC": 0.27,
+        "PubMed Abstracts": 0.071,
+        "PubMed Central": 0.011,
+        "StackExchange": 0.338,
+        "USPTO Backgrounds": 0.033,
+        "Wikipedia (en)": 0.069
+      },
+      "2nd Order In-Run Data Shapley": {
+        "ArXiv": 0.012,
+        "DM Mathematics": 0.054,
+        "Enron Emails": 0.04780114722753346,
+        "FreeLaw": 0.039,
+        "Github": 0.082,
+        "HackerNews": 0.007874015748031496,
+        "NIH ExPorter": 0.004004004004004004,
+        "Pile-CC": 0.27,
+        "PubMed Abstracts": 0.071,
+        "PubMed Central": 0.011,
+        "StackExchange": 0.338,
+        "USPTO Backgrounds": 0.033,
+        "Wikipedia (en)": 0.069
+      },
+      "Adam-aware 1st Order In-Run": {
+        "ArXiv": 0.018,
+        "DM Mathematics": 0.644,
+        "Enron Emails": 0.028680688336520075,
+        "FreeLaw": 0.048,
+        "Github": 0.299,
+        "HackerNews": 0.05174353205849269,
+        "NIH ExPorter": 0.03203203203203203,
+        "Pile-CC": 0.506,
+        "PubMed Abstracts": 0.296,
+        "PubMed Central": 0.415,
+        "StackExchange": 0.396,
+        "USPTO Backgrounds": 0.273,
+        "Wikipedia (en)": 0.15
+      },
+      "Adam-aware 2nd Order In-Run": {
+        "ArXiv": 0.018,
+        "DM Mathematics": 0.644,
+        "Enron Emails": 0.028680688336520075,
+        "FreeLaw": 0.048,
+        "Github": 0.299,
+        "HackerNews": 0.05174353205849269,
+        "NIH ExPorter": 0.03203203203203203,
+        "Pile-CC": 0.506,
+        "PubMed Abstracts": 0.296,
+        "PubMed Central": 0.415,
+        "StackExchange": 0.396,
+        "USPTO Backgrounds": 0.273,
+        "Wikipedia (en)": 0.15
+      },
+      "Graph Adam-aware 1st Order In-Run": {
+        "ArXiv": 0.019,
+        "DM Mathematics": 0.673,
+        "Enron Emails": 0.028680688336520075,
+        "FreeLaw": 0.044,
+        "Github": 0.312,
+        "HackerNews": 0.06074240719910011,
+        "NIH ExPorter": 0.035035035035035036,
+        "Pile-CC": 0.52,
+        "PubMed Abstracts": 0.322,
+        "PubMed Central": 0.455,
+        "StackExchange": 0.386,
+        "USPTO Backgrounds": 0.3,
+        "Wikipedia (en)": 0.166
+      },
+      "Graph Adam-aware 2nd Order In-Run": {
+        "ArXiv": 0.019,
+        "DM Mathematics": 0.673,
+        "Enron Emails": 0.028680688336520075,
+        "FreeLaw": 0.044,
+        "Github": 0.312,
+        "HackerNews": 0.06074240719910011,
+        "NIH ExPorter": 0.035035035035035036,
+        "Pile-CC": 0.52,
+        "PubMed Abstracts": 0.322,
+        "PubMed Central": 0.455,
+        "StackExchange": 0.386,
+        "USPTO Backgrounds": 0.3,
+        "Wikipedia (en)": 0.166
+      }
+    },
+    {
+      "Random": {
+        "ArXiv": 0.025,
+        "DM Mathematics": 0.009,
+        "Enron Emails": 0.011472275334608031,
+        "FreeLaw": 0.019,
+        "Github": 0.109,
+        "HackerNews": 0.003374578177727784,
+        "NIH ExPorter": 0.016016016016016016,
+        "Pile-CC": 0.313,
+        "PubMed Abstracts": 0.153,
+        "PubMed Central": 0.036,
+        "StackExchange": 0.157,
+        "USPTO Backgrounds": 0.061,
+        "Wikipedia (en)": 0.088
+      },
+      "BM25": {
+        "ArXiv": 1.0,
+        "DM Mathematics": 0.774,
+        "Enron Emails": 0.4875717017208413,
+        "FreeLaw": 0.996,
+        "Github": 0.997,
+        "HackerNews": 0.4938132733408324,
+        "NIH ExPorter": 0.2782782782782783,
+        "Pile-CC": 0.886,
+        "PubMed Abstracts": 0.763,
+        "PubMed Central": 0.733,
+        "StackExchange": 0.979,
+        "USPTO Backgrounds": 0.998,
+        "Wikipedia (en)": 0.959
+      },
+      "KNN-Shapley": {
+        "ArXiv": 0.454,
+        "DM Mathematics": 0.577,
+        "Enron Emails": 0.14531548757170173,
+        "FreeLaw": 0.697,
+        "Github": 0.693,
+        "HackerNews": 0.2643419572553431,
+        "NIH ExPorter": 0.13413413413413414,
+        "Pile-CC": 0.872,
+        "PubMed Abstracts": 0.922,
+        "PubMed Central": 0.65,
+        "StackExchange": 0.937,
+        "USPTO Backgrounds": 0.853,
+        "Wikipedia (en)": 0.406
+      },
+      "Influence Function": {
+        "ArXiv": 0.011,
+        "DM Mathematics": 0.056,
+        "Enron Emails": 0.036328871892925434,
+        "FreeLaw": 0.036,
+        "Github": 0.084,
+        "HackerNews": 0.006749156355455568,
+        "NIH ExPorter": 0.005005005005005005,
+        "Pile-CC": 0.214,
+        "PubMed Abstracts": 0.065,
+        "PubMed Central": 0.664,
+        "StackExchange": 0.303,
+        "USPTO Backgrounds": 0.041,
+        "Wikipedia (en)": 0.072
+      },
+      "TRAK (1 ckpt)": {
+        "ArXiv": 0.012,
+        "DM Mathematics": 0.51,
+        "Enron Emails": 0.021032504780114723,
+        "FreeLaw": 0.058,
+        "Github": 0.44,
+        "HackerNews": 0.0281214848143982,
+        "NIH ExPorter": 0.01901901901901902,
+        "Pile-CC": 0.62,
+        "PubMed Abstracts": 0.272,
+        "PubMed Central": 0.628,
+        "StackExchange": 0.557,
+        "USPTO Backgrounds": 0.313,
+        "Wikipedia (en)": 0.096
+      },
+      "LESS": {
+        "ArXiv": 0.012,
+        "DM Mathematics": 0.51,
+        "Enron Emails": 0.021032504780114723,
+        "FreeLaw": 0.058,
+        "Github": 0.44,
+        "HackerNews": 0.0281214848143982,
+        "NIH ExPorter": 0.01901901901901902,
+        "Pile-CC": 0.62,
+        "PubMed Abstracts": 0.272,
+        "PubMed Central": 0.628,
+        "StackExchange": 0.557,
+        "USPTO Backgrounds": 0.313,
+        "Wikipedia (en)": 0.096
+      },
+      "1st Order In-Run Data Shapley": {
+        "ArXiv": 0.011,
+        "DM Mathematics": 0.056,
+        "Enron Emails": 0.036328871892925434,
+        "FreeLaw": 0.036,
+        "Github": 0.084,
+        "HackerNews": 0.006749156355455568,
+        "NIH ExPorter": 0.005005005005005005,
+        "Pile-CC": 0.214,
+        "PubMed Abstracts": 0.065,
+        "PubMed Central": 0.664,
+        "StackExchange": 0.303,
+        "USPTO Backgrounds": 0.041,
+        "Wikipedia (en)": 0.072
+      },
+      "2nd Order In-Run Data Shapley": {
+        "ArXiv": 0.011,
+        "DM Mathematics": 0.056,
+        "Enron Emails": 0.036328871892925434,
+        "FreeLaw": 0.036,
+        "Github": 0.084,
+        "HackerNews": 0.006749156355455568,
+        "NIH ExPorter": 0.005005005005005005,
+        "Pile-CC": 0.214,
+        "PubMed Abstracts": 0.065,
+        "PubMed Central": 0.664,
+        "StackExchange": 0.303,
+        "USPTO Backgrounds": 0.041,
+        "Wikipedia (en)": 0.072
+      },
+      "Adam-aware 1st Order In-Run": {
+        "ArXiv": 0.017,
+        "DM Mathematics": 0.683,
+        "Enron Emails": 0.0248565965583174,
+        "FreeLaw": 0.063,
+        "Github": 0.284,
+        "HackerNews": 0.03937007874015748,
+        "NIH ExPorter": 0.056056056056056056,
+        "Pile-CC": 0.645,
+        "PubMed Abstracts": 0.277,
+        "PubMed Central": 0.371,
+        "StackExchange": 0.437,
+        "USPTO Backgrounds": 0.252,
+        "Wikipedia (en)": 0.129
+      },
+      "Adam-aware 2nd Order In-Run": {
+        "ArXiv": 0.017,
+        "DM Mathematics": 0.683,
+        "Enron Emails": 0.0248565965583174,
+        "FreeLaw": 0.063,
+        "Github": 0.284,
+        "HackerNews": 0.03937007874015748,
+        "NIH ExPorter": 0.056056056056056056,
+        "Pile-CC": 0.645,
+        "PubMed Abstracts": 0.277,
+        "PubMed Central": 0.371,
+        "StackExchange": 0.437,
+        "USPTO Backgrounds": 0.252,
+        "Wikipedia (en)": 0.129
+      },
+      "Graph Adam-aware 1st Order In-Run": {
+        "ArXiv": 0.025,
+        "DM Mathematics": 0.702,
+        "Enron Emails": 0.02676864244741874,
+        "FreeLaw": 0.062,
+        "Github": 0.293,
+        "HackerNews": 0.04499437570303712,
+        "NIH ExPorter": 0.056056056056056056,
+        "Pile-CC": 0.669,
+        "PubMed Abstracts": 0.288,
+        "PubMed Central": 0.407,
+        "StackExchange": 0.421,
+        "USPTO Backgrounds": 0.27,
+        "Wikipedia (en)": 0.144
+      },
+      "Graph Adam-aware 2nd Order In-Run": {
+        "ArXiv": 0.025,
+        "DM Mathematics": 0.702,
+        "Enron Emails": 0.02676864244741874,
+        "FreeLaw": 0.062,
+        "Github": 0.293,
+        "HackerNews": 0.04499437570303712,
+        "NIH ExPorter": 0.056056056056056056,
+        "Pile-CC": 0.669,
+        "PubMed Abstracts": 0.288,
+        "PubMed Central": 0.407,
+        "StackExchange": 0.421,
+        "USPTO Backgrounds": 0.27,
+        "Wikipedia (en)": 0.144
+      }
+    },
+    {
+      "Random": {
+        "ArXiv": 0.014,
+        "DM Mathematics": 0.007,
+        "Enron Emails": 0.011472275334608031,
+        "FreeLaw": 0.027,
+        "Github": 0.099,
+        "HackerNews": 0.010123734533183352,
+        "NIH ExPorter": 0.01001001001001001,
+        "Pile-CC": 0.302,
+        "PubMed Abstracts": 0.162,
+        "PubMed Central": 0.039,
+        "StackExchange": 0.169,
+        "USPTO Backgrounds": 0.059,
+        "Wikipedia (en)": 0.096
+      },
+      "BM25": {
+        "ArXiv": 1.0,
+        "DM Mathematics": 0.774,
+        "Enron Emails": 0.4875717017208413,
+        "FreeLaw": 0.996,
+        "Github": 0.997,
+        "HackerNews": 0.4938132733408324,
+        "NIH ExPorter": 0.2782782782782783,
+        "Pile-CC": 0.886,
+        "PubMed Abstracts": 0.763,
+        "PubMed Central": 0.733,
+        "StackExchange": 0.979,
+        "USPTO Backgrounds": 0.998,
+        "Wikipedia (en)": 0.959
+      },
+      "KNN-Shapley": {
+        "ArXiv": 0.454,
+        "DM Mathematics": 0.577,
+        "Enron Emails": 0.14531548757170173,
+        "FreeLaw": 0.697,
+        "Github": 0.693,
+        "HackerNews": 0.2643419572553431,
+        "NIH ExPorter": 0.13413413413413414,
+        "Pile-CC": 0.872,
+        "PubMed Abstracts": 0.922,
+        "PubMed Central": 0.65,
+        "StackExchange": 0.937,
+        "USPTO Backgrounds": 0.853,
+        "Wikipedia (en)": 0.406
+      },
+      "Influence Function": {
+        "ArXiv": 0.013,
+        "DM Mathematics": 0.048,
+        "Enron Emails": 0.04206500956022945,
+        "FreeLaw": 0.04,
+        "Github": 0.09,
+        "HackerNews": 0.0044994375703037125,
+        "NIH ExPorter": 0.008008008008008008,
+        "Pile-CC": 0.29,
+        "PubMed Abstracts": 0.077,
+        "PubMed Central": 0.068,
+        "StackExchange": 0.312,
+        "USPTO Backgrounds": 0.085,
+        "Wikipedia (en)": 0.071
+      },
+      "TRAK (1 ckpt)": {
+        "ArXiv": 0.019,
+        "DM Mathematics": 0.417,
+        "Enron Emails": 0.017208413001912046,
+        "FreeLaw": 0.089,
+        "Github": 0.481,
+        "HackerNews": 0.048368953880764905,
+        "NIH ExPorter": 0.04004004004004004,
+        "Pile-CC": 0.403,
+        "PubMed Abstracts": 0.414,
+        "PubMed Central": 0.792,
+        "StackExchange": 0.618,
+        "USPTO Backgrounds": 0.277,
+        "Wikipedia (en)": 0.092
+      },
+      "LESS": {
+        "ArXiv": 0.019,
+        "DM Mathematics": 0.417,
+        "Enron Emails": 0.017208413001912046,
+        "FreeLaw": 0.089,
+        "Github": 0.481,
+        "HackerNews": 0.048368953880764905,
+        "NIH ExPorter": 0.04004004004004004,
+        "Pile-CC": 0.403,
+        "PubMed Abstracts": 0.414,
+        "PubMed Central": 0.792,
+        "StackExchange": 0.618,
+        "USPTO Backgrounds": 0.277,
+        "Wikipedia (en)": 0.092
+      },
+      "1st Order In-Run Data Shapley": {
+        "ArXiv": 0.013,
+        "DM Mathematics": 0.048,
+        "Enron Emails": 0.04206500956022945,
+        "FreeLaw": 0.04,
+        "Github": 0.09,
+        "HackerNews": 0.0044994375703037125,
+        "NIH ExPorter": 0.008008008008008008,
+        "Pile-CC": 0.29,
+        "PubMed Abstracts": 0.077,
+        "PubMed Central": 0.068,
+        "StackExchange": 0.312,
+        "USPTO Backgrounds": 0.085,
+        "Wikipedia (en)": 0.071
+      },
+      "2nd Order In-Run Data Shapley": {
+        "ArXiv": 0.013,
+        "DM Mathematics": 0.048,
+        "Enron Emails": 0.04206500956022945,
+        "FreeLaw": 0.04,
+        "Github": 0.09,
+        "HackerNews": 0.0044994375703037125,
+        "NIH ExPorter": 0.008008008008008008,
+        "Pile-CC": 0.29,
+        "PubMed Abstracts": 0.077,
+        "PubMed Central": 0.068,
+        "StackExchange": 0.312,
+        "USPTO Backgrounds": 0.085,
+        "Wikipedia (en)": 0.071
+      },
+      "Adam-aware 1st Order In-Run": {
+        "ArXiv": 0.013,
+        "DM Mathematics": 0.613,
+        "Enron Emails": 0.02676864244741874,
+        "FreeLaw": 0.039,
+        "Github": 0.311,
+        "HackerNews": 0.04049493813273341,
+        "NIH ExPorter": 0.05105105105105105,
+        "Pile-CC": 0.448,
+        "PubMed Abstracts": 0.295,
+        "PubMed Central": 0.48,
+        "StackExchange": 0.365,
+        "USPTO Backgrounds": 0.158,
+        "Wikipedia (en)": 0.112
+      },
+      "Adam-aware 2nd Order In-Run": {
+        "ArXiv": 0.013,
+        "DM Mathematics": 0.613,
+        "Enron Emails": 0.02676864244741874,
+        "FreeLaw": 0.039,
+        "Github": 0.311,
+        "HackerNews": 0.04049493813273341,
+        "NIH ExPorter": 0.05105105105105105,
+        "Pile-CC": 0.448,
+        "PubMed Abstracts": 0.295,
+        "PubMed Central": 0.48,
+        "StackExchange": 0.365,
+        "USPTO Backgrounds": 0.158,
+        "Wikipedia (en)": 0.112
+      },
+      "Graph Adam-aware 1st Order In-Run": {
+        "ArXiv": 0.018,
+        "DM Mathematics": 0.648,
+        "Enron Emails": 0.02676864244741874,
+        "FreeLaw": 0.041,
+        "Github": 0.32,
+        "HackerNews": 0.047244094488188976,
+        "NIH ExPorter": 0.05805805805805806,
+        "Pile-CC": 0.466,
+        "PubMed Abstracts": 0.313,
+        "PubMed Central": 0.535,
+        "StackExchange": 0.348,
+        "USPTO Backgrounds": 0.18,
+        "Wikipedia (en)": 0.128
+      },
+      "Graph Adam-aware 2nd Order In-Run": {
+        "ArXiv": 0.018,
+        "DM Mathematics": 0.648,
+        "Enron Emails": 0.02676864244741874,
+        "FreeLaw": 0.041,
+        "Github": 0.32,
+        "HackerNews": 0.047244094488188976,
+        "NIH ExPorter": 0.05805805805805806,
+        "Pile-CC": 0.466,
+        "PubMed Abstracts": 0.313,
+        "PubMed Central": 0.535,
+        "StackExchange": 0.348,
+        "USPTO Backgrounds": 0.18,
+        "Wikipedia (en)": 0.128
+      }
+    }
+  ],
+  "graph_version": {
+    "name": "graph_v2_dynamic",
+    "alpha": 0.2,
+    "run_sources": [
+      "pile_main_100k/domain_recall/run0_graph_v2.json",
+      "pile_main_100k/domain_recall/run1_graph_v2.json",
+      "pile_main_100k/domain_recall/run2_graph_v2.json"
+    ],
+    "non_graph_rows": "frozen from results.json"
+  }
+}

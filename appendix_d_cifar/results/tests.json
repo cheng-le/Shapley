@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "checks": [
+    "analytic_gradient_vs_autograd",
+    "self_exclusion",
+    "symmetry",
+    "zero_alpha",
+    "no_history_no_pair",
+    "seeded_ANN_reproducibility"
+  ]
+}

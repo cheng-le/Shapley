@@ -1,0 +1,21 @@
+{
+  "budget": 80,
+  "selected_corpora": 80000,
+  "epochs": 1,
+  "primary_metric": "validation_token_accuracy",
+  "method": "Graph Adam-aware 2nd Order In-Run",
+  "seed": 1,
+  "accuracy": 0.4436607695426706,
+  "val_loss": 3.1625856952667237,
+  "score_cache": "pile_main_100k/cache_graph_v2/clean_seed1_graph_v2.npz",
+  "token_cache": "pile_main_100k/token_cache",
+  "selection": {
+    "strategy": "symmetric_graph_greedy",
+    "lambda_fraction": 0.05,
+    "effective_lambda": 3.805143813292902e-07,
+    "selected_pair_affinity": 31675.88671875,
+    "selected_pair_affinity_per_item": 0.395948583984375,
+    "graph_coverage": 1.0
+  },
+  "selected_indices_sha256": "7684f3679e758d69ad44f8b02156a578d413d55c676460aa1f0171659b0d8738"
+}

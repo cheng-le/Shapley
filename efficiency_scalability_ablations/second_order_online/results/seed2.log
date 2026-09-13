@@ -1,0 +1,53 @@
+seed 2 clean graph steps 25
+seed 2 clean graph steps 50
+seed 2 clean graph steps 75
+seed 2 clean graph steps 100
+seed 2 clean graph steps 125
+DONE 2 clean graph 11.99
+seed 2 clean adam1 steps 25
+seed 2 clean adam1 steps 50
+seed 2 clean adam1 steps 75
+seed 2 clean adam1 steps 100
+seed 2 clean adam1 steps 125
+DONE 2 clean adam1 12.05
+seed 2 clean inrun2 steps 25
+seed 2 clean inrun2 steps 50
+seed 2 clean inrun2 steps 75
+seed 2 clean inrun2 steps 100
+seed 2 clean inrun2 steps 125
+DONE 2 clean inrun2 14.84
+seed 2 clean adam2 steps 25
+seed 2 clean adam2 steps 50
+seed 2 clean adam2 steps 75
+seed 2 clean adam2 steps 100
+seed 2 clean adam2 steps 125
+DONE 2 clean adam2 14.91
+seed 2 noise graph steps 25
+seed 2 noise graph steps 50
+seed 2 noise graph steps 75
+seed 2 noise graph steps 100
+seed 2 noise graph steps 125
+DONE 2 noise graph 12.45
+seed 2 noise adam1 steps 25
+seed 2 noise adam1 steps 50
+seed 2 noise adam1 steps 75
+seed 2 noise adam1 steps 100
+seed 2 noise adam1 steps 125
+DONE 2 noise adam1 12.51
+seed 2 noise inrun2 steps 25
+seed 2 noise inrun2 steps 50
+seed 2 noise inrun2 steps 75
+seed 2 noise inrun2 steps 100
+seed 2 noise inrun2 steps 125
+DONE 2 noise inrun2 15.39
+seed 2 noise adam2 steps 25
+seed 2 noise adam2 steps 50
+seed 2 noise adam2 steps 75
+seed 2 noise adam2 steps 100
+seed 2 noise adam2 steps 125
+DONE 2 noise adam2 15.42
+QUALITY 2 inrun2 3.5519515490159392
+QUALITY 2 adam2 3.5544831873849034
+QUALITY 2 graph 3.554864483885467
+QUALITY 2 adam1 3.555250545963645
+QUALITY 2 graph_diverse 3.553681157529354

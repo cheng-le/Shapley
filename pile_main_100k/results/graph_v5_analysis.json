@@ -1,0 +1,204 @@
+{
+  "protocol": {
+    "version": "graph_v5_semantic_diffusion_diverse",
+    "k": 10,
+    "alpha": 0.2,
+    "diffusion_steps": 2,
+    "lambda_fraction": 0.2,
+    "non_graph_rows_frozen": true,
+    "seeds": [
+      0,
+      1,
+      2
+    ]
+  },
+  "score_stability": {
+    "Graph Adam-aware 1st Order In-Run": {
+      "adam_pairwise_spearman": [
+        0.16580121701735975,
+        0.16313753109224002,
+        0.164519979767459
+      ],
+      "graph_pairwise_spearman": [
+        0.22672098986969347,
+        0.22511951944512182,
+        0.2255872049674616
+      ],
+      "adam_mean_spearman": 0.16448624262568626,
+      "graph_mean_spearman": 0.22580923809409228,
+      "mean_delta": 0.06132299546840603
+    },
+    "Graph Adam-aware 2nd Order In-Run": {
+      "adam_pairwise_spearman": [
+        0.16638101304603145,
+        0.1639776734958407,
+        0.1654823764009312
+      ],
+      "graph_pairwise_spearman": [
+        0.22754811680347684,
+        0.22625461374376704,
+        0.22661386720815374
+      ],
+      "adam_mean_spearman": 0.1652803543142678,
+      "graph_mean_spearman": 0.2268055325851325,
+      "mean_delta": 0.061525178270864705
+    }
+  },
+  "selection_vs_adam": {
+    "Graph Adam-aware 1st Order In-Run": {
+      "20": {
+        "graph_mean": 0.43801699698112345,
+        "graph_std": 0.0002666225705797276,
+        "adam_mean": 0.4385540691906598,
+        "adam_std": 5.1295001368699454e-05,
+        "mean_delta": -0.00053707220953636
+      },
+      "40": {
+        "graph_mean": 0.44132971746663885,
+        "graph_std": 0.00037645029931019443,
+        "adam_mean": 0.4417967486748297,
+        "adam_std": 0.00010975529700695203,
+        "mean_delta": -0.0004670312081908601
+      },
+      "60": {
+        "graph_mean": 0.44283423100726077,
+        "graph_std": 0.00024953456681299214,
+        "adam_mean": 0.4430410708393593,
+        "adam_std": 7.333131914299704e-05,
+        "mean_delta": -0.00020683983209851542
+      },
+      "80": {
+        "graph_mean": 0.44356719914243553,
+        "graph_std": 0.00038483609458626357,
+        "adam_mean": 0.4436632319216241,
+        "adam_std": 7.057865191878484e-05,
+        "mean_delta": -9.603277918857067e-05
+      }
+    },
+    "Graph Adam-aware 2nd Order In-Run": {
+      "20": {
+        "graph_mean": 0.437771306281091,
+        "graph_std": 2.9474989847489516e-05,
+        "adam_mean": 0.4380334128408138,
+        "adam_std": 0.00020942395342856394,
+        "mean_delta": -0.00026210655972280783
+      },
+      "40": {
+        "graph_mean": 0.44173683078695986,
+        "graph_std": 0.0001532151790098732,
+        "adam_mean": 0.44142903341776557,
+        "adam_std": 0.00015521598277269485,
+        "mean_delta": 0.0003077973691942848
+      },
+      "60": {
+        "graph_mean": 0.44274585896259433,
+        "graph_std": 0.0002517398830587212,
+        "adam_mean": 0.4426063241552262,
+        "adam_std": 9.67011959834528e-05,
+        "mean_delta": 0.00013953480736811352
+      },
+      "80": {
+        "graph_mean": 0.44346979837493933,
+        "graph_std": 0.00026691327451492866,
+        "adam_mean": 0.4435105644265038,
+        "adam_std": 0.00018947818344573287,
+        "mean_delta": -4.0766051564444794e-05
+      }
+    }
+  },
+  "diversity": {
+    "Graph Adam-aware 1st Order In-Run": {
+      "20": {
+        "mean_relative_edge_mass_reduction_vs_topk": 0.06847032973573242,
+        "per_seed_reduction": [
+          0.0700356105545854,
+          0.06783697172174497,
+          0.06753840693086688
+        ]
+      },
+      "40": {
+        "mean_relative_edge_mass_reduction_vs_topk": 0.06936352021610075,
+        "per_seed_reduction": [
+          0.06891875407491532,
+          0.06969430939250365,
+          0.06947749718088325
+        ]
+      },
+      "60": {
+        "mean_relative_edge_mass_reduction_vs_topk": 0.05484775591397099,
+        "per_seed_reduction": [
+          0.05496259105971735,
+          0.05453250668186316,
+          0.055048170000332464
+        ]
+      },
+      "80": {
+        "mean_relative_edge_mass_reduction_vs_topk": 0.02723413267103277,
+        "per_seed_reduction": [
+          0.026649393787599562,
+          0.02710528513368038,
+          0.027947719091818368
+        ]
+      }
+    },
+    "Graph Adam-aware 2nd Order In-Run": {
+      "20": {
+        "mean_relative_edge_mass_reduction_vs_topk": 0.07117290707321829,
+        "per_seed_reduction": [
+          0.07403189107364727,
+          0.06792634239249873,
+          0.07156048775350887
+        ]
+      },
+      "40": {
+        "mean_relative_edge_mass_reduction_vs_topk": 0.06959725590832451,
+        "per_seed_reduction": [
+          0.0710022272743348,
+          0.06801236967409208,
+          0.06977717077654666
+        ]
+      },
+      "60": {
+        "mean_relative_edge_mass_reduction_vs_topk": 0.054587881710889685,
+        "per_seed_reduction": [
+          0.054926246011349766,
+          0.053469412120919824,
+          0.055367987000399466
+        ]
+      },
+      "80": {
+        "mean_relative_edge_mass_reduction_vs_topk": 0.027165109370775615,
+        "per_seed_reduction": [
+          0.026590195872038924,
+          0.026942080668581725,
+          0.0279630515717062
+        ]
+      }
+    }
+  },
+  "display_audit": {
+    "exact_zero_std_cells": [
+      {
+        "method": "BM25",
+        "metric": "Domain nRecall@1K"
+      },
+      {
+        "method": "KNN-Shapley",
+        "metric": "Domain nRecall@1K"
+      }
+    ],
+    "explanation": "Exact zeros are retained only when all three deterministic runs are identical; no variance was fabricated."
+  },
+  "main_table_positions": {
+    "Graph Adam-aware 1st Order In-Run": {
+      "best_count": 0,
+      "second_count": 2,
+      "average_rank_mean": 4.472222222222221
+    },
+    "Graph Adam-aware 2nd Order In-Run": {
+      "best_count": 0,
+      "second_count": 0,
+      "average_rank_mean": 4.944444444444444
+    }
+  }
+}

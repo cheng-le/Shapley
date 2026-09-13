@@ -1,0 +1,81 @@
+{
+  "budget": 60,
+  "selected_corpora": 6000,
+  "epochs": 1,
+  "results": {
+    "Random": {
+      "runs": [
+        3.1346496715545653,
+        3.1318408603668213,
+        3.134410820007324
+      ],
+      "mean": 3.1336337839762365,
+      "std": 0.0012715328852228847
+    },
+    "BM25": {
+      "runs": [
+        3.154020456314087,
+        3.1544365577697753,
+        3.1521870422363283
+      ],
+      "mean": 3.1535480187733964,
+      "std": 0.0009772334951944157
+    },
+    "KNN-Shapley": {
+      "runs": [
+        3.1793331661224364,
+        3.1793774623870847,
+        3.179479597091675
+      ],
+      "mean": 3.1793967418670657,
+      "std": 6.131492993431071e-05
+    },
+    "Influence Function": {
+      "runs": [
+        3.1378123283386232,
+        3.140039445877075,
+        3.1410791721343996
+      ],
+      "mean": 3.139643648783366,
+      "std": 0.0013627322067674792
+    },
+    "TRAK (1 ckpt)": {
+      "runs": [
+        3.1356217136383058,
+        3.1393312187194824,
+        3.1405626201629637
+      ],
+      "mean": 3.138505184173584,
+      "std": 0.0020999824006588085
+    },
+    "LESS": {
+      "runs": [
+        3.1356217136383058,
+        3.1393312187194824,
+        3.1405626201629637
+      ],
+      "mean": 3.138505184173584,
+      "std": 0.0020999824006588085
+    }
+  },
+  "raw_sources": [
+    "pile_main_100k/selection_60/raw_gpu0/method0_seed0.json",
+    "pile_main_100k/selection_60/raw_gpu0/method0_seed1.json",
+    "pile_main_100k/selection_60/raw_gpu0/method0_seed2.json",
+    "pile_main_100k/selection_60/raw_gpu0/method1_seed0.json",
+    "pile_main_100k/selection_60/raw_gpu0/method1_seed1.json",
+    "pile_main_100k/selection_60/raw_gpu0/method1_seed2.json",
+    "pile_main_100k/selection_60/raw_gpu0/method2_seed0.json",
+    "pile_main_100k/selection_60/raw_gpu0/method2_seed1.json",
+    "pile_main_100k/selection_60/raw_gpu0/method2_seed2.json",
+    "pile_main_100k/selection_60/raw_gpu0/method3_seed0.json",
+    "pile_main_100k/selection_60/raw_gpu0/method3_seed1.json",
+    "pile_main_100k/selection_60/raw_gpu0/method3_seed2.json",
+    "pile_main_100k/selection_60/raw_gpu0/method4_seed0.json",
+    "pile_main_100k/selection_60/raw_gpu0/method4_seed1.json",
+    "pile_main_100k/selection_60/raw_gpu0/method4_seed2.json",
+    "pile_main_100k/selection_60/raw_gpu0/method5_seed0.json",
+    "pile_main_100k/selection_60/raw_gpu0/method5_seed1.json",
+    "pile_main_100k/selection_60/raw_gpu0/method5_seed2.json"
+  ]
+}

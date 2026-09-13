@@ -1,0 +1,12 @@
+{
+  "budget": 60,
+  "selected_corpora": 60000,
+  "epochs": 1,
+  "primary_metric": "validation_token_accuracy",
+  "method": "Influence Function",
+  "seed": 2,
+  "accuracy": 0.442239156093485,
+  "val_loss": 3.15719598236084,
+  "score_cache": "pile_main_100k/cache/clean_seed2.npz",
+  "token_cache": "pile_main_100k/token_cache"
+}

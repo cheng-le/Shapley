@@ -1,0 +1,217 @@
+method,metric,seed,value
+Random,Noise AUROC,0,0.49953415944444446
+Random,Noise AUROC,1,0.4978673388888889
+Random,Noise AUROC,2,0.4989677888888889
+Random,Domain nRecall@1K,0,0.07727162188115802
+Random,Domain nRecall@1K,1,0.07698945150218092
+Random,Domain nRecall@1K,2,0.07735430922136935
+Random,20% Val. Accuracy (%),0,43.83494181398533
+Random,20% Val. Accuracy (%),1,43.83272567292713
+Random,20% Val. Accuracy (%),2,43.888621675172814
+Random,40% Val. Accuracy (%),0,44.19986637490212
+Random,40% Val. Accuracy (%),1,44.16522891095545
+Random,40% Val. Accuracy (%),2,44.18033150187058
+Random,60% Val. Accuracy (%),0,44.317650168180485
+Random,60% Val. Accuracy (%),1,44.273245267718046
+Random,60% Val. Accuracy (%),2,44.294996281807784
+Random,80% Val. Accuracy (%),0,44.35614535915439
+Random,80% Val. Accuracy (%),1,44.31124798290124
+Random,80% Val. Accuracy (%),2,44.36681566795313
+BM25,Noise AUROC,0,0.4584739594444444
+BM25,Noise AUROC,1,0.4605102961111111
+BM25,Noise AUROC,2,0.46100564
+BM25,Domain nRecall@1K,0,0.7957433271799962
+BM25,Domain nRecall@1K,1,0.7957433271799962
+BM25,Domain nRecall@1K,2,0.7957433271799962
+BM25,20% Val. Accuracy (%),0,43.06971651451901
+BM25,20% Val. Accuracy (%),1,43.08793811877531
+BM25,20% Val. Accuracy (%),2,43.096720603709656
+BM25,40% Val. Accuracy (%),0,43.43094750700547
+BM25,40% Val. Accuracy (%),1,43.50063283139106
+BM25,40% Val. Accuracy (%),2,43.48011300677811
+BM25,60% Val. Accuracy (%),0,43.73414843548649
+BM25,60% Val. Accuracy (%),1,43.768293423642454
+BM25,60% Val. Accuracy (%),2,43.71830713088529
+BM25,80% Val. Accuracy (%),0,44.00312229651311
+BM25,80% Val. Accuracy (%),1,43.897157922211804
+BM25,80% Val. Accuracy (%),2,43.890263261141854
+KNN-Shapley,Noise AUROC,0,0.8573480355555556
+KNN-Shapley,Noise AUROC,1,0.8576591122222222
+KNN-Shapley,Noise AUROC,2,0.8571802044444444
+KNN-Shapley,Domain nRecall@1K,0,0.5849839676123983
+KNN-Shapley,Domain nRecall@1K,1,0.5849839676123983
+KNN-Shapley,Domain nRecall@1K,2,0.5849839676123983
+KNN-Shapley,20% Val. Accuracy (%),0,42.727035443482656
+KNN-Shapley,20% Val. Accuracy (%),1,42.57412171046692
+KNN-Shapley,20% Val. Accuracy (%),2,42.62837612674357
+KNN-Shapley,40% Val. Accuracy (%),0,43.0198123010603
+KNN-Shapley,40% Val. Accuracy (%),1,43.00626921681575
+KNN-Shapley,40% Val. Accuracy (%),2,42.98862216764861
+KNN-Shapley,60% Val. Accuracy (%),0,43.269333368353834
+KNN-Shapley,60% Val. Accuracy (%),1,43.29453171297854
+KNN-Shapley,60% Val. Accuracy (%),2,43.29059190665285
+KNN-Shapley,80% Val. Accuracy (%),0,43.679401543419125
+KNN-Shapley,80% Val. Accuracy (%),1,43.63171347101862
+KNN-Shapley,80% Val. Accuracy (%),2,43.57483251719151
+Influence Function,Noise AUROC,0,0.5075035705555556
+Influence Function,Noise AUROC,1,0.503059505
+Influence Function,Noise AUROC,2,0.5087212411111112
+Influence Function,Domain nRecall@1K,0,0.07989839745996684
+Influence Function,Domain nRecall@1K,1,0.122621771788722
+Influence Function,Domain nRecall@1K,2,0.08835172731834931
+Influence Function,20% Val. Accuracy (%),0,43.54914169677609
+Influence Function,20% Val. Accuracy (%),1,43.527144444791
+Influence Function,20% Val. Accuracy (%),2,43.66594053847303
+Influence Function,40% Val. Accuracy (%),0,43.965037502031464
+Influence Function,40% Val. Accuracy (%),1,43.993683177191144
+Influence Function,40% Val. Accuracy (%),2,44.00829329231557
+Influence Function,60% Val. Accuracy (%),0,44.135598284214346
+Influence Function,60% Val. Accuracy (%),1,44.13994848703229
+Influence Function,60% Val. Accuracy (%),2,44.2239156093485
+Influence Function,80% Val. Accuracy (%),0,44.30853936605233
+Influence Function,80% Val. Accuracy (%),1,44.25937386627969
+Influence Function,80% Val. Accuracy (%),2,44.228019574271094
+TRAK (1 ckpt),Noise AUROC,0,0.5165720211111111
+TRAK (1 ckpt),Noise AUROC,1,0.5090797288888889
+TRAK (1 ckpt),Noise AUROC,2,0.5213268061111112
+TRAK (1 ckpt),Domain nRecall@1K,0,0.2633914560748544
+TRAK (1 ckpt),Domain nRecall@1K,1,0.274936385277964
+TRAK (1 ckpt),Domain nRecall@1K,2,0.28520133899405514
+TRAK (1 ckpt),20% Val. Accuracy (%),0,43.55554388205533
+TRAK (1 ckpt),20% Val. Accuracy (%),1,43.54134416342317
+TRAK (1 ckpt),20% Val. Accuracy (%),2,43.631138915929455
+TRAK (1 ckpt),40% Val. Accuracy (%),0,43.95617293779866
+TRAK (1 ckpt),40% Val. Accuracy (%),1,43.96372423325624
+TRAK (1 ckpt),40% Val. Accuracy (%),2,44.01518795338553
+TRAK (1 ckpt),60% Val. Accuracy (%),0,44.145611958625466
+TRAK (1 ckpt),60% Val. Accuracy (%),1,44.147910178982116
+TRAK (1 ckpt),60% Val. Accuracy (%),2,44.19650112366559
+TRAK (1 ckpt),80% Val. Accuracy (%),0,44.300577674102506
+TRAK (1 ckpt),80% Val. Accuracy (%),1,44.277759629132895
+TRAK (1 ckpt),80% Val. Accuracy (%),2,44.28284854563691
+LESS,Noise AUROC,0,0.5165720177777777
+LESS,Noise AUROC,1,0.5090797222222222
+LESS,Noise AUROC,2,0.5213268127777778
+LESS,Domain nRecall@1K,0,0.2633914560748544
+LESS,Domain nRecall@1K,1,0.274936385277964
+LESS,Domain nRecall@1K,2,0.28520133899405514
+LESS,20% Val. Accuracy (%),0,43.55496932696617
+LESS,20% Val. Accuracy (%),1,43.54134416342317
+LESS,20% Val. Accuracy (%),2,43.631138915929455
+LESS,40% Val. Accuracy (%),0,43.95617293779866
+LESS,40% Val. Accuracy (%),1,43.96372423325624
+LESS,40% Val. Accuracy (%),2,44.01518795338553
+LESS,60% Val. Accuracy (%),0,44.145611958625466
+LESS,60% Val. Accuracy (%),1,44.147910178982116
+LESS,60% Val. Accuracy (%),2,44.19650112366559
+LESS,80% Val. Accuracy (%),0,44.300577674102506
+LESS,80% Val. Accuracy (%),1,44.277759629132895
+LESS,80% Val. Accuracy (%),2,44.28284854563691
+1st Order In-Run Data Shapley,Noise AUROC,0,0.4959161338888889
+1st Order In-Run Data Shapley,Noise AUROC,1,0.4932565305555555
+1st Order In-Run Data Shapley,Noise AUROC,2,0.5038184527777778
+1st Order In-Run Data Shapley,Domain nRecall@1K,0,0.07989839745996684
+1st Order In-Run Data Shapley,Domain nRecall@1K,1,0.122621771788722
+1st Order In-Run Data Shapley,Domain nRecall@1K,2,0.08835172731834931
+1st Order In-Run Data Shapley,20% Val. Accuracy (%),0,43.75056429517686
+1st Order In-Run Data Shapley,20% Val. Accuracy (%),1,43.74432626849452
+1st Order In-Run Data Shapley,20% Val. Accuracy (%),2,43.79423048195322
+1st Order In-Run Data Shapley,40% Val. Accuracy (%),0,44.12944233683046
+1st Order In-Run Data Shapley,40% Val. Accuracy (%),1,44.14175423159823
+1st Order In-Run Data Shapley,40% Val. Accuracy (%),2,44.20659687737517
+1st Order In-Run Data Shapley,60% Val. Accuracy (%),0,44.27414814000102
+1st Order In-Run Data Shapley,60% Val. Accuracy (%),1,44.30977055552911
+1st Order In-Run Data Shapley,60% Val. Accuracy (%),2,44.26241080032241
+1st Order In-Run Data Shapley,80% Val. Accuracy (%),0,44.34120692683616
+1st Order In-Run Data Shapley,80% Val. Accuracy (%),1,44.3591822931971
+1st Order In-Run Data Shapley,80% Val. Accuracy (%),2,44.337677517002724
+2nd Order In-Run Data Shapley,Noise AUROC,0,0.49625407555555556
+2nd Order In-Run Data Shapley,Noise AUROC,1,0.4935864033333333
+2nd Order In-Run Data Shapley,Noise AUROC,2,0.5040978788888889
+2nd Order In-Run Data Shapley,Domain nRecall@1K,0,0.07989839745996684
+2nd Order In-Run Data Shapley,Domain nRecall@1K,1,0.122621771788722
+2nd Order In-Run Data Shapley,Domain nRecall@1K,2,0.08835172731834931
+2nd Order In-Run Data Shapley,20% Val. Accuracy (%),0,43.782985618065325
+2nd Order In-Run Data Shapley,20% Val. Accuracy (%),1,43.780605318410224
+2nd Order In-Run Data Shapley,20% Val. Accuracy (%),2,43.81524278235689
+2nd Order In-Run Data Shapley,40% Val. Accuracy (%),0,44.12853946454749
+2nd Order In-Run Data Shapley,40% Val. Accuracy (%),1,44.15316325408303
+2nd Order In-Run Data Shapley,40% Val. Accuracy (%),2,44.14733562389296
+2nd Order In-Run Data Shapley,60% Val. Accuracy (%),0,44.296309550583004
+2nd Order In-Run Data Shapley,60% Val. Accuracy (%),1,44.316747295897514
+2nd Order In-Run Data Shapley,60% Val. Accuracy (%),2,44.29754074005979
+2nd Order In-Run Data Shapley,80% Val. Accuracy (%),0,44.339975737359374
+2nd Order In-Run Data Shapley,80% Val. Accuracy (%),1,44.38635054098465
+2nd Order In-Run Data Shapley,80% Val. Accuracy (%),2,44.36952428480203
+Adam-aware 1st Order In-Run,Noise AUROC,0,0.5608098272222223
+Adam-aware 1st Order In-Run,Noise AUROC,1,0.5571076244444445
+Adam-aware 1st Order In-Run,Noise AUROC,2,0.5604899216666667
+Adam-aware 1st Order In-Run,Domain nRecall@1K,0,0.24288125018669574
+Adam-aware 1st Order In-Run,Domain nRecall@1K,1,0.2521755947195793
+Adam-aware 1st Order In-Run,Domain nRecall@1K,2,0.22710112551009257
+Adam-aware 1st Order In-Run,20% Val. Accuracy (%),0,43.862520458265145
+Adam-aware 1st Order In-Run,20% Val. Accuracy (%),1,43.85308133894318
+Adam-aware 1st Order In-Run,20% Val. Accuracy (%),2,43.850618959989625
+Adam-aware 1st Order In-Run,40% Val. Accuracy (%),0,44.16416188007558
+Adam-aware 1st Order In-Run,40% Val. Accuracy (%),1,44.186979925045186
+Adam-aware 1st Order In-Run,40% Val. Accuracy (%),2,44.18788279732816
+Adam-aware 1st Order In-Run,60% Val. Accuracy (%),0,44.3116583793935
+Adam-aware 1st Order In-Run,60% Val. Accuracy (%),1,44.30648738359103
+Adam-aware 1st Order In-Run,60% Val. Accuracy (%),2,44.294175488823264
+Adam-aware 1st Order In-Run,80% Val. Accuracy (%),0,44.37625478727508
+Adam-aware 1st Order In-Run,80% Val. Accuracy (%),1,44.360495561972336
+Adam-aware 1st Order In-Run,80% Val. Accuracy (%),2,44.36221922723982
+Adam-aware 2nd Order In-Run,Noise AUROC,0,0.5603746949999999
+Adam-aware 2nd Order In-Run,Noise AUROC,1,0.5569688227777778
+Adam-aware 2nd Order In-Run,Noise AUROC,2,0.5600849405555555
+Adam-aware 2nd Order In-Run,Domain nRecall@1K,0,0.24288125018669574
+Adam-aware 2nd Order In-Run,Domain nRecall@1K,1,0.2521755947195793
+Adam-aware 2nd Order In-Run,Domain nRecall@1K,2,0.22710112551009257
+Adam-aware 2nd Order In-Run,20% Val. Accuracy (%),0,43.82394318799278
+Adam-aware 2nd Order In-Run,20% Val. Accuracy (%),1,43.77461352962324
+Adam-aware 2nd Order In-Run,20% Val. Accuracy (%),2,43.81146713462811
+Adam-aware 2nd Order In-Run,40% Val. Accuracy (%),0,44.137896504570996
+Adam-aware 2nd Order In-Run,40% Val. Accuracy (%),1,44.126897878578454
+Adam-aware 2nd Order In-Run,40% Val. Accuracy (%),2,44.16391564218022
+Adam-aware 2nd Order In-Run,60% Val. Accuracy (%),0,44.252068808717475
+Adam-aware 2nd Order In-Run,60% Val. Accuracy (%),1,44.25568029784936
+Adam-aware 2nd Order In-Run,60% Val. Accuracy (%),2,44.27414814000102
+Adam-aware 2nd Order In-Run,80% Val. Accuracy (%),0,44.368785571115964
+Adam-aware 2nd Order In-Run,80% Val. Accuracy (%),1,44.32479106714579
+Adam-aware 2nd Order In-Run,80% Val. Accuracy (%),2,44.359592689689364
+Graph Adam-aware 1st Order In-Run,Noise AUROC,0,0.5639989277777777
+Graph Adam-aware 1st Order In-Run,Noise AUROC,1,0.5605278027777778
+Graph Adam-aware 1st Order In-Run,Noise AUROC,2,0.5633614183333334
+Graph Adam-aware 1st Order In-Run,Domain nRecall@1K,0,0.2627604525721537
+Graph Adam-aware 1st Order In-Run,Domain nRecall@1K,1,0.2618803547684775
+Graph Adam-aware 1st Order In-Run,Domain nRecall@1K,2,0.22685660384153328
+Graph Adam-aware 1st Order In-Run,20% Val. Accuracy (%),0,43.79685701950368
+Graph Adam-aware 1st Order In-Run,20% Val. Accuracy (%),1,43.776090956995375
+Graph Adam-aware 1st Order In-Run,20% Val. Accuracy (%),2,43.824189425888136
+Graph Adam-aware 1st Order In-Run,40% Val. Accuracy (%),0,44.13198679508247
+Graph Adam-aware 1st Order In-Run,40% Val. Accuracy (%),1,44.12098816908992
+Graph Adam-aware 1st Order In-Run,40% Val. Accuracy (%),2,44.143231658970365
+Graph Adam-aware 1st Order In-Run,60% Val. Accuracy (%),0,44.31329996536253
+Graph Adam-aware 1st Order In-Run,60% Val. Accuracy (%),1,44.28046824598181
+Graph Adam-aware 1st Order In-Run,60% Val. Accuracy (%),2,44.330864935231226
+Graph Adam-aware 1st Order In-Run,80% Val. Accuracy (%),0,44.36492784408873
+Graph Adam-aware 1st Order In-Run,80% Val. Accuracy (%),1,44.33070077663432
+Graph Adam-aware 1st Order In-Run,80% Val. Accuracy (%),2,44.33833415139034
+Graph Adam-aware 2nd Order In-Run,Noise AUROC,0,0.56349244
+Graph Adam-aware 2nd Order In-Run,Noise AUROC,1,0.5603653983333333
+Graph Adam-aware 2nd Order In-Run,Noise AUROC,2,0.5628898166666667
+Graph Adam-aware 2nd Order In-Run,Domain nRecall@1K,0,0.2627604525721537
+Graph Adam-aware 2nd Order In-Run,Domain nRecall@1K,1,0.2618803547684775
+Graph Adam-aware 2nd Order In-Run,Domain nRecall@1K,2,0.22685660384153328
+Graph Adam-aware 2nd Order In-Run,20% Val. Accuracy (%),0,43.80884059707765
+Graph Adam-aware 2nd Order In-Run,20% Val. Accuracy (%),1,43.834285179597714
+Graph Adam-aware 2nd Order In-Run,20% Val. Accuracy (%),2,43.83108408695809
+Graph Adam-aware 2nd Order In-Run,40% Val. Accuracy (%),0,44.15603602952885
+Graph Adam-aware 2nd Order In-Run,40% Val. Accuracy (%),1,44.09570774516676
+Graph Adam-aware 2nd Order In-Run,40% Val. Accuracy (%),2,44.125338371907866
+Graph Adam-aware 2nd Order In-Run,60% Val. Accuracy (%),0,44.269141302795454
+Graph Adam-aware 2nd Order In-Run,60% Val. Accuracy (%),1,44.27652843965612
+Graph Adam-aware 2nd Order In-Run,60% Val. Accuracy (%),2,44.27981161159419
+Graph Adam-aware 2nd Order In-Run,80% Val. Accuracy (%),0,44.31962007134332
+Graph Adam-aware 2nd Order In-Run,80% Val. Accuracy (%),1,44.36607695426706
+Graph Adam-aware 2nd Order In-Run,80% Val. Accuracy (%),2,44.363614575313505

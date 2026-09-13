@@ -1,0 +1,7 @@
+{
+  "fingerprint": "4db35bdcf9cd4d40",
+  "train_corpora": 100000,
+  "val_corpora": 10000,
+  "sequence_length": 128,
+  "tokenizer": "gpt2"
+}

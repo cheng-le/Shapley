@@ -1,0 +1,48 @@
+﻿# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE
+.vscode/
+.idea/
+
+# Environments
+venv/
+.venv/
+env/
+.env/
+
+# Logs and outputs
+logs/
+outputs/
+wandb/
+runs/
+checkpoints/
+
+# Large model files
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# Large data / arrays
+*.npy
+*.npz
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# OS files
+.DS_Store
+Thumbs.db
+
+data/Pile_large/
+data/Pile_large_backup_20260902_211657/
+
+data/
+
+data/

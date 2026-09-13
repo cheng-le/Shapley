@@ -1,0 +1,36 @@
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 19691.57it/s]
+budget=20 method=1st Order In-Run Data Shapley seed=0 val_loss=3.196141
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 16811.75it/s]
+budget=20 method=1st Order In-Run Data Shapley seed=1 val_loss=3.194823
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 14619.81it/s]
+budget=20 method=1st Order In-Run Data Shapley seed=2 val_loss=3.192478
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 14590.26it/s]
+budget=20 method=2nd Order In-Run Data Shapley seed=0 val_loss=3.194980
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 20711.92it/s]
+budget=20 method=2nd Order In-Run Data Shapley seed=1 val_loss=3.196485
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 14859.89it/s]
+budget=20 method=2nd Order In-Run Data Shapley seed=2 val_loss=3.194339
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 17272.04it/s]
+budget=20 method=Adam-aware 1st Order In-Run seed=0 val_loss=3.193642
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 17609.13it/s]
+budget=20 method=Adam-aware 1st Order In-Run seed=1 val_loss=3.195361
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 18876.60it/s]
+budget=20 method=Adam-aware 1st Order In-Run seed=2 val_loss=3.194782
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 15462.87it/s]
+budget=20 method=Adam-aware 2nd Order In-Run seed=0 val_loss=3.193198
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 13974.09it/s]
+budget=20 method=Adam-aware 2nd Order In-Run seed=1 val_loss=3.192753
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 17182.63it/s]
+budget=20 method=Adam-aware 2nd Order In-Run seed=2 val_loss=3.193629
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 15812.64it/s]
+budget=20 method=Graph Adam-aware 1st Order In-Run seed=0 val_loss=3.191398
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 21259.53it/s]
+budget=20 method=Graph Adam-aware 1st Order In-Run seed=1 val_loss=3.191127
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 15729.70it/s]
+budget=20 method=Graph Adam-aware 1st Order In-Run seed=2 val_loss=3.193192
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 17155.57it/s]
+budget=20 method=Graph Adam-aware 2nd Order In-Run seed=0 val_loss=3.192186
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 15010.45it/s]
+budget=20 method=Graph Adam-aware 2nd Order In-Run seed=1 val_loss=3.192160
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 19533.56it/s]
+budget=20 method=Graph Adam-aware 2nd Order In-Run seed=2 val_loss=3.192257

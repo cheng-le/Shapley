@@ -1,0 +1,420 @@
+{
+  "protocol": {
+    "paper_target": {
+      "model": "GPT2 124M",
+      "dataset": "uniform random Pile subset, about 10B tokens",
+      "sequence_length": 1024,
+      "batch_size": 16,
+      "max_learning_rate": 0.0006,
+      "min_learning_rate": 6e-05,
+      "optimizer": "AdamW",
+      "weight_decay": 0.1,
+      "betas": [
+        0.9,
+        0.95
+      ],
+      "gradient_clip": 1.0,
+      "warmup_steps": 2000,
+      "training_steps": 500000
+    },
+    "local_executable": {
+      "model_name": "gpt2",
+      "data_path": "data/Pile_large/train.jsonl",
+      "sequence_length": 128,
+      "batch_size": 4,
+      "learning_rate": 0.0006,
+      "min_learning_rate": 6e-05,
+      "warmup_steps": 20,
+      "weight_decay": 0.1,
+      "beta1": 0.9,
+      "beta2": 0.95,
+      "grad_clip": 1.0,
+      "graph_k": 10,
+      "graph_alpha": 0.2,
+      "graph_lambda": 0.05,
+      "seed": 0
+    },
+    "approximation": "GPT2 backbone frozen; attribution and updates use final LayerNorm's 1,536 parameters."
+  },
+  "actual": {
+    "corpus_count": 512,
+    "target_indices": [
+      0,
+      1,
+      2
+    ],
+    "epochs": 1,
+    "steps": 128,
+    "domains": [
+      "ArXiv",
+      "DM Mathematics",
+      "Enron Emails",
+      "EuroParl",
+      "FreeLaw",
+      "Github",
+      "Gutenberg (PG-19)",
+      "HackerNews",
+      "NIH ExPorter",
+      "PhilPapers",
+      "Pile-CC",
+      "PubMed Abstracts",
+      "PubMed Central",
+      "StackExchange",
+      "USPTO Backgrounds",
+      "Ubuntu IRC",
+      "Wikipedia (en)"
+    ]
+  },
+  "paper_reference": {
+    "1st Order In-Run Data Shapley": {
+      "Partial exactly the same": 1.0,
+      "Paraphrase": 1.0,
+      "Significant paraphrase": 32.3,
+      "Similar topic": 145.6
+    },
+    "2nd Order In-Run Data Shapley": {
+      "Partial exactly the same": 1.0,
+      "Paraphrase": 1.0,
+      "Significant paraphrase": 32.0,
+      "Similar topic": 141.6
+    },
+    "Influence Function": {
+      "Partial exactly the same": 1.0,
+      "Paraphrase": 1.0,
+      "Significant paraphrase": 39.3,
+      "Similar topic": 292.0
+    },
+    "BM25": {
+      "Partial exactly the same": 1.0,
+      "Paraphrase": 1.0,
+      "Significant paraphrase": 1.6,
+      "Similar topic": 20917.3
+    }
+  },
+  "queries": [
+    {
+      "group": "Wikipedia musicians",
+      "category": "Partial exactly the same",
+      "target_index": 0
+    },
+    {
+      "group": "Wikipedia musicians",
+      "category": "Paraphrase",
+      "target_index": 0
+    },
+    {
+      "group": "Wikipedia musicians",
+      "category": "Significant paraphrase",
+      "target_index": 0
+    },
+    {
+      "group": "Wikipedia musicians",
+      "category": "Similar topic",
+      "target_index": 0
+    },
+    {
+      "group": "CNN Obama election",
+      "category": "Partial exactly the same",
+      "target_index": 1
+    },
+    {
+      "group": "CNN Obama election",
+      "category": "Paraphrase",
+      "target_index": 1
+    },
+    {
+      "group": "CNN Obama election",
+      "category": "Significant paraphrase",
+      "target_index": 1
+    },
+    {
+      "group": "CNN Obama election",
+      "category": "Similar topic",
+      "target_index": 1
+    },
+    {
+      "group": "Princeton Haber-Bosch",
+      "category": "Partial exactly the same",
+      "target_index": 2
+    },
+    {
+      "group": "Princeton Haber-Bosch",
+      "category": "Paraphrase",
+      "target_index": 2
+    },
+    {
+      "group": "Princeton Haber-Bosch",
+      "category": "Significant paraphrase",
+      "target_index": 2
+    },
+    {
+      "group": "Princeton Haber-Bosch",
+      "category": "Similar topic",
+      "target_index": 2
+    }
+  ],
+  "summary": {
+    "1st Order In-Run Data Shapley": {
+      "average_rank": {
+        "Partial exactly the same": 141.66666666666666,
+        "Paraphrase": 144.0,
+        "Significant paraphrase": 136.0,
+        "Similar topic": 146.66666666666666
+      },
+      "query_ranks": [
+        165.0,
+        27.0,
+        49.0,
+        21.0,
+        132.0,
+        311.0,
+        189.0,
+        305.0,
+        128.0,
+        94.0,
+        170.0,
+        114.0
+      ]
+    },
+    "2nd Order In-Run Data Shapley": {
+      "average_rank": {
+        "Partial exactly the same": 141.66666666666666,
+        "Paraphrase": 144.0,
+        "Significant paraphrase": 136.0,
+        "Similar topic": 146.66666666666666
+      },
+      "query_ranks": [
+        165.0,
+        27.0,
+        49.0,
+        21.0,
+        132.0,
+        311.0,
+        189.0,
+        305.0,
+        128.0,
+        94.0,
+        170.0,
+        114.0
+      ]
+    },
+    "Influence Function": {
+      "average_rank": {
+        "Partial exactly the same": 1.0,
+        "Paraphrase": 1.0,
+        "Significant paraphrase": 5.666666666666667,
+        "Similar topic": 26.0
+      },
+      "query_ranks": [
+        1.0,
+        1.0,
+        2.0,
+        4.0,
+        1.0,
+        1.0,
+        14.0,
+        13.0,
+        1.0,
+        1.0,
+        1.0,
+        61.0
+      ]
+    },
+    "BM25": {
+      "average_rank": {
+        "Partial exactly the same": 1.0,
+        "Paraphrase": 2.6666666666666665,
+        "Significant paraphrase": 2.3333333333333335,
+        "Similar topic": 231.33333333333334
+      },
+      "query_ranks": [
+        1.0,
+        1.0,
+        1.0,
+        176.0,
+        1.0,
+        6.0,
+        5.0,
+        137.0,
+        1.0,
+        1.0,
+        1.0,
+        381.0
+      ]
+    },
+    "Graph 1st Order In-Run (ours)": {
+      "average_rank": {
+        "Partial exactly the same": 1.0,
+        "Paraphrase": 1.0,
+        "Significant paraphrase": 1.3333333333333333,
+        "Similar topic": 26.666666666666668
+      },
+      "query_ranks": [
+        1.0,
+        1.0,
+        2.0,
+        3.0,
+        1.0,
+        1.0,
+        1.0,
+        19.0,
+        1.0,
+        1.0,
+        1.0,
+        58.0
+      ]
+    },
+    "Graph 2nd Order In-Run (ours)": {
+      "average_rank": {
+        "Partial exactly the same": 1.0,
+        "Paraphrase": 1.0,
+        "Significant paraphrase": 1.3333333333333333,
+        "Similar topic": 26.666666666666668
+      },
+      "query_ranks": [
+        1.0,
+        1.0,
+        2.0,
+        3.0,
+        1.0,
+        1.0,
+        1.0,
+        19.0,
+        1.0,
+        1.0,
+        1.0,
+        58.0
+      ]
+    }
+  },
+  "training_loss": [
+    4.440586090087891,
+    3.840006113052368,
+    4.300651550292969,
+    4.834417343139648,
+    4.052512168884277,
+    4.415061950683594,
+    3.593749523162842,
+    4.458972930908203,
+    3.594827175140381,
+    4.13585901260376,
+    3.999652862548828,
+    5.000754356384277,
+    4.620339393615723,
+    4.421781539916992,
+    4.054367542266846,
+    3.9190516471862793,
+    4.472182273864746,
+    4.5082292556762695,
+    4.096401214599609,
+    4.277076244354248,
+    4.326436996459961,
+    3.396101951599121,
+    4.881464958190918,
+    4.578336715698242,
+    4.015250205993652,
+    4.344315528869629,
+    3.749814748764038,
+    4.4288434982299805,
+    3.498626708984375,
+    4.19432258605957,
+    3.230956792831421,
+    3.9478108882904053,
+    4.155418395996094,
+    4.222511291503906,
+    4.163967132568359,
+    3.646466016769409,
+    4.205265998840332,
+    3.6758017539978027,
+    3.9882993698120117,
+    3.7745256423950195,
+    4.248887062072754,
+    4.539238929748535,
+    4.255504608154297,
+    3.3637096881866455,
+    3.994779109954834,
+    3.9903881549835205,
+    3.8803343772888184,
+    3.9532744884490967,
+    4.507957458496094,
+    3.975393295288086,
+    3.5305216312408447,
+    3.9325904846191406,
+    3.7377820014953613,
+    3.6154041290283203,
+    3.8920059204101562,
+    4.3392133712768555,
+    4.61985969543457,
+    3.9114718437194824,
+    3.6569461822509766,
+    3.29901123046875,
+    3.894686698913574,
+    4.7177324295043945,
+    4.313693523406982,
+    4.4738359451293945,
+    3.7785348892211914,
+    4.114252090454102,
+    4.155360221862793,
+    4.266061782836914,
+    3.311680793762207,
+    4.251741409301758,
+    3.4589033126831055,
+    4.134055137634277,
+    4.789207935333252,
+    3.9723427295684814,
+    4.919356346130371,
+    3.9479787349700928,
+    3.509821653366089,
+    3.377570152282715,
+    3.7629809379577637,
+    3.8358447551727295,
+    4.071201324462891,
+    4.322530746459961,
+    4.865236759185791,
+    4.265342712402344,
+    3.578420400619507,
+    4.604128837585449,
+    3.128227472305298,
+    3.8993008136749268,
+    4.785933971405029,
+    3.753187417984009,
+    3.0158958435058594,
+    4.490850448608398,
+    3.9222726821899414,
+    3.934229850769043,
+    4.199322700500488,
+    3.4340784549713135,
+    4.233768463134766,
+    4.039528846740723,
+    3.407320499420166,
+    3.3696885108947754,
+    3.829256534576416,
+    4.756736755371094,
+    3.6817076206207275,
+    3.921452045440674,
+    4.065125465393066,
+    5.09060001373291,
+    3.7877678871154785,
+    4.30776309967041,
+    4.464914321899414,
+    3.5160627365112305,
+    4.169188499450684,
+    4.222054481506348,
+    4.14644193649292,
+    3.973931312561035,
+    4.233877658843994,
+    3.5352373123168945,
+    5.143148422241211,
+    4.633833408355713,
+    3.839693069458008,
+    4.084619998931885,
+    3.3562886714935303,
+    3.0692923069000244,
+    4.625699996948242,
+    4.249053001403809,
+    3.9454617500305176,
+    4.053688049316406,
+    4.730068206787109,
+    3.4193766117095947
+  ]
+}

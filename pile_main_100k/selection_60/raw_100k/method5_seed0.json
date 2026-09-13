@@ -1,0 +1,12 @@
+{
+  "budget": 60,
+  "selected_corpora": 60000,
+  "epochs": 1,
+  "primary_metric": "validation_token_accuracy",
+  "method": "LESS",
+  "seed": 0,
+  "accuracy": 0.4414561195862547,
+  "val_loss": 3.161260371398926,
+  "score_cache": "pile_main_100k/cache/clean_seed0.npz",
+  "token_cache": "pile_main_100k/token_cache"
+}

@@ -1,0 +1,22 @@
+{
+  "budget": 10,
+  "selected_corpora": 10000,
+  "epochs": 1,
+  "primary_metric": "validation_token_accuracy",
+  "method": "2nd Order In-Run Data Shapley",
+  "seed": 0,
+  "accuracy": 0.43377438569906185,
+  "val_loss": 3.1647311973655214,
+  "score_cache": "pile_main_100k/cache/clean_seed0.npz",
+  "token_cache": "pile_main_100k/token_cache",
+  "selection": {
+    "strategy": "top_k"
+  },
+  "protocol_split": "pile_main_100k/protocol_v2_split.json",
+  "eval_part": "evaluation",
+  "lr_schedule": "constant",
+  "warmup_ratio": 0.02,
+  "min_lr_ratio": 0.1,
+  "optimizer_steps": 625,
+  "selected_indices_sha256": "7d4486b7d12704996611ade487d2ad394a28cc4f81723abf15289c8e877d32c6"
+}

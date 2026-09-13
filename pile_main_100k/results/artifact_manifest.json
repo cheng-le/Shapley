@@ -1,0 +1,26 @@
+{
+  "table_source": "main_table.csv",
+  "plot_source": "plot_data.csv",
+  "rank_source": "per_metric_ranks.csv",
+  "raw_sources": {
+    "noise": "../noise_auroc/results_graph_v2.json with frozen non-Graph rows",
+    "domain": "../domain_recall/results_graph_v2.json with frozen non-Graph rows",
+    "selection": "../selection_{20,40,60,80}/results_100k_graph_v2.json; Graph cells from raw_100k_graph_v2",
+    "dataset": "../../data/Pile_large/manifest.json"
+  },
+  "figure_formats": [
+    "png",
+    "pdf",
+    "svg"
+  ],
+  "display": {
+    "selection_accuracy_unit": "percent",
+    "std_ddof": 0,
+    "decimals": {
+      "auroc_recall_mean": 4,
+      "selection_accuracy_mean": 3,
+      "standard_deviation": 3
+    }
+  },
+  "graph_method_boundary": "Selection uses Graph v2 trajectory replay and symmetric-graph diversity; accuracy is displayed in percent while raw JSON remains a 0-1 proportion."
+}

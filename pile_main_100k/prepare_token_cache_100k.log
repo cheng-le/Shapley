@@ -1,0 +1,29 @@
+tokenize train=256/100,000
+tokenize train=5,376/100,000
+tokenize train=10,496/100,000
+tokenize train=15,616/100,000
+tokenize train=20,736/100,000
+tokenize train=25,856/100,000
+tokenize train=30,976/100,000
+tokenize train=36,096/100,000
+tokenize train=41,216/100,000
+tokenize train=46,336/100,000
+tokenize train=51,456/100,000
+tokenize train=56,576/100,000
+tokenize train=61,696/100,000
+tokenize train=66,816/100,000
+tokenize train=71,936/100,000
+tokenize train=77,056/100,000
+tokenize train=82,176/100,000
+tokenize train=87,296/100,000
+tokenize train=92,416/100,000
+tokenize train=97,536/100,000
+tokenize val=256/10,000
+tokenize val=5,376/10,000
+{
+  "fingerprint": "4db35bdcf9cd4d40",
+  "train_corpora": 100000,
+  "val_corpora": 10000,
+  "sequence_length": 128,
+  "tokenizer": "gpt2"
+}

@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "checks": [
+    "exact_vs_brute_force",
+    "ANN_no_self",
+    "ANN_weight_normalization",
+    "replay_bitwise_parity_6_cases",
+    "alpha_zero",
+    "no_history_first_order",
+    "lambda_zero_topk",
+    "nested_subsets"
+  ]
+}

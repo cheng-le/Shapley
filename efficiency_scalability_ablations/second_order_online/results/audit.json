@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "input_and_source_hashes": "unchanged",
+  "timing_cells": 24,
+  "measured_training_steps": 3000,
+  "utility_cells": 15,
+  "utility_evaluation_disjoint": true,
+  "graph_measured_hvp_calls": 0,
+  "graph_measured_create_graph_calls": 0,
+  "baseline_measured_hvp_calls": 1500,
+  "common_pretrained_evaluation_loss": 3.5461914455518126
+}

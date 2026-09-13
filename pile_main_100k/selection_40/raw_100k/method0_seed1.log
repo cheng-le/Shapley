@@ -1,0 +1,2 @@
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 20487.03it/s]
+budget=40 method=Random seed=1 val_accuracy=0.441652 val_loss=3.133435

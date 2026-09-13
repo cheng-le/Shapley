@@ -1,0 +1,14 @@
+{
+  "budget": 80,
+  "selected_corpora": 8000,
+  "epochs": 1,
+  "results": {
+    "2nd Order In-Run Data Shapley": {
+      "runs": [
+        3.121681224822998
+      ],
+      "mean": 3.121681224822998,
+      "std": 0.0
+    }
+  }
+}

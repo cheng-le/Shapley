@@ -1,0 +1,2 @@
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 20302.10it/s]
+budget=20 method=TRAK (1 ckpt) seed=0 val_accuracy=0.435555 val_loss=3.171262

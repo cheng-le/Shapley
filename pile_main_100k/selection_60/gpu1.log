@@ -1,0 +1,11 @@
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 14561.16it/s]
+budget=60 method=1st Order In-Run Data Shapley seed=0 val_loss=3.138090
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 17702.53it/s]
+budget=60 method=1st Order In-Run Data Shapley seed=1 val_loss=3.137597
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 13631.03it/s]
+budget=60 method=1st Order In-Run Data Shapley seed=2 val_loss=3.138037
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 17373.55it/s]
+budget=60 method=2nd Order In-Run Data Shapley seed=0 val_loss=3.137594
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 14682.05it/s]
+budget=60 method=2nd Order In-Run Data Shapley seed=1 val_loss=3.138751
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 15130.08it/s]

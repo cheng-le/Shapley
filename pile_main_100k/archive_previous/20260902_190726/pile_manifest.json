@@ -1,0 +1,57 @@
+{
+  "dataset": "monology/pile-uncopyrighted",
+  "sampling": "streaming shuffle with fixed-size random buffer, then deterministic split",
+  "seed": 2027,
+  "shuffle_buffer": 100000,
+  "splits": {
+    "train": {
+      "corpora": 50000,
+      "gpt2_tokens": 84109973,
+      "bytes": 282674506,
+      "domains": {
+        "ArXiv": 691,
+        "DM Mathematics": 524,
+        "Enron Emails": 239,
+        "EuroParl": 34,
+        "FreeLaw": 1409,
+        "Github": 5077,
+        "Gutenberg (PG-19)": 20,
+        "HackerNews": 452,
+        "NIH ExPorter": 499,
+        "PhilPapers": 13,
+        "Pile-CC": 14769,
+        "PubMed Abstracts": 8327,
+        "PubMed Central": 1643,
+        "StackExchange": 8422,
+        "USPTO Backgrounds": 3129,
+        "Ubuntu IRC": 2,
+        "Wikipedia (en)": 4750
+      }
+    },
+    "val": {
+      "corpora": 5000,
+      "gpt2_tokens": 8413215,
+      "bytes": 27962600,
+      "domains": {
+        "ArXiv": 72,
+        "DM Mathematics": 57,
+        "Enron Emails": 43,
+        "EuroParl": 3,
+        "FreeLaw": 150,
+        "Github": 498,
+        "Gutenberg (PG-19)": 1,
+        "HackerNews": 39,
+        "NIH ExPorter": 44,
+        "PhilPapers": 4,
+        "Pile-CC": 1458,
+        "PubMed Abstracts": 837,
+        "PubMed Central": 159,
+        "StackExchange": 822,
+        "USPTO Backgrounds": 338,
+        "Ubuntu IRC": 1,
+        "Wikipedia (en)": 474
+      }
+    }
+  },
+  "unique_sha256": 55000
+}

@@ -1,0 +1,7 @@
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 19469.23it/s]
+budget=60 method=Random seed=0 val_loss=3.134650
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 14514.52it/s]
+budget=60 method=Random seed=1 val_loss=3.131841
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 18435.41it/s]
+budget=60 method=Random seed=2 val_loss=3.134526
+malloc(): unsorted double linked list corrupted

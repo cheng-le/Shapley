@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "timing_cells": 24,
+  "utility_cells": 15,
+  "matched_trajectories": 6,
+  "graph_hvp_calls": 0,
+  "graph_create_graph_calls": 0
+}

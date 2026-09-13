@@ -1,0 +1,2 @@
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 14633.59it/s]
+budget=40 method=Adam-aware 1st Order In-Run seed=2 val_accuracy=0.441879 val_loss=3.130653

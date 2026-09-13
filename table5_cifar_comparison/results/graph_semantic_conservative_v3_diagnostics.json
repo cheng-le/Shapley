@@ -1,0 +1,169 @@
+{
+  "cache_version": "semantic-conservative-v3",
+  "feature_size": 128,
+  "k": 10,
+  "smoothing": 0.2,
+  "consistency_penalty": 1.0,
+  "runs": [
+    {
+      "run": 0,
+      "true_label_homophily": 0.5876,
+      "1st": {
+        "max_value_increase": 0.0,
+        "selected_clean": {
+          "0.2": {
+            "raw_clean": 176,
+            "graph_clean": 185
+          },
+          "0.4": {
+            "raw_clean": 355,
+            "graph_clean": 375
+          },
+          "0.6": {
+            "raw_clean": 537,
+            "graph_clean": 555
+          },
+          "0.8": {
+            "raw_clean": 719,
+            "graph_clean": 727
+          }
+        }
+      },
+      "2nd": {
+        "max_value_increase": 0.0,
+        "selected_clean": {
+          "0.2": {
+            "raw_clean": 178,
+            "graph_clean": 187
+          },
+          "0.4": {
+            "raw_clean": 356,
+            "graph_clean": 376
+          },
+          "0.6": {
+            "raw_clean": 541,
+            "graph_clean": 554
+          },
+          "0.8": {
+            "raw_clean": 722,
+            "graph_clean": 735
+          }
+        }
+      }
+    },
+    {
+      "run": 1,
+      "true_label_homophily": 0.5979,
+      "1st": {
+        "max_value_increase": 0.0,
+        "selected_clean": {
+          "0.2": {
+            "raw_clean": 181,
+            "graph_clean": 190
+          },
+          "0.4": {
+            "raw_clean": 360,
+            "graph_clean": 376
+          },
+          "0.6": {
+            "raw_clean": 542,
+            "graph_clean": 559
+          },
+          "0.8": {
+            "raw_clean": 719,
+            "graph_clean": 735
+          }
+        }
+      },
+      "2nd": {
+        "max_value_increase": 0.0,
+        "selected_clean": {
+          "0.2": {
+            "raw_clean": 179,
+            "graph_clean": 188
+          },
+          "0.4": {
+            "raw_clean": 362,
+            "graph_clean": 376
+          },
+          "0.6": {
+            "raw_clean": 543,
+            "graph_clean": 558
+          },
+          "0.8": {
+            "raw_clean": 720,
+            "graph_clean": 730
+          }
+        }
+      }
+    },
+    {
+      "run": 2,
+      "true_label_homophily": 0.6164,
+      "1st": {
+        "max_value_increase": 0.0,
+        "selected_clean": {
+          "0.2": {
+            "raw_clean": 178,
+            "graph_clean": 183
+          },
+          "0.4": {
+            "raw_clean": 358,
+            "graph_clean": 377
+          },
+          "0.6": {
+            "raw_clean": 545,
+            "graph_clean": 560
+          },
+          "0.8": {
+            "raw_clean": 728,
+            "graph_clean": 742
+          }
+        }
+      },
+      "2nd": {
+        "max_value_increase": 0.0,
+        "selected_clean": {
+          "0.2": {
+            "raw_clean": 181,
+            "graph_clean": 189
+          },
+          "0.4": {
+            "raw_clean": 359,
+            "graph_clean": 380
+          },
+          "0.6": {
+            "raw_clean": 541,
+            "graph_clean": 558
+          },
+          "0.8": {
+            "raw_clean": 717,
+            "graph_clean": 726
+          }
+        }
+      }
+    }
+  ],
+  "best_by_budget": {
+    "0.2": {
+      "method": "Graph Adam-aware 2nd Order In-Run",
+      "mean": 0.35369999999999996,
+      "std": 0.005359726361174315
+    },
+    "0.4": {
+      "method": "Graph Adam-aware 2nd Order In-Run",
+      "mean": 0.45823333333333327,
+      "std": 0.004327688631231342
+    },
+    "0.6": {
+      "method": "Graph Adam-aware 2nd Order In-Run",
+      "mean": 0.5099,
+      "std": 0.014949470447700383
+    },
+    "0.8": {
+      "method": "Graph Adam-aware 1st Order In-Run",
+      "mean": 0.5531666666666667,
+      "std": 0.0024444949489732045
+    }
+  }
+}

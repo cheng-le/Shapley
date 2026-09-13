@@ -1,0 +1,28 @@
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 18829.08it/s]
+domain=ArXiv train=1336 val=165
+domain=DM Mathematics train=1085 val=116
+domain=Enron Emails train=523 val=49
+domain=FreeLaw train=2847 val=261
+domain=Github train=10160 val=1027
+domain=HackerNews train=889 val=97
+domain=NIH ExPorter train=999 val=96
+domain=Pile-CC train=29686 val=2984
+domain=PubMed Abstracts train=16491 val=1579
+domain=PubMed Central train=3174 val=320
+domain=StackExchange train=16771 val=1667
+domain=USPTO Backgrounds train=6289 val=665
+domain=Wikipedia (en) train=9597 val=964
+{
+  "Random": 0.07735430922136935,
+  "BM25": 0.7957433271799962,
+  "KNN-Shapley": 0.5849839676123983,
+  "Influence Function": 0.08835172731834931,
+  "TRAK (1 ckpt)": 0.28520133899405514,
+  "LESS": 0.28520133899405514,
+  "1st Order In-Run Data Shapley": 0.08835172731834931,
+  "2nd Order In-Run Data Shapley": 0.08835172731834931,
+  "Adam-aware 1st Order In-Run": 0.22710112551009257,
+  "Adam-aware 2nd Order In-Run": 0.22710112551009257,
+  "Graph Adam-aware 1st Order In-Run": 0.24069775346105124,
+  "Graph Adam-aware 2nd Order In-Run": 0.24069775346105124
+}

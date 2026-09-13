@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "source_and_input_hashes": "unchanged",
+  "disjoint_train_validation": true,
+  "separate_official_test_split": true,
+  "trajectories": 9,
+  "result_cells": 396,
+  "unique_subset_fits": 311,
+  "full_data_reference_fits": 9,
+  "exact_graph_seed_invariance": true,
+  "raw_score_accumulation": "bitwise_equal",
+  "stored_predictions_match_metrics": true
+}

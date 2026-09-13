@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "timing_cells": 12,
+  "timing_stages": 168,
+  "ablation_cells": 168,
+  "clean_score_vectors": 84,
+  "source_hashes_match": true,
+  "input_cache_stat_unchanged": true
+}

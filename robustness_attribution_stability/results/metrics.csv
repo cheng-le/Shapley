@@ -1,0 +1,229 @@
+dataset,seed,method,metric,value
+Pile,0,1st Order In-Run Data Shapley,corruption_auroc,0.49591613388888894
+Pile,0,1st Order In-Run Data Shapley,top_1pct_contamination,0.191
+Pile,0,1st Order In-Run Data Shapley,top_5pct_contamination,0.1498
+Pile,0,1st Order In-Run Data Shapley,top_10pct_contamination,0.1314
+Pile,0,1st Order In-Run Data Shapley,top_20pct_contamination,0.1183
+Pile,0,2nd Order In-Run Data Shapley,corruption_auroc,0.49625407555555556
+Pile,0,2nd Order In-Run Data Shapley,top_1pct_contamination,0.189
+Pile,0,2nd Order In-Run Data Shapley,top_5pct_contamination,0.1488
+Pile,0,2nd Order In-Run Data Shapley,top_10pct_contamination,0.1304
+Pile,0,2nd Order In-Run Data Shapley,top_20pct_contamination,0.1181
+Pile,0,Adam-aware 1st Order In-Run,corruption_auroc,0.5608098272222222
+Pile,0,Adam-aware 1st Order In-Run,top_1pct_contamination,0.11
+Pile,0,Adam-aware 1st Order In-Run,top_5pct_contamination,0.097
+Pile,0,Adam-aware 1st Order In-Run,top_10pct_contamination,0.0904
+Pile,0,Adam-aware 1st Order In-Run,top_20pct_contamination,0.08785
+Pile,0,Adam-aware 2nd Order In-Run,corruption_auroc,0.5603746949999999
+Pile,0,Adam-aware 2nd Order In-Run,top_1pct_contamination,0.108
+Pile,0,Adam-aware 2nd Order In-Run,top_5pct_contamination,0.0946
+Pile,0,Adam-aware 2nd Order In-Run,top_10pct_contamination,0.0911
+Pile,0,Adam-aware 2nd Order In-Run,top_20pct_contamination,0.0879
+Pile,0,BM25,corruption_auroc,0.45847395944444447
+Pile,0,BM25,top_1pct_contamination,0.063
+Pile,0,BM25,top_5pct_contamination,0.1032
+Pile,0,BM25,top_10pct_contamination,0.1137
+Pile,0,BM25,top_20pct_contamination,0.11745
+Pile,0,Graph Adam-aware 1st Order In-Run,corruption_auroc,0.5639989277777777
+Pile,0,Graph Adam-aware 1st Order In-Run,top_1pct_contamination,0.119
+Pile,0,Graph Adam-aware 1st Order In-Run,top_5pct_contamination,0.0958
+Pile,0,Graph Adam-aware 1st Order In-Run,top_10pct_contamination,0.0898
+Pile,0,Graph Adam-aware 1st Order In-Run,top_20pct_contamination,0.0867
+Pile,0,Graph Adam-aware 2nd Order In-Run,corruption_auroc,0.56349244
+Pile,0,Graph Adam-aware 2nd Order In-Run,top_1pct_contamination,0.117
+Pile,0,Graph Adam-aware 2nd Order In-Run,top_5pct_contamination,0.0956
+Pile,0,Graph Adam-aware 2nd Order In-Run,top_10pct_contamination,0.0898
+Pile,0,Graph Adam-aware 2nd Order In-Run,top_20pct_contamination,0.0868
+Pile,0,Influence Function,corruption_auroc,0.5075035705555556
+Pile,0,Influence Function,top_1pct_contamination,0.254
+Pile,0,Influence Function,top_5pct_contamination,0.1794
+Pile,0,Influence Function,top_10pct_contamination,0.1463
+Pile,0,Influence Function,top_20pct_contamination,0.1214
+Pile,0,KNN-Shapley,corruption_auroc,0.8573480355555556
+Pile,0,KNN-Shapley,top_1pct_contamination,0.0
+Pile,0,KNN-Shapley,top_5pct_contamination,0.0
+Pile,0,KNN-Shapley,top_10pct_contamination,0.0
+Pile,0,KNN-Shapley,top_20pct_contamination,0.0
+Pile,0,LESS,corruption_auroc,0.5165720177777778
+Pile,0,LESS,top_1pct_contamination,0.038
+Pile,0,LESS,top_5pct_contamination,0.0974
+Pile,0,LESS,top_10pct_contamination,0.101
+Pile,0,LESS,top_20pct_contamination,0.10135
+Pile,0,Random,corruption_auroc,0.49953415944444446
+Pile,0,Random,top_1pct_contamination,0.092
+Pile,0,Random,top_5pct_contamination,0.102
+Pile,0,Random,top_10pct_contamination,0.1025
+Pile,0,Random,top_20pct_contamination,0.1001
+Pile,0,TRAK (1 ckpt),corruption_auroc,0.5165720211111112
+Pile,0,TRAK (1 ckpt),top_1pct_contamination,0.038
+Pile,0,TRAK (1 ckpt),top_5pct_contamination,0.0974
+Pile,0,TRAK (1 ckpt),top_10pct_contamination,0.101
+Pile,0,TRAK (1 ckpt),top_20pct_contamination,0.10135
+Pile,1,1st Order In-Run Data Shapley,corruption_auroc,0.49325653055555563
+Pile,1,1st Order In-Run Data Shapley,top_1pct_contamination,0.191
+Pile,1,1st Order In-Run Data Shapley,top_5pct_contamination,0.1506
+Pile,1,1st Order In-Run Data Shapley,top_10pct_contamination,0.1338
+Pile,1,1st Order In-Run Data Shapley,top_20pct_contamination,0.11885
+Pile,1,2nd Order In-Run Data Shapley,corruption_auroc,0.4935864033333333
+Pile,1,2nd Order In-Run Data Shapley,top_1pct_contamination,0.189
+Pile,1,2nd Order In-Run Data Shapley,top_5pct_contamination,0.151
+Pile,1,2nd Order In-Run Data Shapley,top_10pct_contamination,0.1342
+Pile,1,2nd Order In-Run Data Shapley,top_20pct_contamination,0.11865
+Pile,1,Adam-aware 1st Order In-Run,corruption_auroc,0.5571076244444445
+Pile,1,Adam-aware 1st Order In-Run,top_1pct_contamination,0.084
+Pile,1,Adam-aware 1st Order In-Run,top_5pct_contamination,0.0958
+Pile,1,Adam-aware 1st Order In-Run,top_10pct_contamination,0.0961
+Pile,1,Adam-aware 1st Order In-Run,top_20pct_contamination,0.08835
+Pile,1,Adam-aware 2nd Order In-Run,corruption_auroc,0.5569688227777778
+Pile,1,Adam-aware 2nd Order In-Run,top_1pct_contamination,0.082
+Pile,1,Adam-aware 2nd Order In-Run,top_5pct_contamination,0.0954
+Pile,1,Adam-aware 2nd Order In-Run,top_10pct_contamination,0.0952
+Pile,1,Adam-aware 2nd Order In-Run,top_20pct_contamination,0.08845
+Pile,1,BM25,corruption_auroc,0.4605102961111111
+Pile,1,BM25,top_1pct_contamination,0.081
+Pile,1,BM25,top_5pct_contamination,0.1038
+Pile,1,BM25,top_10pct_contamination,0.1118
+Pile,1,BM25,top_20pct_contamination,0.1166
+Pile,1,Graph Adam-aware 1st Order In-Run,corruption_auroc,0.5605278027777778
+Pile,1,Graph Adam-aware 1st Order In-Run,top_1pct_contamination,0.083
+Pile,1,Graph Adam-aware 1st Order In-Run,top_5pct_contamination,0.0942
+Pile,1,Graph Adam-aware 1st Order In-Run,top_10pct_contamination,0.0946
+Pile,1,Graph Adam-aware 1st Order In-Run,top_20pct_contamination,0.0884
+Pile,1,Graph Adam-aware 2nd Order In-Run,corruption_auroc,0.5603653983333333
+Pile,1,Graph Adam-aware 2nd Order In-Run,top_1pct_contamination,0.087
+Pile,1,Graph Adam-aware 2nd Order In-Run,top_5pct_contamination,0.094
+Pile,1,Graph Adam-aware 2nd Order In-Run,top_10pct_contamination,0.0952
+Pile,1,Graph Adam-aware 2nd Order In-Run,top_20pct_contamination,0.0881
+Pile,1,Influence Function,corruption_auroc,0.5030595050000001
+Pile,1,Influence Function,top_1pct_contamination,0.275
+Pile,1,Influence Function,top_5pct_contamination,0.184
+Pile,1,Influence Function,top_10pct_contamination,0.1494
+Pile,1,Influence Function,top_20pct_contamination,0.12375
+Pile,1,KNN-Shapley,corruption_auroc,0.8576591122222222
+Pile,1,KNN-Shapley,top_1pct_contamination,0.0
+Pile,1,KNN-Shapley,top_5pct_contamination,0.0
+Pile,1,KNN-Shapley,top_10pct_contamination,0.0
+Pile,1,KNN-Shapley,top_20pct_contamination,0.0
+Pile,1,LESS,corruption_auroc,0.5090797222222222
+Pile,1,LESS,top_1pct_contamination,0.144
+Pile,1,LESS,top_5pct_contamination,0.127
+Pile,1,LESS,top_10pct_contamination,0.1171
+Pile,1,LESS,top_20pct_contamination,0.1067
+Pile,1,Random,corruption_auroc,0.4978673388888889
+Pile,1,Random,top_1pct_contamination,0.106
+Pile,1,Random,top_5pct_contamination,0.1094
+Pile,1,Random,top_10pct_contamination,0.1052
+Pile,1,Random,top_20pct_contamination,0.1027
+Pile,1,TRAK (1 ckpt),corruption_auroc,0.5090797288888889
+Pile,1,TRAK (1 ckpt),top_1pct_contamination,0.144
+Pile,1,TRAK (1 ckpt),top_5pct_contamination,0.127
+Pile,1,TRAK (1 ckpt),top_10pct_contamination,0.1171
+Pile,1,TRAK (1 ckpt),top_20pct_contamination,0.1067
+Pile,2,1st Order In-Run Data Shapley,corruption_auroc,0.5038184527777777
+Pile,2,1st Order In-Run Data Shapley,top_1pct_contamination,0.177
+Pile,2,1st Order In-Run Data Shapley,top_5pct_contamination,0.1474
+Pile,2,1st Order In-Run Data Shapley,top_10pct_contamination,0.1301
+Pile,2,1st Order In-Run Data Shapley,top_20pct_contamination,0.11765
+Pile,2,2nd Order In-Run Data Shapley,corruption_auroc,0.5040978788888889
+Pile,2,2nd Order In-Run Data Shapley,top_1pct_contamination,0.183
+Pile,2,2nd Order In-Run Data Shapley,top_5pct_contamination,0.1474
+Pile,2,2nd Order In-Run Data Shapley,top_10pct_contamination,0.1301
+Pile,2,2nd Order In-Run Data Shapley,top_20pct_contamination,0.11725
+Pile,2,Adam-aware 1st Order In-Run,corruption_auroc,0.5604899216666667
+Pile,2,Adam-aware 1st Order In-Run,top_1pct_contamination,0.096
+Pile,2,Adam-aware 1st Order In-Run,top_5pct_contamination,0.0994
+Pile,2,Adam-aware 1st Order In-Run,top_10pct_contamination,0.0933
+Pile,2,Adam-aware 1st Order In-Run,top_20pct_contamination,0.08955
+Pile,2,Adam-aware 2nd Order In-Run,corruption_auroc,0.5600849405555556
+Pile,2,Adam-aware 2nd Order In-Run,top_1pct_contamination,0.096
+Pile,2,Adam-aware 2nd Order In-Run,top_5pct_contamination,0.0994
+Pile,2,Adam-aware 2nd Order In-Run,top_10pct_contamination,0.0927
+Pile,2,Adam-aware 2nd Order In-Run,top_20pct_contamination,0.08935
+Pile,2,BM25,corruption_auroc,0.46100564
+Pile,2,BM25,top_1pct_contamination,0.077
+Pile,2,BM25,top_5pct_contamination,0.1014
+Pile,2,BM25,top_10pct_contamination,0.114
+Pile,2,BM25,top_20pct_contamination,0.11735
+Pile,2,Graph Adam-aware 1st Order In-Run,corruption_auroc,0.5633614183333334
+Pile,2,Graph Adam-aware 1st Order In-Run,top_1pct_contamination,0.102
+Pile,2,Graph Adam-aware 1st Order In-Run,top_5pct_contamination,0.0988
+Pile,2,Graph Adam-aware 1st Order In-Run,top_10pct_contamination,0.0925
+Pile,2,Graph Adam-aware 1st Order In-Run,top_20pct_contamination,0.08805
+Pile,2,Graph Adam-aware 2nd Order In-Run,corruption_auroc,0.5628898166666667
+Pile,2,Graph Adam-aware 2nd Order In-Run,top_1pct_contamination,0.099
+Pile,2,Graph Adam-aware 2nd Order In-Run,top_5pct_contamination,0.098
+Pile,2,Graph Adam-aware 2nd Order In-Run,top_10pct_contamination,0.0926
+Pile,2,Graph Adam-aware 2nd Order In-Run,top_20pct_contamination,0.08825
+Pile,2,Influence Function,corruption_auroc,0.5087212411111112
+Pile,2,Influence Function,top_1pct_contamination,0.237
+Pile,2,Influence Function,top_5pct_contamination,0.1634
+Pile,2,Influence Function,top_10pct_contamination,0.1431
+Pile,2,Influence Function,top_20pct_contamination,0.12175
+Pile,2,KNN-Shapley,corruption_auroc,0.8571802044444444
+Pile,2,KNN-Shapley,top_1pct_contamination,0.0
+Pile,2,KNN-Shapley,top_5pct_contamination,0.0
+Pile,2,KNN-Shapley,top_10pct_contamination,0.0
+Pile,2,KNN-Shapley,top_20pct_contamination,0.0
+Pile,2,LESS,corruption_auroc,0.5213268127777777
+Pile,2,LESS,top_1pct_contamination,0.019
+Pile,2,LESS,top_5pct_contamination,0.0958
+Pile,2,LESS,top_10pct_contamination,0.1005
+Pile,2,LESS,top_20pct_contamination,0.0993
+Pile,2,Random,corruption_auroc,0.4989677888888889
+Pile,2,Random,top_1pct_contamination,0.097
+Pile,2,Random,top_5pct_contamination,0.0986
+Pile,2,Random,top_10pct_contamination,0.0977
+Pile,2,Random,top_20pct_contamination,0.1003
+Pile,2,TRAK (1 ckpt),corruption_auroc,0.5213268061111112
+Pile,2,TRAK (1 ckpt),top_1pct_contamination,0.019
+Pile,2,TRAK (1 ckpt),top_5pct_contamination,0.0958
+Pile,2,TRAK (1 ckpt),top_10pct_contamination,0.1005
+Pile,2,TRAK (1 ckpt),top_20pct_contamination,0.0993
+CIFAR-10,0,Adam-aware 1st Order In-Run,corruption_auroc,0.4737222222222222
+CIFAR-10,0,Adam-aware 1st Order In-Run,top_10pct_contamination,0.13
+CIFAR-10,0,Adam-aware 1st Order In-Run,top_20pct_contamination,0.12
+CIFAR-10,0,Adam-aware 1st Order In-Run,top_40pct_contamination,0.1125
+CIFAR-10,0,Graph Adam-aware 1st Order In-Run,corruption_auroc,0.6061
+CIFAR-10,0,Graph Adam-aware 1st Order In-Run,top_10pct_contamination,0.08
+CIFAR-10,0,Graph Adam-aware 1st Order In-Run,top_20pct_contamination,0.075
+CIFAR-10,0,Graph Adam-aware 1st Order In-Run,top_40pct_contamination,0.0625
+CIFAR-10,0,Adam-aware 2nd Order In-Run,corruption_auroc,0.4824777777777778
+CIFAR-10,0,Adam-aware 2nd Order In-Run,top_10pct_contamination,0.14
+CIFAR-10,0,Adam-aware 2nd Order In-Run,top_20pct_contamination,0.11
+CIFAR-10,0,Adam-aware 2nd Order In-Run,top_40pct_contamination,0.11
+CIFAR-10,0,Graph Adam-aware 2nd Order In-Run,corruption_auroc,0.6142555555555556
+CIFAR-10,0,Graph Adam-aware 2nd Order In-Run,top_10pct_contamination,0.07
+CIFAR-10,0,Graph Adam-aware 2nd Order In-Run,top_20pct_contamination,0.065
+CIFAR-10,0,Graph Adam-aware 2nd Order In-Run,top_40pct_contamination,0.06
+CIFAR-10,1,Adam-aware 1st Order In-Run,corruption_auroc,0.5085333333333333
+CIFAR-10,1,Adam-aware 1st Order In-Run,top_10pct_contamination,0.1
+CIFAR-10,1,Adam-aware 1st Order In-Run,top_20pct_contamination,0.095
+CIFAR-10,1,Adam-aware 1st Order In-Run,top_40pct_contamination,0.1
+CIFAR-10,1,Graph Adam-aware 1st Order In-Run,corruption_auroc,0.6342444444444445
+CIFAR-10,1,Graph Adam-aware 1st Order In-Run,top_10pct_contamination,0.06
+CIFAR-10,1,Graph Adam-aware 1st Order In-Run,top_20pct_contamination,0.05
+CIFAR-10,1,Graph Adam-aware 1st Order In-Run,top_40pct_contamination,0.06
+CIFAR-10,1,Adam-aware 2nd Order In-Run,corruption_auroc,0.504
+CIFAR-10,1,Adam-aware 2nd Order In-Run,top_10pct_contamination,0.12
+CIFAR-10,1,Adam-aware 2nd Order In-Run,top_20pct_contamination,0.105
+CIFAR-10,1,Adam-aware 2nd Order In-Run,top_40pct_contamination,0.095
+CIFAR-10,1,Graph Adam-aware 2nd Order In-Run,corruption_auroc,0.6306666666666666
+CIFAR-10,1,Graph Adam-aware 2nd Order In-Run,top_10pct_contamination,0.08
+CIFAR-10,1,Graph Adam-aware 2nd Order In-Run,top_20pct_contamination,0.06
+CIFAR-10,1,Graph Adam-aware 2nd Order In-Run,top_40pct_contamination,0.06
+CIFAR-10,2,Adam-aware 1st Order In-Run,corruption_auroc,0.5164
+CIFAR-10,2,Adam-aware 1st Order In-Run,top_10pct_contamination,0.16
+CIFAR-10,2,Adam-aware 1st Order In-Run,top_20pct_contamination,0.11
+CIFAR-10,2,Adam-aware 1st Order In-Run,top_40pct_contamination,0.105
+CIFAR-10,2,Graph Adam-aware 1st Order In-Run,corruption_auroc,0.6410111111111111
+CIFAR-10,2,Graph Adam-aware 1st Order In-Run,top_10pct_contamination,0.07
+CIFAR-10,2,Graph Adam-aware 1st Order In-Run,top_20pct_contamination,0.085
+CIFAR-10,2,Graph Adam-aware 1st Order In-Run,top_40pct_contamination,0.0575
+CIFAR-10,2,Adam-aware 2nd Order In-Run,corruption_auroc,0.48734444444444447
+CIFAR-10,2,Adam-aware 2nd Order In-Run,top_10pct_contamination,0.12
+CIFAR-10,2,Adam-aware 2nd Order In-Run,top_20pct_contamination,0.095
+CIFAR-10,2,Adam-aware 2nd Order In-Run,top_40pct_contamination,0.1025
+CIFAR-10,2,Graph Adam-aware 2nd Order In-Run,corruption_auroc,0.6249666666666667
+CIFAR-10,2,Graph Adam-aware 2nd Order In-Run,top_10pct_contamination,0.05
+CIFAR-10,2,Graph Adam-aware 2nd Order In-Run,top_20pct_contamination,0.055
+CIFAR-10,2,Graph Adam-aware 2nd Order In-Run,top_40pct_contamination,0.05

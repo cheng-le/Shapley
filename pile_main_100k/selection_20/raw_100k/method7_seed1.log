@@ -1,0 +1,2 @@
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 18023.26it/s]
+budget=20 method=2nd Order In-Run Data Shapley seed=1 val_accuracy=0.437806 val_loss=3.139059

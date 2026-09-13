@@ -1,0 +1,16 @@
+{
+  "table_source": "main_table.csv",
+  "plot_source": "plot_data.csv",
+  "rank_source": "per_metric_ranks.csv",
+  "raw_sources": {
+    "noise": "../noise_auroc/results.json and ../cache/noise_seed*.npz",
+    "domain": "../domain_recall/results.json",
+    "selection": "../selection_{20,40,60,80}/results_gpu{0,1}.json",
+    "dataset": "../../data/Pile_large/manifest.json"
+  },
+  "figure_formats": [
+    "png",
+    "pdf",
+    "svg"
+  ]
+}

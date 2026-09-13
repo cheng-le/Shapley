@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "checks": [
+    "online_vs_replay_three_seeds",
+    "no_future_history",
+    "zero_alpha",
+    "analytic_HVP",
+    "Graph_higher_order_guard"
+  ]
+}

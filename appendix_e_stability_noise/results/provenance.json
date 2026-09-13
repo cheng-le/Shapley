@@ -1,0 +1,39 @@
+{
+  "source_hashes": {
+    "appendix_d_cifar/data/seed0.npz": "4c9d41b7fc5d0cf4cf197fb1aea7f57b7ef881046599a4558abd5ca11494f466",
+    "appendix_d_cifar/results/data0_train0/scores.npz": "e60e732afaf7728921f6954280c97435d975eab846753c358a210140b855870b",
+    "appendix_d_cifar/results/data0_train0/trajectory.npz": "9a552709ac1415f2a1eb8b4d26a00e8d6f34eab8f36ebba8d59d5b8d73e23f12",
+    "appendix_d_cifar/results/data0_train1/scores.npz": "a96541b8cb02fc87c4fdd3689fa1c7249d9fbdd4bb6817d7fde24c6012ef0959",
+    "appendix_d_cifar/results/data0_train1/trajectory.npz": "4fd130d5b089969d5768997b45150dc6e52211adc17be25a5b50435df9b7fcff",
+    "appendix_d_cifar/results/data0_train2/scores.npz": "cd7e7b0cf65bf94a0a8442d45b185a9bd3a90401fefd3843943932bb00f49b5a",
+    "appendix_d_cifar/results/data0_train2/trajectory.npz": "7c2f139a43acc1e9bea0e8146456b0cce189385fdf3d04c6f86cf4c57d84f3ed",
+    "appendix_d_cifar/data/seed1.npz": "1cee1ceb189c6bfa24f6188791deeace88d6f4b38f286b1751c00aae8b9abc18",
+    "appendix_d_cifar/results/data1_train0/scores.npz": "8c563c02575447d68a02bf2013eb6792ba0e4ad0e5dde2e7f931abb536e43839",
+    "appendix_d_cifar/results/data1_train0/trajectory.npz": "6022d059d8c546a351453afaf12a33348a1da78050f3b2f913151776dba62d8f",
+    "appendix_d_cifar/results/data1_train1/scores.npz": "d9a822957772fecd20d24e4a32a2e55a5805d6f84326618ca5a98511b6486f07",
+    "appendix_d_cifar/results/data1_train1/trajectory.npz": "5e9d2b36daeec3a960f51bbb1f29392aacc645e5ec8364493f88ef0af0fe629d",
+    "appendix_d_cifar/results/data1_train2/scores.npz": "b94a45e09122f57593dd2af8664e41e2b3324e9603c2b8f7b3520ccb344e1037",
+    "appendix_d_cifar/results/data1_train2/trajectory.npz": "eadb3567949165eb35d1affa3267008b67f52dcd33f91a16de7766dc40bc2746",
+    "appendix_d_cifar/data/seed2.npz": "def2669d67ea4e816f578eb0ae94aa7409e7c4000afa59206e288196f28cb695",
+    "appendix_d_cifar/results/data2_train0/scores.npz": "7185bd995294f94eb63aceb16197ce9404c250efe956014b934e3fbdb523ca3b",
+    "appendix_d_cifar/results/data2_train0/trajectory.npz": "1f2c73457085ad95376721968da9a2b18ec96ffc9430ac3d0f11faf680a7bc87",
+    "appendix_d_cifar/results/data2_train1/scores.npz": "d4366a44f9ccf1d41c6f0d2106460b536ef0cd819b2195600758fd8ba39c524b",
+    "appendix_d_cifar/results/data2_train1/trajectory.npz": "040553d368d660c7e71b529dd3fc75250e52e2cbfdb86b162089336a4c20e021",
+    "appendix_d_cifar/results/data2_train2/scores.npz": "b301403cb4a6d0ebfb65db049d1505325b83d65609ad40b561094c4c41ffbb0b",
+    "appendix_d_cifar/results/data2_train2/trajectory.npz": "1ad05d65d6857bc681a142f6b82e98be7994b8b2bde4a95faeac27f0ac360a2f"
+  },
+  "script_sha256": "529d92086f6e4280a69ae86a464fd171cbb6b78f9b9d780a25b9749e6c74718f",
+  "graph_code_sha256": "7c48c5a33ec157fcaa38e28d58b15cb051641c3d6253df7761a41256aaec4b24",
+  "source": "Appendix D frozen-ResNet, initial-gradient gated extension",
+  "methods": [
+    "k10_a0_l0",
+    "full",
+    "no_gate",
+    "no_history",
+    "no_pair",
+    "no_scale",
+    "random"
+  ],
+  "no_retraining": true,
+  "noise_labels_diagnostic_only": true
+}

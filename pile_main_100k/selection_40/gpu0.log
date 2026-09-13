@@ -1,0 +1,36 @@
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 14146.37it/s]
+budget=40 method=Random seed=0 val_loss=3.153411
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 19097.86it/s]
+budget=40 method=Random seed=1 val_loss=3.155005
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 15012.99it/s]
+budget=40 method=Random seed=2 val_loss=3.154432
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 15225.08it/s]
+budget=40 method=BM25 seed=0 val_loss=3.179880
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 15213.89it/s]
+budget=40 method=BM25 seed=1 val_loss=3.175534
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 18717.23it/s]
+budget=40 method=BM25 seed=2 val_loss=3.178700
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 13320.11it/s]
+budget=40 method=KNN-Shapley seed=0 val_loss=3.204064
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 18067.85it/s]
+budget=40 method=KNN-Shapley seed=1 val_loss=3.200338
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 19636.13it/s]
+budget=40 method=KNN-Shapley seed=2 val_loss=3.204540
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 14352.76it/s]
+budget=40 method=Influence Function seed=0 val_loss=3.159320
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 15583.60it/s]
+budget=40 method=Influence Function seed=1 val_loss=3.162428
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 13632.52it/s]
+budget=40 method=Influence Function seed=2 val_loss=3.160511
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 15213.14it/s]
+budget=40 method=TRAK (1 ckpt) seed=0 val_loss=3.160000
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 17828.11it/s]
+budget=40 method=TRAK (1 ckpt) seed=1 val_loss=3.159205
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 18248.97it/s]
+budget=40 method=TRAK (1 ckpt) seed=2 val_loss=3.161858
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 14611.89it/s]
+budget=40 method=LESS seed=0 val_loss=3.160000
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 17324.58it/s]
+budget=40 method=LESS seed=1 val_loss=3.159205
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 14444.94it/s]
+budget=40 method=LESS seed=2 val_loss=3.161858

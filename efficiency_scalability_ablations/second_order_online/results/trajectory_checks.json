@@ -1,0 +1,44 @@
+[
+  {
+    "seed": 0,
+    "scenario": "clean",
+    "status": "bitwise_equal",
+    "graph_adam2_spearman": 0.9886362016021103,
+    "graph_adam1_spearman": 0.989539460508079
+  },
+  {
+    "seed": 0,
+    "scenario": "noise",
+    "status": "bitwise_equal",
+    "graph_adam2_spearman": 0.9900249420249422,
+    "graph_adam1_spearman": 0.9907130947130949
+  },
+  {
+    "seed": 1,
+    "scenario": "clean",
+    "status": "bitwise_equal",
+    "graph_adam2_spearman": 0.9884622374276242,
+    "graph_adam1_spearman": 0.989008901008901
+  },
+  {
+    "seed": 1,
+    "scenario": "noise",
+    "status": "bitwise_equal",
+    "graph_adam2_spearman": 0.9870790110790111,
+    "graph_adam1_spearman": 0.9880349200349201
+  },
+  {
+    "seed": 2,
+    "scenario": "clean",
+    "status": "bitwise_equal",
+    "graph_adam2_spearman": 0.987866991866992,
+    "graph_adam1_spearman": 0.9888469248469248
+  },
+  {
+    "seed": 2,
+    "scenario": "noise",
+    "status": "bitwise_equal",
+    "graph_adam2_spearman": 0.9874711714711716,
+    "graph_adam1_spearman": 0.9879495639495639
+  }
+]

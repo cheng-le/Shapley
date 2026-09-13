@@ -1,0 +1,246 @@
+{
+  "protocol": {
+    "graph_version": "graph_v2_dynamic_diverse",
+    "alpha": 0.2,
+    "lambda_fraction": 0.05,
+    "std_ddof": 0,
+    "seeds": [
+      0,
+      1,
+      2
+    ]
+  },
+  "score_stability": {
+    "Graph Adam-aware 1st Order In-Run": {
+      "adam_pairwise_spearman": [
+        0.16580121701735975,
+        0.16313753109224002,
+        0.164519979767459
+      ],
+      "graph_pairwise_spearman": [
+        0.1843743028575626,
+        0.18210951866607653,
+        0.18397230589744804
+      ],
+      "adam_mean_spearman": 0.16448624262568626,
+      "graph_mean_spearman": 0.18348537580702906,
+      "mean_spearman_delta": 0.018999133181342803
+    },
+    "Graph Adam-aware 2nd Order In-Run": {
+      "adam_pairwise_spearman": [
+        0.16638101304603145,
+        0.1639776734958407,
+        0.1654823764009312
+      ],
+      "graph_pairwise_spearman": [
+        0.18521165405069284,
+        0.18325968765903092,
+        0.18525938238184286
+      ],
+      "adam_mean_spearman": 0.1652803543142678,
+      "graph_mean_spearman": 0.18457690803052218,
+      "mean_spearman_delta": 0.019296553716254383
+    }
+  },
+  "selection_vs_adam": {
+    "Graph Adam-aware 1st Order In-Run": {
+      "20": {
+        "graph_mean": 0.4379904580079573,
+        "graph_std": 0.00019697017542687342,
+        "adam_mean": 0.4385540691906598,
+        "adam_std": 5.1295001368699454e-05,
+        "mean_delta": -0.0005636111827025392,
+        "std_delta": 0.00014567517405817396
+      },
+      "40": {
+        "graph_mean": 0.4413206887438092,
+        "graph_std": 9.08105218844202e-05,
+        "adam_mean": 0.4417967486748297,
+        "adam_std": 0.00010975529700695203,
+        "mean_delta": -0.0004760599310205116,
+        "std_delta": -1.8944775122531834e-05
+      },
+      "60": {
+        "graph_mean": 0.4430821104885852,
+        "graph_std": 0.00020886668398991613,
+        "adam_mean": 0.4430410708393593,
+        "adam_std": 7.333131914299704e-05,
+        "mean_delta": 4.103964922591574e-05,
+        "std_delta": 0.00013553536484691908
+      },
+      "80": {
+        "graph_mean": 0.4434465425737113,
+        "graph_std": 0.00014670397434708395,
+        "adam_mean": 0.4436632319216241,
+        "adam_std": 7.057865191878484e-05,
+        "mean_delta": -0.0002166893479128018,
+        "std_delta": 7.612532242829911e-05
+      }
+    },
+    "Graph Adam-aware 2nd Order In-Run": {
+      "20": {
+        "graph_mean": 0.4382473662121115,
+        "graph_std": 0.0001131590137701768,
+        "adam_mean": 0.4380334128408138,
+        "adam_std": 0.00020942395342856394,
+        "mean_delta": 0.00021395337129770375,
+        "std_delta": -9.626493965838714e-05
+      },
+      "40": {
+        "graph_mean": 0.4412569404886783,
+        "graph_std": 0.0002463020304549026,
+        "adam_mean": 0.44142903341776557,
+        "adam_std": 0.00015521598277269485,
+        "mean_delta": -0.00017209292908726415,
+        "std_delta": 9.108604768220775e-05
+      },
+      "60": {
+        "graph_mean": 0.4427516045134859,
+        "graph_std": 4.462242819648886e-05,
+        "adam_mean": 0.4426063241552262,
+        "adam_std": 9.67011959834528e-05,
+        "mean_delta": 0.00014528035825966956,
+        "std_delta": -5.2078767786963935e-05
+      },
+      "80": {
+        "graph_mean": 0.4434977053364129,
+        "graph_std": 0.00021343283254360038,
+        "adam_mean": 0.4435105644265038,
+        "adam_std": 0.00018947818344573287,
+        "mean_delta": -1.2859090090855396e-05,
+        "std_delta": 2.3954649097867518e-05
+      }
+    }
+  },
+  "selection_vs_static_graph": {
+    "Graph Adam-aware 1st Order In-Run": {
+      "20": {
+        "v2_mean": 0.4379904580079573,
+        "v2_std": 0.00019697017542687342,
+        "static_mean": 0.43787417900181724,
+        "static_std": 0.0001957036250743335,
+        "mean_delta": 0.00011627900614002984,
+        "std_delta": 1.2665503525399193e-06
+      },
+      "40": {
+        "v2_mean": 0.4413206887438092,
+        "v2_std": 9.08105218844202e-05,
+        "static_mean": 0.4415332741267994,
+        "static_std": 0.00019380913696221197,
+        "mean_delta": -0.00021258538299018248,
+        "std_delta": -0.00010299861507779178
+      },
+      "60": {
+        "v2_mean": 0.4430821104885852,
+        "v2_std": 0.00020886668398991613,
+        "static_mean": 0.44265885490623536,
+        "static_std": 3.19816825187994e-05,
+        "mean_delta": 0.0004232555823498463,
+        "std_delta": 0.00017688500147111674
+      },
+      "80": {
+        "v2_mean": 0.4434465425737113,
+        "v2_std": 0.00014670397434708395,
+        "static_mean": 0.44373983926684585,
+        "static_std": 2.5363550957998094e-05,
+        "mean_delta": -0.0002932966931345482,
+        "std_delta": 0.00012134042338908586
+      }
+    },
+    "Graph Adam-aware 2nd Order In-Run": {
+      "20": {
+        "v2_mean": 0.4382473662121115,
+        "v2_std": 0.0001131590137701768,
+        "static_mean": 0.4382421678565429,
+        "static_std": 5.3799347000080245e-05,
+        "mean_delta": 5.198355568614144e-06,
+        "std_delta": 5.935966677009656e-05
+      },
+      "40": {
+        "v2_mean": 0.4412569404886783,
+        "v2_std": 0.0002463020304549026,
+        "static_mean": 0.4415775969479634,
+        "static_std": 0.00012301128552460842,
+        "mean_delta": -0.0003206564592850847,
+        "std_delta": 0.00012329074493029417
+      },
+      "60": {
+        "v2_mean": 0.4427516045134859,
+        "v2_std": 4.462242819648886e-05,
+        "static_mean": 0.4426749971682642,
+        "static_std": 0.00012403120811545627,
+        "mean_delta": 7.660734522169088e-05,
+        "std_delta": -7.94087799189674e-05
+      },
+      "80": {
+        "v2_mean": 0.4434977053364129,
+        "v2_std": 0.00021343283254360038,
+        "static_mean": 0.44346979837493933,
+        "static_std": 6.502536399001113e-05,
+        "mean_delta": 2.7906961473589398e-05,
+        "std_delta": 0.00014840746855358924
+      }
+    }
+  },
+  "diversity": {
+    "Graph Adam-aware 1st Order In-Run": {
+      "20": {
+        "mean_relative_reduction": 0.015174967604673842,
+        "mean_topk_overlap": 0.9956666666666667,
+        "mean_graph_coverage": 0.9339266666666667
+      },
+      "40": {
+        "mean_relative_reduction": 0.017680350698462806,
+        "mean_topk_overlap": 0.9938583333333333,
+        "mean_graph_coverage": 0.9963333333333333
+      },
+      "60": {
+        "mean_relative_reduction": 0.015055955084098798,
+        "mean_topk_overlap": 0.9942166666666665,
+        "mean_graph_coverage": 0.9998299999999999
+      },
+      "80": {
+        "mean_relative_reduction": 0.006481479852950424,
+        "mean_topk_overlap": 0.9974833333333333,
+        "mean_graph_coverage": 1.0
+      }
+    },
+    "Graph Adam-aware 2nd Order In-Run": {
+      "20": {
+        "mean_relative_reduction": 0.014901649214307602,
+        "mean_topk_overlap": 0.99595,
+        "mean_graph_coverage": 0.93352
+      },
+      "40": {
+        "mean_relative_reduction": 0.018230618596362994,
+        "mean_topk_overlap": 0.9936833333333334,
+        "mean_graph_coverage": 0.9962366666666668
+      },
+      "60": {
+        "mean_relative_reduction": 0.015197849030476168,
+        "mean_topk_overlap": 0.9940944444444444,
+        "mean_graph_coverage": 0.9998299999999999
+      },
+      "80": {
+        "mean_relative_reduction": 0.005986015977882535,
+        "mean_topk_overlap": 0.9976583333333333,
+        "mean_graph_coverage": 1.0
+      }
+    }
+  },
+  "main_table_positions": {
+    "Graph Adam-aware 1st Order In-Run": {
+      "best_count": 1,
+      "second_count": 2
+    },
+    "Graph Adam-aware 2nd Order In-Run": {
+      "best_count": 0,
+      "second_count": 0
+    }
+  },
+  "display_audit": {
+    "exact_zero_std_cells": 2,
+    "selection_accuracy_is_percent": true,
+    "rounded_zero_std_cells_at_display_precision": 2
+  }
+}

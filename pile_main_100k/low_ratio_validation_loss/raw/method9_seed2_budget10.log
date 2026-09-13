@@ -1,0 +1,1 @@
+budget=10 method=Adam-aware 2nd Order In-Run seed=2 val_accuracy=0.435030 val_loss=3.157180
